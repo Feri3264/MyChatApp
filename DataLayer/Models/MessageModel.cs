@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
-    public class MessageModal
+    public class MessageModel
     {
         [Key]
         public int MessageId { get; set; }
@@ -18,16 +18,11 @@ namespace DataLayer.Models
         public string MessageText { get; set; }
 
         [Required]
-        public int MessageFrom { get; set; }
-
-        [Required]
-        public int MessageTo { get; set; }
+        public int FriendsRelationId { get; set; }
 
 
-        //Navigation properties
-        [ForeignKey("MessageFrom")]
-        public List<UserModal> User { get; set; }
-        [ForeignKey("MessageTo")]
-        public List<FriendModal> Freinds { get; set; }
+        //Navigation Properties
+        [ForeignKey("FriendsRelationId")]
+        public virtual FriendModel Friends { get; set; }
     }
 }

@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
-    public class UserModal
+    public class UserModel
     {
         [Key]
         public int UserId { get; set; }
 
-        [Required(ErrorMessage = "Please Enter Your {0}") , MaxLength(100)]
+        [Required(ErrorMessage = "Please Enter Your {0}") , MaxLength(100)]        
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Please Enter Your {0}") , MaxLength(200)]
@@ -33,7 +33,6 @@ namespace DataLayer.Models
 
 
         //Navigation Properties
-        public List<FriendModal> Friends { get; set; }
-        public List<MessageModal> Messages { get; set; }
+        public virtual List<FriendModel> Friends { get; set; }
     }
 }

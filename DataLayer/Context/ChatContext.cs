@@ -10,19 +10,20 @@ namespace DataLayer.Context
 {
     public class ChatContext : DbContext
     {
-        public DbSet<UserModal> Users { get; set; }
-        public DbSet<FriendModal> Friends { get; set; }
-        public DbSet<MessageModal> Messages { get; set; }
+        public DbSet<UserModel> Users { get; set; }
+        public DbSet<FriendModel> Friends { get; set; }
+        public DbSet<MessageModel> Messages { get; set; }
 
 
         #region OnConfiguring
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=ChatApp;Integrated Security=true;Trusted_Connection=yes;");
+            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=ChatApp;Integrated Security=true;TrustServerCertificate=True;");
 
             base.OnConfiguring(optionsBuilder);
         }
         #endregion
-     
+
+
     }
 }

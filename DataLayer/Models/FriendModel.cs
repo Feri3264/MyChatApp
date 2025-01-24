@@ -9,9 +9,11 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
-    [Keyless]
-    public class FriendModal
+    public class FriendModel
     {
+        [Key]
+        public int FriendsRelationId { get; set; }
+
         [Required]
         public int UserId { get; set; }
 
@@ -20,7 +22,7 @@ namespace DataLayer.Models
 
 
         //Navigation Properties
-        [ForeignKey("UserId")]
-        public UserModal User { get; set; }
+        public virtual UserModel User { get; set; }
+        public virtual List<MessageModel> Messages { get; set; }
     }
 }
