@@ -11,6 +11,11 @@ namespace DataLayer.Models
         public int MessageId { get; set; }
         public string MessageText { get; set; }
         public int MessageFrom { get; set; }
-        public int MessageTo { get; set; }             
+        public int MessageTo { get; set; }
+
+
+        //Navigation properties
+        public List<UserModal> User { get; set; }
+        public List<FriendModal> Freinds { get; set; }
     }
 }

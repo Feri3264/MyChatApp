@@ -10,5 +10,8 @@ namespace DataLayer.Models
     {
         public int UserId { get; set; }
         public int FreindId { get; set; }
+
+        //Navigation Properties
+        public UserModal User { get; set; }
     }
 }
