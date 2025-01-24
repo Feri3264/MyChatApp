@@ -1,12 +1,12 @@
 using System.Diagnostics;
-using ChatApp.Models;
+using DataLayer.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChatApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<HomeController> _logger;        
 
         public HomeController(ILogger<HomeController> logger)
         {

@@ -1,4 +1,4 @@
-namespace ChatApp.Models
+namespace DataLayer.Models
 {
     public class ErrorViewModel
     {
