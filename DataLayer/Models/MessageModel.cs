@@ -22,7 +22,6 @@ namespace DataLayer.Models
 
 
         //Navigation Properties
-        [ForeignKey("FriendsRelationId")]
         public virtual FriendModel Friends { get; set; }
     }
 }
