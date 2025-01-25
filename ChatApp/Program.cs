@@ -1,7 +1,20 @@
+using DataLayer.Context;
+using DataLayer.Repository;
+using DataLayer.Services;
+using Microsoft.AspNetCore.Identity;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+#region DI
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IFriendRepository, FriendRepository>();
+builder.Services.AddScoped<IMessageRepository, MessageRepository>();
+#endregion
+
+
 
 var app = builder.Build();
 
