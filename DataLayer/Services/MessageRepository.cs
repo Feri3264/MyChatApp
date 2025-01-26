@@ -21,17 +21,28 @@ namespace DataLayer.Services
 
         public void AddMessage(MessageModel message)
         {
-            throw new NotImplementedException();
+            _context.Messages.Add(message);
         }
 
         public void RemoveMessage(int messageId)
         {
-            throw new NotImplementedException();
+            MessageModel message = FindMessageById(messageId);
+            _context.Messages.Remove(message);
+        }
+
+        public MessageModel FindMessageById(int messageId)
+        {
+            MessageModel message = _context.Messages.FirstOrDefault(m => m.MessageId == messageId);
+            if (message == null)
+            {
+                throw new NullReferenceException();
+            }
+            return message;
         }
 
         public void SaveChanges()
         {
-            throw new NotImplementedException();
+            _context.SaveChanges();
         }
     }
 }

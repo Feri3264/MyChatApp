@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pQIMxfrJ2orQorHKWbllT2AWRq8i95L0xcMM4y+eUd0=",
+  "Hash": "pV6jObFcby/sqGzgkEQPl4fQgNkZZlwH8Md9icfb1H4=",
   "Source": "ChatApp",
   "BasePath": "_content/ChatApp",
   "Mode": "Default",
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-g1wgsltahr.gz",
+      "SourceId": "ChatApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatApp",
+      "RelativePath": "css/MainStyle#[.{fingerprint=g1wgsltahr}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\MainStyle.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "q7zi4905yt",
+      "Integrity": "xgohZsYSEcoBvWcuH6MDkYG8GHjxNI9cCk5lq9m48I8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\MainStyle.css"
     },
     {
       "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\36hp28tzq1-ttgo8qnofa.gz",
@@ -1214,6 +1235,27 @@
       "OriginalItemSpec": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\u1asda16b8-ikpyst30ts.gz",
+      "SourceId": "ChatApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/ChatApp",
+      "RelativePath": "css/LoginStyle#[.{fingerprint=ikpyst30ts}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\LoginStyle.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "wm6p9xwvmy",
+      "Integrity": "2HrhXh/UWAtB3lxvVH9P2uOieCOYoTTql6NTywfTNnw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\LoginStyle.css"
+    },
+    {
       "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\uk9pswj9ws-k8d9w2qqmf.gz",
       "SourceId": "ChatApp",
       "SourceType": "Discovered",
@@ -1401,6 +1443,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ChatApp.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\LoginStyle.css",
+      "SourceId": "ChatApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\",
+      "BasePath": "_content/ChatApp",
+      "RelativePath": "css/LoginStyle#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ikpyst30ts",
+      "Integrity": "Duraa+AftKWdlm1QjYmuOewm8AsO5AJRJypNHfJRN1s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LoginStyle.css"
+    },
+    {
+      "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\MainStyle.css",
+      "SourceId": "ChatApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\",
+      "BasePath": "_content/ChatApp",
+      "RelativePath": "css/MainStyle#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g1wgsltahr",
+      "Integrity": "zJnm65yQerjqQwFDkhyeymlo2mZl1VGbvbnMcM4iJg4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MainStyle.css"
     },
     {
       "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\site.css",
@@ -3320,6 +3404,602 @@
         {
           "Name": "integrity",
           "Value": "sha256-D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginStyle.css",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\u1asda16b8-ikpyst30ts.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001897533207"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "526"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2HrhXh/UWAtB3lxvVH9P2uOieCOYoTTql6NTywfTNnw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:13:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Duraa+AftKWdlm1QjYmuOewm8AsO5AJRJypNHfJRN1s=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Duraa+AftKWdlm1QjYmuOewm8AsO5AJRJypNHfJRN1s="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginStyle.css",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\LoginStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1951"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Duraa+AftKWdlm1QjYmuOewm8AsO5AJRJypNHfJRN1s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:13:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Duraa+AftKWdlm1QjYmuOewm8AsO5AJRJypNHfJRN1s="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginStyle.css.gz",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\u1asda16b8-ikpyst30ts.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "526"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2HrhXh/UWAtB3lxvVH9P2uOieCOYoTTql6NTywfTNnw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:13:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2HrhXh/UWAtB3lxvVH9P2uOieCOYoTTql6NTywfTNnw="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginStyle.ikpyst30ts.css",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\u1asda16b8-ikpyst30ts.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001897533207"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "526"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2HrhXh/UWAtB3lxvVH9P2uOieCOYoTTql6NTywfTNnw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:13:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Duraa+AftKWdlm1QjYmuOewm8AsO5AJRJypNHfJRN1s=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ikpyst30ts"
+        },
+        {
+          "Name": "label",
+          "Value": "css/LoginStyle.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Duraa+AftKWdlm1QjYmuOewm8AsO5AJRJypNHfJRN1s="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginStyle.ikpyst30ts.css",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\LoginStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1951"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Duraa+AftKWdlm1QjYmuOewm8AsO5AJRJypNHfJRN1s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:13:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ikpyst30ts"
+        },
+        {
+          "Name": "label",
+          "Value": "css/LoginStyle.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Duraa+AftKWdlm1QjYmuOewm8AsO5AJRJypNHfJRN1s="
+        }
+      ]
+    },
+    {
+      "Route": "css/LoginStyle.ikpyst30ts.css.gz",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\u1asda16b8-ikpyst30ts.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "526"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2HrhXh/UWAtB3lxvVH9P2uOieCOYoTTql6NTywfTNnw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:13:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ikpyst30ts"
+        },
+        {
+          "Name": "label",
+          "Value": "css/LoginStyle.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2HrhXh/UWAtB3lxvVH9P2uOieCOYoTTql6NTywfTNnw="
+        }
+      ]
+    },
+    {
+      "Route": "css/MainStyle.css",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-g1wgsltahr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000594883998"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1680"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xgohZsYSEcoBvWcuH6MDkYG8GHjxNI9cCk5lq9m48I8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:03:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"zJnm65yQerjqQwFDkhyeymlo2mZl1VGbvbnMcM4iJg4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zJnm65yQerjqQwFDkhyeymlo2mZl1VGbvbnMcM4iJg4="
+        }
+      ]
+    },
+    {
+      "Route": "css/MainStyle.css",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\MainStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zJnm65yQerjqQwFDkhyeymlo2mZl1VGbvbnMcM4iJg4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:03:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zJnm65yQerjqQwFDkhyeymlo2mZl1VGbvbnMcM4iJg4="
+        }
+      ]
+    },
+    {
+      "Route": "css/MainStyle.css.gz",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-g1wgsltahr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xgohZsYSEcoBvWcuH6MDkYG8GHjxNI9cCk5lq9m48I8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:03:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xgohZsYSEcoBvWcuH6MDkYG8GHjxNI9cCk5lq9m48I8="
+        }
+      ]
+    },
+    {
+      "Route": "css/MainStyle.g1wgsltahr.css",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-g1wgsltahr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000594883998"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1680"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xgohZsYSEcoBvWcuH6MDkYG8GHjxNI9cCk5lq9m48I8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:03:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"zJnm65yQerjqQwFDkhyeymlo2mZl1VGbvbnMcM4iJg4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g1wgsltahr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/MainStyle.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zJnm65yQerjqQwFDkhyeymlo2mZl1VGbvbnMcM4iJg4="
+        }
+      ]
+    },
+    {
+      "Route": "css/MainStyle.g1wgsltahr.css",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\MainStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zJnm65yQerjqQwFDkhyeymlo2mZl1VGbvbnMcM4iJg4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:03:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g1wgsltahr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/MainStyle.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zJnm65yQerjqQwFDkhyeymlo2mZl1VGbvbnMcM4iJg4="
+        }
+      ]
+    },
+    {
+      "Route": "css/MainStyle.g1wgsltahr.css.gz",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-g1wgsltahr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xgohZsYSEcoBvWcuH6MDkYG8GHjxNI9cCk5lq9m48I8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:03:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g1wgsltahr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/MainStyle.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xgohZsYSEcoBvWcuH6MDkYG8GHjxNI9cCk5lq9m48I8="
         }
       ]
     },

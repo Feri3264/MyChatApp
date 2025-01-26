@@ -8,11 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-#region DI
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IFriendRepository, FriendRepository>();
-builder.Services.AddScoped<IMessageRepository, MessageRepository>();
-#endregion
+//#region DI
+//builder.Services.AddScoped<IUserRepository, UserRepository>();
+//builder.Services.AddScoped<IFriendRepository, FriendRepository>();
+//builder.Services.AddScoped<IMessageRepository, MessageRepository>();
+//#endregion
 
 
 
@@ -35,7 +35,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Home}/{action=Main}/{id?}")
     .WithStaticAssets();
 
 

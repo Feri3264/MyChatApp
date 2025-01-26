@@ -11,6 +11,7 @@ namespace DataLayer.Repository
     {
         public void AddMessage(MessageModel message);
         public void RemoveMessage(int messageId);
+        public MessageModel FindMessageById(int messageId);
         public void SaveChanges();
     }
 }

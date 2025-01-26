@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\ChatApp.xv7490a582.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\LoginStyle.css",
+      "PackagePath": "staticwebassets\\css\\LoginStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\MainStyle.css",
+      "PackagePath": "staticwebassets\\css\\MainStyle.css"
+    },
+    {
       "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

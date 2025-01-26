@@ -3,6 +3,7 @@ C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\jquery\LICENS
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\css\MainStyle.css
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\jquery\dist\jquery.min.map
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
@@ -54,12 +55,15 @@ C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\jquery-valida
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\favicon.ico
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\jquery\dist\jquery.js
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\css\LoginStyle.css
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\js\site.js
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\css\LoginStyle.css
+wwwroot\css\MainStyle.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
