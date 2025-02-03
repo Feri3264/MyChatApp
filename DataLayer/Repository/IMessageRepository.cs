@@ -12,6 +12,7 @@ namespace DataLayer.Repository
         public void AddMessage(MessageModel message);
         public void RemoveMessage(int messageId);
         public MessageModel FindMessageById(int messageId);
+        public List<MessageModel> FindMessagesByFriendship(FriendModel friendship);
         public void SaveChanges();
     }
 }

@@ -26,7 +26,7 @@ namespace DataLayer.Models
         [Required(ErrorMessage = "Please Enter Your {0}"), MaxLength(100)]
         public string Password { get; set; }
 
-        public bool isAdmin { get; set; }
+        public bool? isAdmin { get; set; }
 
         public string? Picture { get; set; }
 

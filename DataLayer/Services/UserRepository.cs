@@ -15,7 +15,7 @@ namespace DataLayer.Services
     public class UserRepository : IUserRepository
     {
 
-        ChatContext _context;
+        private readonly ChatContext _context;
 
         public UserRepository(ChatContext context)
         {
@@ -50,6 +50,19 @@ namespace DataLayer.Services
             else
             {
                 return FoundUser;
+            }
+        }
+
+        public UserModel FindUserByUsername(string username)
+        {
+            UserModel user = _context.Users.Include(f => f.Friends).FirstOrDefault(u => u.Username == username);
+            if (user == null)
+            {
+                throw new NullReferenceException();
+            }
+            else
+            {
+                return user;
             }
         }
 

@@ -2,17 +2,23 @@ using DataLayer.Context;
 using DataLayer.Repository;
 using DataLayer.Services;
 using Microsoft.AspNetCore.Identity;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//#region DI
-//builder.Services.AddScoped<IUserRepository, UserRepository>();
-//builder.Services.AddScoped<IFriendRepository, FriendRepository>();
-//builder.Services.AddScoped<IMessageRepository, MessageRepository>();
-//#endregion
+
+builder.Services.AddControllers()
+   .AddJsonOptions(options => options.JsonSerializerOptions.NumberHandling = JsonNumberHandling.Strict);
+
+#region DI
+builder.Services.AddScoped<ChatContext>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IFriendRepository, FriendRepository>();
+builder.Services.AddScoped<IMessageRepository, MessageRepository>();
+#endregion
 
 
 
@@ -35,7 +41,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Main}/{id?}")
+    pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 

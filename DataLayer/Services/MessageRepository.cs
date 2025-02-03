@@ -21,7 +21,7 @@ namespace DataLayer.Services
 
         public void AddMessage(MessageModel message)
         {
-            _context.Messages.Add(message);
+            _context.Messages.Add(message);            
         }
 
         public void RemoveMessage(int messageId)
@@ -38,6 +38,12 @@ namespace DataLayer.Services
                 throw new NullReferenceException();
             }
             return message;
+        }
+
+        public List<MessageModel> FindMessagesByFriendship(FriendModel friendship)
+        {
+            List<MessageModel> messages = _context.Messages.Where(m => m.Sender == friendship.UserId && m.Receiver == friendship.FreindId || m.Sender == friendship.FreindId && m.Receiver == friendship.UserId).ToList();
+            return messages;
         }
 
         public void SaveChanges()
