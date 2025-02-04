@@ -22,7 +22,7 @@ namespace ChatApp.Controllers
         }
 
 
-        [HttpGet("/{userId}/{friendId}")]
+        [HttpGet("/chat/{userId}/{friendId}")]
         public IActionResult Chat(int userId, int friendId)
         {
             FriendModel friendship = _friendRepository.FindFriendship(friendId, userId);

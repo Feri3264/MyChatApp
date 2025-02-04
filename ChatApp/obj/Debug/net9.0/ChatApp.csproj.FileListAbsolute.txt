@@ -247,7 +247,6 @@ C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ChatApp.
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ChatApp.RazorAssemblyInfo.cache
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ChatApp.RazorAssemblyInfo.cs
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\scopedcss\bundle\ChatApp.styles.css
-C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\u1asda16b8-ikpyst30ts.gz
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\k122m92u1e-b9sayid5wm.gz
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\t7em8rk3wv-61n19gt1b8.gz
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\v4gnfyq6tt-xtxxf3hu2r.gz
@@ -326,4 +325,5 @@ C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\refint\C
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ChatApp.pdb
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ChatApp.genruntimeconfig.cache
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ref\ChatApp.dll
-C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\2b6kfzhc2n-uhv7mx71l0.gz
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\2b6kfzhc2n-4zjkyy5r8h.gz
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\u1asda16b8-s3r1eiacb2.gz

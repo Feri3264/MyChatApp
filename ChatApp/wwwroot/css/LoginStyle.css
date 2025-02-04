@@ -16,6 +16,7 @@ body {
 }
 
 .screen-1 {
+  width: 50%;
   background: #f1f7fe;
   padding: 2em;
   display: flex;
@@ -25,6 +26,7 @@ body {
   gap: 2em;
 }
 .screen-1 .email {
+  margin-bottom: 15px;
   background: white;
   box-shadow: 0 0 2em #e6e9f9;
   padding: 1em;
@@ -55,6 +57,7 @@ body {
   margin-bottom: -0.2em;
 }
 .screen-1 .password {
+  margin-bottom: 15px;
   background: white;
   box-shadow: 0 0 2em #e6e9f9;
   padding: 1em;

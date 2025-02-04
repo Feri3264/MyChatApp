@@ -1,4 +1,6 @@
-﻿@{
+﻿@model UserModel
+
+@{
     Layout = "_LoginLayout";
 }
 
@@ -6,21 +8,24 @@
 
 <!-- partial:index.partial.html -->
 <div class="screen-1">
-    <div class="email">
-        <label for="email">Email Address</label>
-        <div class="sec-2">
-            <ion-icon name="mail-outline"></ion-icon>
-            <input type="email" name="email" placeholder="Username@gmail.com" />
+    <form asp-controller="Account" asp-action="Login" method="post">
+        <div class="email">
+            <label asp-for="Email"></label>
+            <div class="sec-2">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" placeholder="Username@gmail.com" asp-for="Email" />
+            </div>
         </div>
-    </div>
-    <div class="password">
-        <label for="password">Password</label>
-        <div class="sec-2">
-            <ion-icon name="lock-closed-outline"></ion-icon>
-            <input class="pas" type="password" name="password" placeholder="············" />
+        <div class="password">
+            <label asp-for="Password"></label>
+            <div class="sec-2">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input class="pas" type="password" name="password" placeholder="············" asp-for="Password" />
+            </div>
         </div>
-    </div>
-    <button class="login">Login </button>
+        <button class="login">Login </button>        
+    </form>
+
     <div class="footer"><span>Signup</span></div>
 </div>
 <!-- partial -->
