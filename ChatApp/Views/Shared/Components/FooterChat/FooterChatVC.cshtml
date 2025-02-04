@@ -1,0 +1,17 @@
+﻿@model FriendModel
+
+
+<form id="footer-update">
+	<div class="footer-chat MyBorder-LeftButtom-RightButtom">
+		<input id="friendrelationId" type="hidden" value="@Model.FriendsRelationId">
+		<input id="friendId" type="hidden" value="@Model.FreindId" >
+		<input id="UserId" type="hidden" value="@Model.UserId" >
+		<input id="MessageCreate" type="hidden" value="@DateTime.Now">
+		
+		<input id="message-input" type="text" class="write-message" placeholder="Type your message here" value=""/>
+		<button class="send-icon" type="button" onclick="AddMessage()">
+			<i class="fa fa-paper-plane "></i>
+		</button>
+		
+	</div>
+</form>

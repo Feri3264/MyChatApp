@@ -1,0 +1,56 @@
+﻿
+
+<div class="search-card">
+
+
+	<form>
+		<div class="search-bar MyBorder-LeftTop-RightTop">
+			<input id="Search-value" type="text" class="search-input" placeholder="Type your Friend Username Here" value="" oninput="SearchFriend()"/>
+			<button type="button" class="search-btn" >
+				<i class="fa fa-search "></i>
+			</button>
+		</div>
+	</form>
+
+
+
+
+
+	<section id="friend-html" class="discussions MyBorder-LeftButtom-RightButtom">
+
+		@await Component.InvokeAsync("SearchedFriends")
+
+	</section>
+
+
+</div>
+
+
+
+
+
+
+
+@*===Ajax===*@
+
+@*Ajax For Searching Friends Username*@
+
+@section Search
+{
+	<script type="text/javascript">		
+		function SearchFriend(){
+				$.ajax({
+					type: "POST",
+					url: '@Url.Action("ReturnSearchedFriendsViewComponent")',
+					data: {data:$("#Search-value").val()},					
+					dataType: "html",					
+					success: function (html) {
+						$("#friend-html").html(html);
+					},
+					error: function () {
+						alert("Error while inserting data");
+					}
+				});
+		}
+	</script>
+}

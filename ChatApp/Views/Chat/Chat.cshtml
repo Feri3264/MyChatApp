@@ -1,0 +1,87 @@
+﻿@model FriendModel
+@{
+	Layout = "_MainLayout";
+}
+
+
+
+<div class="chat-card MyBorder-all">
+
+	<section class="chat">
+
+		@*Header*@
+		@await Component.InvokeAsync("HeaderChat", Model.FreindId)
+
+
+
+		@*Chat*@
+		<div id="message-update" class="messages-chat">
+			@await Component.InvokeAsync("Message" , Model)
+		</div>
+
+
+
+		@*Footer*@
+		@await Component.InvokeAsync("FooterChat" , Model)
+
+
+	</section>
+
+</div>
+
+
+
+
+
+
+@*===Ajax===*@
+
+@*Ajax to Show Messages*@
+
+<script type="text/javascript">
+	var data = {
+		FriendsRelationId: @Model.FriendsRelationId ,
+		FreindId: @Model.FreindId ,
+		UserId: @Model.UserId
+	}
+</script>
+
+<script type="text/javascript">	
+	setInterval(GetMessages , 10000);
+	function GetMessages() {
+			$.ajax({
+				type: "POST",
+				url: '@Url.Action("ReturnMessageViewComponent")',
+				data: {data},
+				dataType: "html",
+				success: function (html) {
+					$("#message-update").html(html);
+				},
+				error: function () {
+					alert("Error while inserting data");
+				}
+			});
+	}
+</script>
+
+@*Ajax to Add Messages*@
+
+@section Chat
+{
+	<script type="text/javascript">
+		function AddMessage(){
+				$.ajax({
+					type: "POST",
+					url: '@Url.Action("AddMessageAction")',
+					data: {FriendsRelationId:$("#friendrelationId").val(),Receiver:$("#friendId").val(),Sender:$("#UserId").val(),IsSender:true,MessageDate:$("#MessageCreate").val(),MessageText:$("#message-input").val()},
+					dataType: "text",
+					success: function (html) {
+						$("#message-input").val(html);
+					},
+					error: function () {
+						alert("Error while inserting data");
+					}
+				});
+		}
+	</script>
+}

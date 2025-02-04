@@ -1,32 +1,27 @@
 using System.Diagnostics;
-using ChatApp.Models;
+using DataLayer.Context;
+using DataLayer.Models;
+using DataLayer.Repository;
+using DataLayer.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ChatApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        ChatContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ChatContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        [HttpGet("/{username}")]
+        public IActionResult Main(string username)
+        {            
+            UserModel user = _context.Users.Include(f => f.Friends).FirstOrDefault(u => u.Username == username);
+            return View(user);
         }
     }
 }

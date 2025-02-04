@@ -1,0 +1,59 @@
+﻿@model UserModel
+
+@{
+    Layout = "_LoginLayout";
+}
+
+<!-- partial:index.partial.html -->
+<div class="screen-1">
+
+    <form asp-controller="Account" asp-action="Register" method="post">
+        <div class="email">
+            <label asp-for="Name"></label>
+            <div class="sec-2">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" placeholder="Your Name" asp-for="Name" />
+            </div>
+        </div>
+
+
+        <div class="email">
+            <label asp-for="Username"></label>
+            <div class="sec-2">
+                <ion-icon name="at-outline"></ion-icon>
+                <input type="text" placeholder="Your Username" asp-for="Username" />
+            </div>
+        </div>
+
+        <div class="email">
+            <label asp-for="Email"></label>
+            <div class="sec-2">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" placeholder="Username@gmail.com" asp-for="Email" />
+            </div>
+        </div>
+
+
+        <div class="password">
+            <label asp-for="Password"></label>
+            <div class="sec-2">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input class="pas" type="password" placeholder="············" asp-for="Password" />
+            </div>
+        </div>
+
+        <div class="password">
+            <label for="password">Confirm Password</label>
+            <div class="sec-2">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input class="pas" type="password" name="ConfirmPassword" placeholder="············" />
+            </div>
+        </div>
+
+
+        <button class="login">Sign Up </button>
+    </form>
+
+    <div class="footer"><span>Login</span></div>
+</div>
+<!-- partial -->

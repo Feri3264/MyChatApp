@@ -1,7 +1,26 @@
+using DataLayer.Context;
+using DataLayer.Repository;
+using DataLayer.Services;
+using Microsoft.AspNetCore.Identity;
+using System.Text.Json.Serialization;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+builder.Services.AddControllers()
+   .AddJsonOptions(options => options.JsonSerializerOptions.NumberHandling = JsonNumberHandling.Strict);
+
+#region DI
+builder.Services.AddScoped<ChatContext>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IFriendRepository, FriendRepository>();
+builder.Services.AddScoped<IMessageRepository, MessageRepository>();
+#endregion
+
+
 
 var app = builder.Build();
 
