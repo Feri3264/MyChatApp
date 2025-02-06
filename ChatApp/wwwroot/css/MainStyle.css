@@ -363,14 +363,14 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        margin-bottom: 8px;
+        margin-bottom: 8px;        
     }
     .chat .messages-chat .message-Response {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
-        margin-bottom: 8px;
+        margin-bottom: 8px;        
     }
     .chat .messages-chat .alignMessages-response {
         display: flex;
@@ -405,12 +405,15 @@ body {
         background-color: #f6f6f6;
         padding: 15px;
         border-radius: 12px;
+        color: black;
+        background-color: lightgreen;
     }
     .chat .messages-chat .text {
         margin: 0 0 5px 10px;
         background-color: #f6f6f6;
         padding: 15px;
         border-radius: 12px;
+        background-color: wheat;
     }
 
 .text-only {
