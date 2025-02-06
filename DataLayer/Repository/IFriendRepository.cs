@@ -12,6 +12,7 @@ namespace DataLayer.Repository
     {      
         public void AddFriend(FriendModel friend);
         public void RemoveFriendship(int friendId, int userId);
+        public FriendModel FindFriendshipById(int friendshipId);
         public FriendModel FindFriendship(int friendId , int userId);
         public void SaveChanges();
     }

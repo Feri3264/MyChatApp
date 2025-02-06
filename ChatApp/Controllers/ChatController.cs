@@ -39,7 +39,7 @@ namespace ChatApp.Controllers
 
         [HttpPost]
         public string AddMessageAction(MessageModel data)
-        { 
+        {
             _messageRepository.AddMessage(data); 
             _messageRepository.SaveChanges();
             return "";

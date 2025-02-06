@@ -4,7 +4,7 @@
 
 @foreach (var item in Model)
 {
-	if (item.IsSender)
+	if (item.Sender == (int)ViewData["MessageUserId"])
 	{
 		<div class="message-Response text-only">
 			<div class="alignMessages-response">

@@ -17,8 +17,8 @@ namespace ChatApp.Components
         {
             List<MessageModel> messages = _messageRepository.FindMessagesByFriendship(friendship)
                 .OrderBy(m => m.MessageDate)
-                .ToList();            
-
+                .ToList(); 
+            ViewData["MessageUserId"]= friendship.UserId;
             return View("MessageVC", messages);                       
         }
     }
