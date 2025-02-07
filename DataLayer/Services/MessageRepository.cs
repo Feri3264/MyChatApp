@@ -33,10 +33,6 @@ namespace DataLayer.Services
         public MessageModel FindMessageById(int messageId)
         {
             MessageModel message = _context.Messages.FirstOrDefault(m => m.MessageId == messageId);
-            if (message == null)
-            {
-                throw new NullReferenceException();
-            }
             return message;
         }
 

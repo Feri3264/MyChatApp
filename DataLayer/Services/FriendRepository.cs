@@ -38,11 +38,7 @@ namespace DataLayer.Services
 
         public FriendModel FindFriendship(int friendId, int userId)
         {
-            FriendModel friendship = _context.Friends.Include(m => m.Messages).FirstOrDefault(f => f.UserId == userId && f.FreindId == friendId);
-            if (friendship == null)
-            {
-                throw new NullReferenceException();
-            }           
+            FriendModel friendship = _context.Friends.Include(m => m.Messages).FirstOrDefault(f => f.UserId == userId && f.FreindId == friendId);         
             return friendship;
         }
 

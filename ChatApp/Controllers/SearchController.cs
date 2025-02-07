@@ -20,7 +20,7 @@ namespace ChatApp.Controllers
 
         [HttpGet("/search/{userId}")]
         public IActionResult Search(int userId)
-        {
+        {            
             TempData["userId"] = userId;
             return View();
         }
@@ -37,6 +37,12 @@ namespace ChatApp.Controllers
                 UserId = userId,
                 FreindId = friendId
             };
+
+
+            if(friendship.UserId == null || friendship.FreindId == null)
+                return NotFound();
+
+
             _friendRepository.AddFriend(friendship);
             _friendRepository.SaveChanges();
 

@@ -26,6 +26,10 @@ namespace ChatApp.Controllers
         public IActionResult Chat(int userId, int friendId)
         {
             FriendModel friendship = _friendRepository.FindFriendship(friendId, userId);
+            if (friendship == null)
+            {
+                return NotFound();
+            }
             return View(friendship);
         }
 
@@ -40,6 +44,10 @@ namespace ChatApp.Controllers
         [HttpPost]
         public string AddMessageAction(MessageModel data)
         {
+            if(data.MessageText == null || data.MessageText == " ")
+            {
+                return "";
+            }
             _messageRepository.AddMessage(data); 
             _messageRepository.SaveChanges();
             return "";

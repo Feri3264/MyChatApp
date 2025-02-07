@@ -19,7 +19,7 @@ namespace ChatApp.Controllers
 
         [HttpGet("/{username}")]
         public IActionResult Main(string username)
-        {            
+        {          
             UserModel user = _context.Users.Include(f => f.Friends).FirstOrDefault(u => u.Username == username);
             return View(user);
         }
