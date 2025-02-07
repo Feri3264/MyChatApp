@@ -30,8 +30,12 @@ namespace ChatApp.Controllers
             {
                 _userRepository.AddUser(user);
                 _userRepository.SaveChanges();
+                return RedirectToAction("Login");
             }
-            return RedirectToAction("Login");
+            else
+            {
+                return View(user);
+            }            
         }
 
         public IActionResult Login()
