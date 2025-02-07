@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zw1F4+8gOr+YHF6//N9ZT6yfZqP34547cOa6OdNpZ+8=",
+  "Hash": "flLRiABLpIakCdZZFLSX4jjxCe+kZn0uurO7xtrdP/0=",
   "Source": "ChatApp",
   "BasePath": "_content/ChatApp",
   "Mode": "Default",
@@ -122,12 +122,12 @@
       "OriginalItemSpec": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-9rk7vk6dvj.gz",
+      "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-0rn6o0mfyj.gz",
       "SourceId": "ChatApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/ChatApp",
-      "RelativePath": "css/MainStyle#[.{fingerprint=9rk7vk6dvj}]?.css.gz",
+      "RelativePath": "css/MainStyle#[.{fingerprint=0rn6o0mfyj}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -136,8 +136,8 @@
       "RelatedAsset": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\MainStyle.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "djkp61gl0o",
-      "Integrity": "xyHtLMgeDXb15LrIvkeAHuLKBvqVMYS7Q9PpqrY3wQw=",
+      "Fingerprint": "njb8wnnmxe",
+      "Integrity": "c7grY2I7LlpsqZQhWgG4Cq7hm8fOj/9lBoqvHoKJ4M8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\MainStyle.css"
@@ -1396,8 +1396,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9rk7vk6dvj",
-      "Integrity": "K6ysP4fy4sqH6A3PY6/xcmaIVsc2VLRSNLrjENTiFTY=",
+      "Fingerprint": "0rn6o0mfyj",
+      "Integrity": "vPV6E2ZDaAtU2+0Fd6oVnJEPUB36hJo0O51f3damnIk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\MainStyle.css"
@@ -3026,13 +3026,13 @@
       ]
     },
     {
-      "Route": "css/MainStyle.9rk7vk6dvj.css",
-      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-9rk7vk6dvj.gz",
+      "Route": "css/MainStyle.0rn6o0mfyj.css",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-0rn6o0mfyj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000408663670"
+          "Quality": "0.000398883127"
         }
       ],
       "ResponseHeaders": [
@@ -3042,15 +3042,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2446"
+          "Value": "2506"
         },
         {
           "Name": "ETag",
-          "Value": "\"xyHtLMgeDXb15LrIvkeAHuLKBvqVMYS7Q9PpqrY3wQw=\""
+          "Value": "\"c7grY2I7LlpsqZQhWgG4Cq7hm8fOj/9lBoqvHoKJ4M8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:01:57 GMT"
+          "Value": "Fri, 07 Feb 2025 15:02:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3070,13 +3070,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"K6ysP4fy4sqH6A3PY6/xcmaIVsc2VLRSNLrjENTiFTY=\""
+          "Value": "W/\"vPV6E2ZDaAtU2+0Fd6oVnJEPUB36hJo0O51f3damnIk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9rk7vk6dvj"
+          "Value": "0rn6o0mfyj"
         },
         {
           "Name": "label",
@@ -3084,12 +3084,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-K6ysP4fy4sqH6A3PY6/xcmaIVsc2VLRSNLrjENTiFTY="
+          "Value": "sha256-vPV6E2ZDaAtU2+0Fd6oVnJEPUB36hJo0O51f3damnIk="
         }
       ]
     },
     {
-      "Route": "css/MainStyle.9rk7vk6dvj.css",
+      "Route": "css/MainStyle.0rn6o0mfyj.css",
       "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\MainStyle.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3099,7 +3099,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12695"
+          "Value": "12908"
         },
         {
           "Name": "Content-Type",
@@ -3107,11 +3107,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"K6ysP4fy4sqH6A3PY6/xcmaIVsc2VLRSNLrjENTiFTY=\""
+          "Value": "\"vPV6E2ZDaAtU2+0Fd6oVnJEPUB36hJo0O51f3damnIk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:01:57 GMT"
+          "Value": "Fri, 07 Feb 2025 15:02:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3121,7 +3121,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9rk7vk6dvj"
+          "Value": "0rn6o0mfyj"
         },
         {
           "Name": "label",
@@ -3129,13 +3129,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-K6ysP4fy4sqH6A3PY6/xcmaIVsc2VLRSNLrjENTiFTY="
+          "Value": "sha256-vPV6E2ZDaAtU2+0Fd6oVnJEPUB36hJo0O51f3damnIk="
         }
       ]
     },
     {
-      "Route": "css/MainStyle.9rk7vk6dvj.css.gz",
-      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-9rk7vk6dvj.gz",
+      "Route": "css/MainStyle.0rn6o0mfyj.css.gz",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-0rn6o0mfyj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3144,7 +3144,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2446"
+          "Value": "2506"
         },
         {
           "Name": "Content-Type",
@@ -3152,11 +3152,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xyHtLMgeDXb15LrIvkeAHuLKBvqVMYS7Q9PpqrY3wQw=\""
+          "Value": "\"c7grY2I7LlpsqZQhWgG4Cq7hm8fOj/9lBoqvHoKJ4M8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:01:57 GMT"
+          "Value": "Fri, 07 Feb 2025 15:02:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3174,7 +3174,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9rk7vk6dvj"
+          "Value": "0rn6o0mfyj"
         },
         {
           "Name": "label",
@@ -3182,18 +3182,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xyHtLMgeDXb15LrIvkeAHuLKBvqVMYS7Q9PpqrY3wQw="
+          "Value": "sha256-c7grY2I7LlpsqZQhWgG4Cq7hm8fOj/9lBoqvHoKJ4M8="
         }
       ]
     },
     {
       "Route": "css/MainStyle.css",
-      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-9rk7vk6dvj.gz",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-0rn6o0mfyj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000408663670"
+          "Quality": "0.000398883127"
         }
       ],
       "ResponseHeaders": [
@@ -3203,15 +3203,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2446"
+          "Value": "2506"
         },
         {
           "Name": "ETag",
-          "Value": "\"xyHtLMgeDXb15LrIvkeAHuLKBvqVMYS7Q9PpqrY3wQw=\""
+          "Value": "\"c7grY2I7LlpsqZQhWgG4Cq7hm8fOj/9lBoqvHoKJ4M8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:01:57 GMT"
+          "Value": "Fri, 07 Feb 2025 15:02:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3231,13 +3231,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"K6ysP4fy4sqH6A3PY6/xcmaIVsc2VLRSNLrjENTiFTY=\""
+          "Value": "W/\"vPV6E2ZDaAtU2+0Fd6oVnJEPUB36hJo0O51f3damnIk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-K6ysP4fy4sqH6A3PY6/xcmaIVsc2VLRSNLrjENTiFTY="
+          "Value": "sha256-vPV6E2ZDaAtU2+0Fd6oVnJEPUB36hJo0O51f3damnIk="
         }
       ]
     },
@@ -3252,7 +3252,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12695"
+          "Value": "12908"
         },
         {
           "Name": "Content-Type",
@@ -3260,11 +3260,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"K6ysP4fy4sqH6A3PY6/xcmaIVsc2VLRSNLrjENTiFTY=\""
+          "Value": "\"vPV6E2ZDaAtU2+0Fd6oVnJEPUB36hJo0O51f3damnIk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:01:57 GMT"
+          "Value": "Fri, 07 Feb 2025 15:02:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3274,13 +3274,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-K6ysP4fy4sqH6A3PY6/xcmaIVsc2VLRSNLrjENTiFTY="
+          "Value": "sha256-vPV6E2ZDaAtU2+0Fd6oVnJEPUB36hJo0O51f3damnIk="
         }
       ]
     },
     {
       "Route": "css/MainStyle.css.gz",
-      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-9rk7vk6dvj.gz",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\compressed\\2b6kfzhc2n-0rn6o0mfyj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3289,7 +3289,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2446"
+          "Value": "2506"
         },
         {
           "Name": "Content-Type",
@@ -3297,11 +3297,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xyHtLMgeDXb15LrIvkeAHuLKBvqVMYS7Q9PpqrY3wQw=\""
+          "Value": "\"c7grY2I7LlpsqZQhWgG4Cq7hm8fOj/9lBoqvHoKJ4M8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:01:57 GMT"
+          "Value": "Fri, 07 Feb 2025 15:02:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3319,7 +3319,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xyHtLMgeDXb15LrIvkeAHuLKBvqVMYS7Q9PpqrY3wQw="
+          "Value": "sha256-c7grY2I7LlpsqZQhWgG4Cq7hm8fOj/9lBoqvHoKJ4M8="
         }
       ]
     },

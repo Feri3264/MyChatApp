@@ -2,7 +2,11 @@ body {
     padding: 5%;
     background-color: #F5F5F5;
 }
-
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: none;
+}
 /* .container {
   padding:0;
   background-color: #FFF; 
@@ -74,7 +78,7 @@ body {
 
 .SignOutButton {
     position: relative;
-    top: 410px;
+    top: 475px;
     left: 3px;
     height: 70px;
     display: flex;
@@ -127,6 +131,17 @@ body {
 .chat .messages-chat {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+}
+
+.fa-search {
+    color: white;
+}
+
+.search-back-btn {
+    position: relative;
+    left: 90px;
+    top: 3px;
+    color: white;
 }
 
 

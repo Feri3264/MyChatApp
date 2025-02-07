@@ -33,24 +33,22 @@ namespace ChatApp.Controllers
             return View(friendship);
         }
 
+        [HttpPost]
+        public string AddMessageAction(MessageModel data)
+        {
+            if (data.MessageText == null || data.MessageText == " ")
+            {
+                return "";
+            }
+            _messageRepository.AddMessage(data);
+            _messageRepository.SaveChanges();
+            return "";
+        }
 
         [HttpPost]
         public IActionResult ReturnMessageViewComponent(FriendModel data)
         {            
             return ViewComponent("Message" , data);
-        }
-
-
-        [HttpPost]
-        public string AddMessageAction(MessageModel data)
-        {
-            if(data.MessageText == null || data.MessageText == " ")
-            {
-                return "";
-            }
-            _messageRepository.AddMessage(data); 
-            _messageRepository.SaveChanges();
-            return "";
         }
     }
 }
