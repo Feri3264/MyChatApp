@@ -1,7 +1,10 @@
 ﻿using DataLayer.Context;
 using DataLayer.Models;
 using DataLayer.Repository;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace ChatApp.Controllers
 {
@@ -17,7 +20,7 @@ namespace ChatApp.Controllers
         }
 
 
-
+        #region Register
         public IActionResult Register()
         {
             return View();
@@ -35,23 +38,63 @@ namespace ChatApp.Controllers
             else
             {
                 return View(user);
-            }            
+            }
         }
+        #endregion
 
+
+        #region Login
         public IActionResult Login()
         {
             return View();
         }
 
+
         [HttpPost]
-        public IActionResult Login(string email , string password)
+        public IActionResult Login(string email, string password)
         {
             UserModel user = _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
-            if (user != null)
+
+            if (user == null)
             {
-                return Redirect($"/{user.Username}");
+                return View();
             }
+
+            List<Claim> claims = new List<Claim>
+            {
+                new Claim (ClaimTypes.NameIdentifier , user.UserId.ToString() , ClaimValueTypes.Integer32),
+                new Claim (ClaimTypes.Name , user.Username, ClaimValueTypes.String),
+                new Claim (ClaimTypes.GivenName , user.Name , ClaimValueTypes.String)
+            };
+
+            var Identity = new ClaimsIdentity(claims, "login");
+            var principal = new ClaimsPrincipal(Identity);
+            HttpContext.SignInAsync(principal);
+
+            return Redirect($"/{user.Username}");
+        }
+        #endregion
+
+
+        #region AccessDenied
+        public IActionResult AccessDenied()
+        {
             return View();
         }
+        #endregion
+
+
+        #region Logout
+        public IActionResult Logout()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+                return RedirectToAction("Login");
+            }
+            return NotFound();
+        }
+        #endregion
+
     }
 }

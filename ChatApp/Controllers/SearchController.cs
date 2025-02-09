@@ -1,9 +1,11 @@
 ﻿using DataLayer.Models;
 using DataLayer.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChatApp.Controllers
 {
+    [Authorize]
     public class SearchController : Controller
     {
 
@@ -17,15 +19,12 @@ namespace ChatApp.Controllers
 
 
 
-
         [HttpGet("/search/{userId}")]
         public IActionResult Search(int userId)
         {            
             TempData["userId"] = userId;
             return View();
         }
-
-
 
 
         [HttpGet("/AddFriend")]
@@ -49,8 +48,6 @@ namespace ChatApp.Controllers
             UserModel user =  _userRepository.FindUserById(userId);
             return Redirect($"/{user.Username}");
         }
-
-
 
 
         [HttpPost]

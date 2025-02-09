@@ -1,6 +1,7 @@
 ﻿using DataLayer.Models;
 using DataLayer.Repository;
 using DataLayer.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using NuGet.Protocol.Plugins;
@@ -10,6 +11,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ChatApp.Controllers
 {
+    [Authorize]
     public class ChatController : Controller
     {
 

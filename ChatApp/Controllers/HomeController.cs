@@ -3,11 +3,13 @@ using DataLayer.Context;
 using DataLayer.Models;
 using DataLayer.Repository;
 using DataLayer.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace ChatApp.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         ChatContext _context;
@@ -17,6 +19,7 @@ namespace ChatApp.Controllers
             _context = context;
         }
 
+        
         [HttpGet("/{username}")]
         public IActionResult Main(string username)
         {          
