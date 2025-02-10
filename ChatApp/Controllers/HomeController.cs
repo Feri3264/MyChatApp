@@ -10,15 +10,10 @@ using Microsoft.EntityFrameworkCore;
 namespace ChatApp.Controllers
 {
     [Authorize]
-    public class HomeController : Controller
+    public class HomeController 
+        (ChatContext _context)
+        : Controller
     {
-        ChatContext _context;
-
-        public HomeController(ChatContext context)
-        {
-            _context = context;
-        }
-
         
         [HttpGet("/{username}")]
         public IActionResult Main(string username)

@@ -8,19 +8,14 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using System.Web.Helpers;
 using ChatApp.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ChatApp.Controllers
 {
-    public class AccountController : Controller
-    {
-
-        ChatContext _context;
-        IUserRepository _userRepository;
-        public AccountController(IUserRepository userRepository , ChatContext context)
-        {
-            _context = context;
-            _userRepository = userRepository;
-        }
+    public class AccountController
+        (IUserRepository _userRepository, ChatContext _context)
+        : Controller
+    {        
 
 
         #region Register
@@ -28,6 +23,7 @@ namespace ChatApp.Controllers
         {
             return View();
         }
+
 
         [HttpPost]
         public IActionResult Register(RegisterViewModel user)
@@ -104,10 +100,10 @@ namespace ChatApp.Controllers
 
 
         #region AccessDenied
-        public IActionResult AccessDenied()
-        {
-            return View();
-        }
+        //public IActionResult AccessDenied()
+        //{
+        //    return View();
+        //}
         #endregion
 
 
