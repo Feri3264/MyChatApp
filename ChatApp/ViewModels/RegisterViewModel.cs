@@ -17,6 +17,9 @@ namespace ChatApp.ViewModels
         [Required(ErrorMessage = "Please Enter Your {0}"), MaxLength(100)]
         public string Password { get; set; }
 
+        [Compare("Password")]
+        public string ConfirmPassword { get; set; }
+
         [Required(ErrorMessage = "Please Select Your {0}")]
         public IFormFile ProfilePicture { get; set; }
     }
