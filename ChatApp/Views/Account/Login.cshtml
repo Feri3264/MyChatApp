@@ -1,31 +1,39 @@
 ﻿@model UserModel
 
 @{
+    ViewData["Title"] = "Login";
     Layout = "_LoginLayout";
 }
 
 
 
-<!-- partial:index.partial.html -->
+
 <div class="screen-1">
-    <form asp-controller="Account" asp-action="Login" method="post">
+    <form class="login-form" asp-controller="Account" asp-action="Login" method="post">
         <div class="email">
             <label asp-for="Email"></label>
             <div class="sec-2">
                 <ion-icon name="mail-outline"></ion-icon>
-                <input type="email" placeholder="Username@gmail.com" asp-for="Email" />
+                <input type="email" placeholder="Username@gmail.com" asp-for="Email" />                
             </div>
+            <span asp-validation-for="Email"></span>
         </div>
         <div class="password">
             <label asp-for="Password"></label>
             <div class="sec-2">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input class="pas" type="password" name="password" placeholder="············" asp-for="Password" />
+                <input type="password" placeholder="············" asp-for="Password" />                
             </div>
+            <span asp-validation-for="Password"></span>
         </div>
-        <button class="login">Login </button>        
+      
+
+        <button class="login">Login</button>        
     </form>
 
     <div class="footer"><span>Signup</span></div>
 </div>
-<!-- partial -->
+
+@section Validation {
+    <partial name="_ValidationScriptsPartial" />
+}   

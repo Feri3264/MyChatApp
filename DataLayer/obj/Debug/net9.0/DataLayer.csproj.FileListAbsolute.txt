@@ -7,6 +7,7 @@ C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\DataLayer\obj\Debug\net9.0\DataLa
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\DataLayer\obj\Debug\net9.0\DataLayer.AssemblyInfoInputs.cache
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\DataLayer\obj\Debug\net9.0\DataLayer.AssemblyInfo.cs
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\DataLayer\obj\Debug\net9.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\DataLayer\obj\Debug\net9.0\DataLayer.sourcelink.json
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\DataLayer\obj\Debug\net9.0\DataLayer.dll
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\DataLayer\obj\Debug\net9.0\refint\DataLayer.dll
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\DataLayer\obj\Debug\net9.0\DataLayer.pdb

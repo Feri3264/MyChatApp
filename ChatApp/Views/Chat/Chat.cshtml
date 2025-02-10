@@ -1,5 +1,6 @@
 ﻿@model FriendModel
 @{
+	ViewData["Title"] = "Chat";
 	Layout = "_MainLayout";
 }
 
@@ -28,6 +29,8 @@
 	</section>
 
 </div>
+
+
 
 
 
@@ -73,7 +76,7 @@
 				$.ajax({
 					type: "POST",
 					url: '@Url.Action("AddMessageAction")',
-					data: {FriendsRelationId:$("#friendrelationId").val(),Receiver:$("#friendId").val(),Sender:$("#UserId").val(),IsSender:true,MessageDate:$("#MessageCreate").val(),MessageText:$("#message-input").val()},
+					data: {FriendsRelationId:$("#friendrelationId").val(),Receiver:$("#friendId").val(),Sender:$("#UserId").val(),MessageDate:$("#MessageCreate").val(),MessageText:$("#message-input").val()},
 					dataType: "text",
 					success: function (html) {
 						$("#message-input").val(html);

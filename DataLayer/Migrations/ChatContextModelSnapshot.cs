@@ -54,9 +54,6 @@ namespace DataLayer.Migrations
                     b.Property<int>("FriendsRelationId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("IsSender")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime>("MessageDate")
                         .HasColumnType("datetime2");
 

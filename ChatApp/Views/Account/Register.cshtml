@@ -1,19 +1,21 @@
 ﻿@model UserModel
 
 @{
+    ViewData["Title"] = "Sign In";
     Layout = "_LoginLayout";
 }
 
-<!-- partial:index.partial.html -->
+
 <div class="screen-1">
 
-    <form asp-controller="Account" asp-action="Register" method="post">
+    <form class="register-form" asp-controller="Account" asp-action="Register" method="post">
         <div class="email">
             <label asp-for="Name"></label>
             <div class="sec-2">
                 <ion-icon name="person-outline"></ion-icon>
                 <input type="text" placeholder="Your Name" asp-for="Name" />
             </div>
+            <span asp-validation-for="Name"></span>
         </div>
 
 
@@ -23,6 +25,7 @@
                 <ion-icon name="at-outline"></ion-icon>
                 <input type="text" placeholder="Your Username" asp-for="Username" />
             </div>
+            <span asp-validation-for="Username"></span>
         </div>
 
         <div class="email">
@@ -31,6 +34,7 @@
                 <ion-icon name="mail-outline"></ion-icon>
                 <input type="email" placeholder="Username@gmail.com" asp-for="Email" />
             </div>
+            <span asp-validation-for="Email"></span>
         </div>
 
 
@@ -40,6 +44,7 @@
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input class="pas" type="password" placeholder="············" asp-for="Password" />
             </div>
+            <span asp-validation-for="Password"></span>
         </div>
 
         <div class="password">
@@ -56,4 +61,8 @@
 
     <div class="footer"><span>Login</span></div>
 </div>
-<!-- partial -->
+
+
+@section Validation {
+    <partial name="_ValidationScriptsPartial" />
+}                

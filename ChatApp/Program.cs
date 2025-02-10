@@ -3,21 +3,37 @@ using DataLayer.Repository;
 using DataLayer.Services;
 using Microsoft.AspNetCore.Identity;
 using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-
-builder.Services.AddControllers()
-   .AddJsonOptions(options => options.JsonSerializerOptions.NumberHandling = JsonNumberHandling.Strict);
 
 #region DI
 builder.Services.AddScoped<ChatContext>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IFriendRepository, FriendRepository>();
 builder.Services.AddScoped<IMessageRepository, MessageRepository>();
+#endregion
+
+
+#region Authentication
+builder.Services.AddAuthentication()
+    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme ,options =>
+    {
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+
+        options.LoginPath = "/account/login";
+        options.LogoutPath = "/account/logout";
+        options.AccessDeniedPath = "/account/AccessDenied";
+
+    });
 #endregion
 
 
@@ -33,11 +49,18 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+
 app.UseRouting();
 
+
+app.UseAuthentication();
 app.UseAuthorization();
 
+
 app.MapStaticAssets();
+
 
 app.MapControllerRoute(
     name: "default",

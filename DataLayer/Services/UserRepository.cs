@@ -30,8 +30,8 @@ namespace DataLayer.Services
 
         public void RemoveUser(UserModel user)
         {
-            FindUser(user);
-            _context.Users.Remove(user);
+            UserModel result = FindUser(user);
+            _context.Users.Remove(result);
         }
 
         public void RemoveUser(int userId)
@@ -43,41 +43,19 @@ namespace DataLayer.Services
         public UserModel FindUser(UserModel user)
         {
             UserModel FoundUser = _context.Users.FirstOrDefault(user);
-            if (FoundUser == null)
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                return FoundUser;
-            }
+            return FoundUser;
         }
 
         public UserModel FindUserByUsername(string username)
         {
             UserModel user = _context.Users.Include(f => f.Friends).FirstOrDefault(u => u.Username == username);
-            if (user == null)
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                return user;
-            }
+            return user;
         }
 
         public UserModel FindUserById(int userId)
         {
             UserModel user = _context.Users.FirstOrDefault(u => u.UserId == userId);
-
-            if (user == null)
-            {
-                throw new NullReferenceException();
-            }
-            else
-            {
-                return user;
-            }
+            return user;
         }
 
         public void SaveChanges()

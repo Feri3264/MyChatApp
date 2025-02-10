@@ -1,10 +1,13 @@
-﻿
+﻿@{
+	ViewData["Title"] = "Search";
+}
 
 <div class="search-card">
 
 
 	<form>
 		<div class="search-bar MyBorder-LeftTop-RightTop">
+			<a class="search-back-btn" onClick="history.go(-1); return false;"><i class="fa fa-chevron-left back-icon" aria-hidden="true"></i></a>
 			<input id="Search-value" type="text" class="search-input" placeholder="Type your Friend Username Here" value="" oninput="SearchFriend()"/>
 			<button type="button" class="search-btn" >
 				<i class="fa fa-search "></i>

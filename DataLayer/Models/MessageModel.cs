@@ -25,9 +25,6 @@ namespace DataLayer.Models
         public int Receiver { get; set; }
 
         [Required]
-        public bool IsSender { get; set; }
-
-        [Required]
         public DateTime MessageDate { get; set; }
 
         [Required]
