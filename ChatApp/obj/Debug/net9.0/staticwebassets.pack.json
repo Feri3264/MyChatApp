@@ -1,6 +1,18 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\4deffeee-dedf-4bbf-947e-7ec85b6a8192farid1010.jpg",
+      "PackagePath": "staticwebassets\\ProfilePicture\\4deffeee-dedf-4bbf-947e-7ec85b6a8192farid1010.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\b5ff0bda-d907-47ac-be6a-0d215513891fsarah1010.jpg",
+      "PackagePath": "staticwebassets\\ProfilePicture\\b5ff0bda-d907-47ac-be6a-0d215513891fsarah1010.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\e7132baf-1bc9-41df-8db6-5da45d3c5ef4john1010.jpg",
+      "PackagePath": "staticwebassets\\ProfilePicture\\e7132baf-1bc9-41df-8db6-5da45d3c5ef4john1010.jpg"
+    },
+    {
       "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\LoginStyle.css",
       "PackagePath": "staticwebassets\\css\\LoginStyle.css"
     },

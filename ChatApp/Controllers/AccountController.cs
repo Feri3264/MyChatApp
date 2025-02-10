@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
+using System.Web.Helpers;
+using ChatApp.ViewModels;
 
 namespace ChatApp.Controllers
 {
@@ -27,11 +30,20 @@ namespace ChatApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(UserModel user)
-        {
+        public IActionResult Register(RegisterViewModel user)
+        {            
             if (ModelState.IsValid)
-            {
-                _userRepository.AddUser(user);
+            {                
+                var RegisteredUser = new UserModel
+                {
+                    Name = user.Name,
+                    Username = user.Username,
+                    Email = user.Email,
+                    Password = user.Password,
+                    isAdmin = false,
+                    Picture = AddProfilePic(user)
+                };
+                _userRepository.AddUser(RegisteredUser);
                 _userRepository.SaveChanges();
                 return RedirectToAction("Login");
             }
@@ -39,6 +51,21 @@ namespace ChatApp.Controllers
             {
                 return View(user);
             }
+        }
+
+  
+        public string AddProfilePic(RegisterViewModel user)
+        {
+            string fileName = Guid.NewGuid().ToString() + user.Username.ToString() + Path.GetExtension(user.ProfilePicture.FileName);
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(),
+                "wwwroot",
+                "ProfilePicture",
+                fileName);
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                user.ProfilePicture.CopyTo(stream);
+            }
+            return fileName;
         }
         #endregion
 

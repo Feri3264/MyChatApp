@@ -40,7 +40,7 @@ namespace DataLayer.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Friends");
+                    b.ToTable("Friends", (string)null);
                 });
 
             modelBuilder.Entity("DataLayer.Models.MessageModel", b =>
@@ -71,7 +71,7 @@ namespace DataLayer.Migrations
 
                     b.HasIndex("FriendsRelationId");
 
-                    b.ToTable("Messages");
+                    b.ToTable("Messages", (string)null);
                 });
 
             modelBuilder.Entity("DataLayer.Models.UserModel", b =>
@@ -110,7 +110,7 @@ namespace DataLayer.Migrations
 
                     b.HasKey("UserId");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
                 });
 
             modelBuilder.Entity("DataLayer.Models.FriendModel", b =>

@@ -11,7 +11,7 @@ namespace DataLayer.Repository
     {
         public void AddUser(UserModel user);
         public void RemoveUser(UserModel user);
-        public void RemoveUser(int userId);
+        public void RemoveUser(int userId);        
         public UserModel FindUser(UserModel user);
         public UserModel FindUserByUsername(string username);
         public UserModel FindUserById(int userId);

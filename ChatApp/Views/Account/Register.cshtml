@@ -1,4 +1,4 @@
-﻿@model UserModel
+﻿@model RegisterViewModel
 
 @{
     ViewData["Title"] = "Sign In";
@@ -8,7 +8,7 @@
 
 <div class="screen-1">
 
-    <form class="register-form" asp-controller="Account" asp-action="Register" method="post">
+    <form class="register-form" asp-controller="Account" asp-action="Register" method="post" enctype="multipart/form-data">
         <div class="email">
             <label asp-for="Name"></label>
             <div class="sec-2">
@@ -53,6 +53,14 @@
                 <ion-icon name="lock-closed-outline"></ion-icon>
                 <input class="pas" type="password" name="ConfirmPassword" placeholder="············" />
             </div>
+        </div>
+
+        <div class="password">
+            <label asp-for="ProfilePicture"></label>
+            <div class="sec-2">                
+                <input class="pas" asp-for="ProfilePicture" />
+            </div>
+            <span asp-validation-for="ProfilePicture"></span>
         </div>
 
 

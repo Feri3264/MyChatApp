@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+
 
 
 namespace DataLayer.Models
@@ -28,7 +31,8 @@ namespace DataLayer.Models
 
         public bool? isAdmin { get; set; }
 
-        public string? Picture { get; set; }
+        [Required(ErrorMessage = "Please Select Your {0}")]
+        public string Picture { get; set; }
 
 
 

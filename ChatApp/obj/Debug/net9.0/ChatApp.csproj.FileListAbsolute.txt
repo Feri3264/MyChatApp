@@ -393,3 +393,9 @@ C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\refint\C
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ChatApp.pdb
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ChatApp.genruntimeconfig.cache
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ref\ChatApp.dll
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\bin\Debug\net9.0\System.Web.Razor.dll
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\bin\Debug\net9.0\System.Web.Helpers.dll
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\bin\Debug\net9.0\System.Web.WebPages.Deployment.dll
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\bin\Debug\net9.0\System.Web.WebPages.Razor.dll
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\bin\Debug\net9.0\System.Web.WebPages.dll
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\bin\Debug\net9.0\Microsoft.Web.Infrastructure.dll
