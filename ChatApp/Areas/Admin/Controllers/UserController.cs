@@ -8,20 +8,18 @@ using Microsoft.EntityFrameworkCore;
 using DataLayer.Context;
 using DataLayer.Models;
 using Microsoft.AspNetCore.Authorization;
-using System.Security.Claims;
+using ChatApp.ViewModels;
+using ChatApp.Areas.Admin.ViewModels;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 
-namespace ChatApp.Areas.Admin
+namespace ChatApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Authorize]
-    public class UserController : Controller
+    [Route("/Admin/User/{action=index}")]
+    public class UserController 
+        (ChatContext _context) : Controller
     {
-        private readonly ChatContext _context;
-
-        public UserController(ChatContext context)
-        {
-            _context = context;
-        }
 
         // GET: Admin/User
         public async Task<IActionResult> Index()
@@ -29,6 +27,8 @@ namespace ChatApp.Areas.Admin
             return View(await _context.Users.ToListAsync());
         }
 
+
+        #region Details
         // GET: Admin/User/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -46,7 +46,9 @@ namespace ChatApp.Areas.Admin
 
             return View(userModel);
         }
+        #endregion
 
+        #region Create
         // GET: Admin/User/Create
         public IActionResult Create()
         {
@@ -60,6 +62,7 @@ namespace ChatApp.Areas.Admin
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,Password,isAdmin,Picture")] UserModel userModel)
         {
+            userModel.Friends = null;
             if (ModelState.IsValid)
             {
                 _context.Add(userModel);
@@ -68,7 +71,9 @@ namespace ChatApp.Areas.Admin
             }
             return View(userModel);
         }
+        #endregion
 
+        #region Edit
         // GET: Admin/User/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -77,12 +82,23 @@ namespace ChatApp.Areas.Admin
                 return NotFound();
             }
 
+
             var userModel = await _context.Users.FindAsync(id);
             if (userModel == null)
             {
                 return NotFound();
             }
-            return View(userModel);
+
+            var user = new EditUserViewModel()
+            {
+                UserId = userModel.UserId,
+                Name = userModel.Name,
+                Username = userModel.Username,
+                Email = userModel.Email,
+                Password = userModel.Password,
+                isAdmin = userModel.isAdmin,
+            };
+            return View(user);
         }
 
         // POST: Admin/User/Edit/5
@@ -90,23 +106,33 @@ namespace ChatApp.Areas.Admin
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("UserId,Name,Username,Email,Password,isAdmin,Picture")] UserModel userModel)
+        public async Task<IActionResult> Edit(int UserId, [Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] EditUserViewModel userModel)
         {
-            if (id != userModel.UserId)
+            if (UserId != userModel.UserId)
             {
                 return NotFound();
             }
 
+
+
             if (ModelState.IsValid)
             {
+                UserModel user = _context.Users.Find(UserId);
+                user.UserId = userModel.UserId;
+                user.Name = userModel.Name;
+                user.Username = userModel.Username;
+                user.Email = userModel.Email;
+                user.Password = userModel.Password;
+                user.isAdmin = userModel.isAdmin;
+                user.Picture = EditProfilePic(userModel, user);
                 try
                 {
-                    _context.Update(userModel);
+                    _context.Update(user);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UserModelExists(userModel.UserId))
+                    if (!UserModelExists(user.UserId))
                     {
                         return NotFound();
                     }
@@ -119,7 +145,9 @@ namespace ChatApp.Areas.Admin
             }
             return View(userModel);
         }
+        #endregion
 
+        #region Delete
         // GET: Admin/User/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -141,9 +169,9 @@ namespace ChatApp.Areas.Admin
         // POST: Admin/User/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(int UserId)
         {
-            var userModel = await _context.Users.FindAsync(id);
+            var userModel = await _context.Users.FindAsync(UserId);
             if (userModel != null)
             {
                 _context.Users.Remove(userModel);
@@ -153,9 +181,37 @@ namespace ChatApp.Areas.Admin
             return RedirectToAction(nameof(Index));
         }
 
+        #endregion
+
+        #region Tools
         private bool UserModelExists(int id)
         {
             return _context.Users.Any(e => e.UserId == id);
         }
+
+
+        public string EditProfilePic(EditUserViewModel userViewModel, UserModel FoundUser)
+        {
+            if (userViewModel.ProfilePicture == null || userViewModel.ProfilePicture.FileName == FoundUser.Picture)
+            {
+                return FoundUser.Picture;
+            }
+
+            string fileName = Guid.NewGuid().ToString() + userViewModel.Username.ToString() + Path.GetExtension(userViewModel.ProfilePicture.FileName);
+            string path = Path.Combine(Directory.GetCurrentDirectory(),
+                "wwwroot",
+                "ProfilePicture");
+            string NewFilePath = Path.Combine(path, fileName);
+            using (var stream = new FileStream(NewFilePath, FileMode.Create))
+            {
+                userViewModel.ProfilePicture.CopyTo(stream);
+            }
+            string oldFilePath = Path.Combine(path, FoundUser.Picture);
+            System.IO.File.Delete(oldFilePath);
+            return fileName;
+        }
+        #endregion
+
+
     }
 }

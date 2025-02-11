@@ -1,9 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ChatApp.ViewModels
+namespace ChatApp.Areas.Admin.ViewModels
 {
-    public class RegisterViewModel
-    {        
+    public class EditUserViewModel
+    {
+        public int UserId { get; set; }
+
         [Required(ErrorMessage = "Please Enter Your {0}"), MaxLength(100)]
         public string Name { get; set; }
 
@@ -16,10 +18,8 @@ namespace ChatApp.ViewModels
         [Required(ErrorMessage = "Please Enter Your {0}"), MaxLength(100)]
         public string Password { get; set; }
 
-        [Compare("Password")]
-        public string ConfirmPassword { get; set; }
+        public bool isAdmin { get; set; }
 
-        [Required(ErrorMessage = "Please Select Your {0}")]
-        public IFormFile ProfilePicture { get; set; }
+        public IFormFile? ProfilePicture { get; set; }
     }
 }

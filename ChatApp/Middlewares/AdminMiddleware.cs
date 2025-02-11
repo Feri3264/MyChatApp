@@ -2,7 +2,7 @@
 
 namespace ChatApp.Middlewares
 {
-    public class AdminMiddleware 
+    public class AdminMiddleware
         (RequestDelegate _next)
     {
         public async Task InvokeAsync(HttpContext context)
@@ -19,11 +19,8 @@ namespace ChatApp.Middlewares
                     context.Response.Redirect("/account/AccessDenied");
                 }
             }
-            else
-            {
-                await _next(context);
-            }
-            
+
+            await _next(context);            
         }
 
     }

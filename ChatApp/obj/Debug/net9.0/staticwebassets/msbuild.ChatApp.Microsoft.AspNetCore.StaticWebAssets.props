@@ -1188,41 +1188,41 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\4deffeee-dedf-4bbf-947e-7ec85b6a8192farid1010.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\92c92cf6-cb43-4a22-aadf-9e93a05f4165sarah1010.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>ChatApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ChatApp</BasePath>
-      <RelativePath>ProfilePicture/4deffeee-dedf-4bbf-947e-7ec85b6a8192farid1010.jpg</RelativePath>
+      <RelativePath>ProfilePicture/92c92cf6-cb43-4a22-aadf-9e93a05f4165sarah1010.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cb6w4d205h</Fingerprint>
-      <Integrity>+N9u+UA2OtN/pacwKenkjlwMKo4HCNEZF4T2TfIInHA=</Integrity>
+      <Fingerprint>uc8b8ge682</Fingerprint>
+      <Integrity>8ljYkbPH0p6jwpueKsn40xHlrTkZYgJpiArB9obBLgQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\4deffeee-dedf-4bbf-947e-7ec85b6a8192farid1010.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\92c92cf6-cb43-4a22-aadf-9e93a05f4165sarah1010.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\b5ff0bda-d907-47ac-be6a-0d215513891fsarah1010.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\a6da2a33-97cf-4869-b812-c1004e2c5b03sarah1010.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>ChatApp</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ChatApp</BasePath>
-      <RelativePath>ProfilePicture/b5ff0bda-d907-47ac-be6a-0d215513891fsarah1010.jpg</RelativePath>
+      <RelativePath>ProfilePicture/a6da2a33-97cf-4869-b812-c1004e2c5b03sarah1010.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>u8swmguilx</Fingerprint>
-      <Integrity>/sxS8FrFvXdNGSvQVIJFrmYfzrGrlPGpHW7Fq+c609g=</Integrity>
+      <Fingerprint>xnx5co3rmo</Fingerprint>
+      <Integrity>rRX7SGEcKDU2QdaPRcTV4kh3zGsXbm6kViPTyJXoBLM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\b5ff0bda-d907-47ac-be6a-0d215513891fsarah1010.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\a6da2a33-97cf-4869-b812-c1004e2c5b03sarah1010.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\e7132baf-1bc9-41df-8db6-5da45d3c5ef4john1010.jpg'))">
       <SourceType>Package</SourceType>

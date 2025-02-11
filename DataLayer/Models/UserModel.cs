@@ -37,6 +37,6 @@ namespace DataLayer.Models
 
 
         //Navigation Properties
-        public virtual List<FriendModel> Friends { get; set; }
+        public List<FriendModel>? Friends { get; set; }
     }
 }
