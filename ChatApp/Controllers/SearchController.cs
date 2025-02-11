@@ -7,8 +7,7 @@ namespace ChatApp.Controllers
 {
     [Authorize]
     public class SearchController 
-        (IFriendRepository _friendRepository, IUserRepository _userRepository)
-        : Controller
+        (IFriendRepository _friendRepository, IUserRepository _userRepository) : Controller
     {
 
 

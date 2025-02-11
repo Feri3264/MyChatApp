@@ -3,6 +3,304 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "ChatApp.styles.css",
+      "AssetFile": "ChatApp.styles.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001851851852"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"7YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90="
+        }
+      ]
+    },
+    {
+      "Route": "ChatApp.styles.css",
+      "AssetFile": "ChatApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1125"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90="
+        }
+      ]
+    },
+    {
+      "Route": "ChatApp.styles.css.gz",
+      "AssetFile": "ChatApp.styles.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE="
+        }
+      ]
+    },
+    {
+      "Route": "ChatApp.xv7490a582.styles.css",
+      "AssetFile": "ChatApp.styles.css.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001851851852"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"7YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xv7490a582"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90="
+        },
+        {
+          "Name": "label",
+          "Value": "ChatApp.styles.css"
+        }
+      ]
+    },
+    {
+      "Route": "ChatApp.xv7490a582.styles.css",
+      "AssetFile": "ChatApp.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1125"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xv7490a582"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90="
+        },
+        {
+          "Name": "label",
+          "Value": "ChatApp.styles.css"
+        }
+      ]
+    },
+    {
+      "Route": "ChatApp.xv7490a582.styles.css.gz",
+      "AssetFile": "ChatApp.styles.css.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "539"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xv7490a582"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE="
+        },
+        {
+          "Name": "label",
+          "Value": "ChatApp.styles.css.gz"
+        }
+      ]
+    },
+    {
       "Route": "Identity/css/site.css",
       "AssetFile": "Identity/css/site.css",
       "Selectors": [],

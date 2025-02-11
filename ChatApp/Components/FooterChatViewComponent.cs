@@ -4,14 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChatApp.Components
 {
-    public class FooterChatViewComponent : ViewComponent
+    public class FooterChatViewComponent 
+        (IMessageRepository _messageRepository) : ViewComponent
     {
-
-        IMessageRepository _messageRepository;
-        public FooterChatViewComponent(IMessageRepository messageRepository)
-        {
-            _messageRepository = messageRepository;
-        }
 
 
         public IViewComponentResult Invoke(FriendModel friendship)

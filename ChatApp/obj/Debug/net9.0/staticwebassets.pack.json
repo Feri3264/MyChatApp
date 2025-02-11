@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ChatApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ChatApp.xv7490a582.bundle.scp.css"
+    },
+    {
       "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\4deffeee-dedf-4bbf-947e-7ec85b6a8192farid1010.jpg",
       "PackagePath": "staticwebassets\\ProfilePicture\\4deffeee-dedf-4bbf-947e-7ec85b6a8192farid1010.jpg"
     },

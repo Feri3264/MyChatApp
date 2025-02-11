@@ -6,15 +6,13 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
-using System.Web.Helpers;
 using ChatApp.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 
 namespace ChatApp.Controllers
 {
     public class AccountController
-        (IUserRepository _userRepository, ChatContext _context)
-        : Controller
+        (IUserRepository _userRepository, ChatContext _context) : Controller
     {        
 
 
@@ -87,12 +85,14 @@ namespace ChatApp.Controllers
             {
                 new Claim (ClaimTypes.NameIdentifier , user.UserId.ToString() , ClaimValueTypes.Integer32),
                 new Claim (ClaimTypes.Name , user.Username, ClaimValueTypes.String),
-                new Claim (ClaimTypes.GivenName , user.Name , ClaimValueTypes.String)
+                new Claim (ClaimTypes.GivenName , user.Name , ClaimValueTypes.String),
+                new Claim ("Admin" , user.isAdmin.ToString() , ClaimValueTypes.Boolean)
             };
 
             var Identity = new ClaimsIdentity(claims, "login");
             var principal = new ClaimsPrincipal(Identity);
             HttpContext.SignInAsync(principal);
+
 
             return Redirect($"/{user.Username}");
         }
@@ -100,10 +100,10 @@ namespace ChatApp.Controllers
 
 
         #region AccessDenied
-        //public IActionResult AccessDenied()
-        //{
-        //    return View();
-        //}
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
         #endregion
 
 

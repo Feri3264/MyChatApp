@@ -5,14 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChatApp.Components
 {
-    public class SearchedFriendsViewComponent : ViewComponent
+    public class SearchedFriendsViewComponent 
+        (ChatContext _context) : ViewComponent
     {
-
-        ChatContext _context;
-        public SearchedFriendsViewComponent(ChatContext context)
-        {
-                _context = context;
-        }
        
         public IViewComponentResult Invoke(string username)
         {

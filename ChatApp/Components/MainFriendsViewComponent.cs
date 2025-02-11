@@ -5,13 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChatApp.Components
 {
-    public class MainFriendsViewComponent : ViewComponent
+    public class MainFriendsViewComponent 
+        (IUserRepository _userRepository) : ViewComponent
     {       
-        IUserRepository _userRepository;
-        public MainFriendsViewComponent(IUserRepository userRepository)
-        {            
-            _userRepository = userRepository;
-        }
 
 
         public IViewComponentResult Invoke(UserModel model)

@@ -1,5 +1,17 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/ChatApp/ChatApp.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ChatApp.xv7490a582.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1125"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00227YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 18:39:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ChatApp/ChatApp.xv7490a582.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ChatApp.xv7490a582.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xv7490a582"},{"Name":"integrity","Value":"sha256-7YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90="},{"Name":"label","Value":"_content/ChatApp/ChatApp.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1125"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00227YnH4bMsn/U5f667Te5UKAkCB61FvsMQZPPAdyKlD90=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 18:39:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ChatApp/css/LoginStyle.cdfenj4dob.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LoginStyle.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

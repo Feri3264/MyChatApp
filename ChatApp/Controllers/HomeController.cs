@@ -11,8 +11,7 @@ namespace ChatApp.Controllers
 {
     [Authorize]
     public class HomeController 
-        (ChatContext _context)
-        : Controller
+        (ChatContext _context) : Controller
     {
         
         [HttpGet("/{username}")]

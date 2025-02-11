@@ -13,8 +13,7 @@ namespace ChatApp.Controllers
 {
     [Authorize]
     public class ChatController 
-        (IFriendRepository _friendRepository, IMessageRepository _messageRepository)
-        : Controller
+        (IFriendRepository _friendRepository, IMessageRepository _messageRepository) : Controller
     {
 
 
