@@ -1,6 +1,22 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ChatApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ChatApp.xv7490a582.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\92c92cf6-cb43-4a22-aadf-9e93a05f4165sarah1010.jpg",
+      "PackagePath": "staticwebassets\\ProfilePicture\\92c92cf6-cb43-4a22-aadf-9e93a05f4165sarah1010.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\a6da2a33-97cf-4869-b812-c1004e2c5b03sarah1010.jpg",
+      "PackagePath": "staticwebassets\\ProfilePicture\\a6da2a33-97cf-4869-b812-c1004e2c5b03sarah1010.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\e7132baf-1bc9-41df-8db6-5da45d3c5ef4john1010.jpg",
+      "PackagePath": "staticwebassets\\ProfilePicture\\e7132baf-1bc9-41df-8db6-5da45d3c5ef4john1010.jpg"
+    },
+    {
       "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\css\\LoginStyle.css",
       "PackagePath": "staticwebassets\\css\\LoginStyle.css"
     },

@@ -98,6 +98,7 @@ namespace DataLayer.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Picture")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Username")
@@ -105,7 +106,7 @@ namespace DataLayer.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
-                    b.Property<bool?>("isAdmin")
+                    b.Property<bool>("isAdmin")
                         .HasColumnType("bit");
 
                     b.HasKey("UserId");

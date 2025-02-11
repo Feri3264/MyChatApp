@@ -393,3 +393,7 @@ C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\refint\C
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ChatApp.pdb
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ChatApp.genruntimeconfig.cache
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ref\ChatApp.dll
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\scopedcss\projectbundle\ChatApp.bundle.scp.css
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\zsrykpp1ei-xv7490a582.gz
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\rkrrd15vgk-xv7490a582.gz

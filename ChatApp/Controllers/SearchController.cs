@@ -6,16 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace ChatApp.Controllers
 {
     [Authorize]
-    public class SearchController : Controller
+    public class SearchController 
+        (IFriendRepository _friendRepository, IUserRepository _userRepository) : Controller
     {
-
-        IFriendRepository _friendRepository;
-        IUserRepository _userRepository;
-        public SearchController(IFriendRepository friendRepository, IUserRepository userRepository)
-        {
-            _friendRepository = friendRepository;
-            _userRepository = userRepository;
-        }
 
 
 

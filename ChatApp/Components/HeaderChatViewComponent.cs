@@ -4,14 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ChatApp.Components
 {
-    public class HeaderChatViewComponent : ViewComponent
+    public class HeaderChatViewComponent 
+        (IUserRepository _userRepository) : ViewComponent
     {
-
-        IUserRepository _userRepository;
-        public HeaderChatViewComponent(IUserRepository userRepository)
-        {
-            _userRepository = userRepository;
-        }
 
 
         public IViewComponentResult Invoke(int friendId)

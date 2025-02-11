@@ -4,8 +4,8 @@
 @foreach (var item in Model)
 {
 	<div class="found-friend friend-active">
-		<div class="photo" src="/ProfilePicture/@item.Picture">
-		</div>
+		<img class="photo" src="/ProfilePicture/@(item.Picture)">
+		</img>
 		<div class="desc-contact">
 			<p class="name">@item.Username</p>
 		</div>

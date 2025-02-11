@@ -12,16 +12,9 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace ChatApp.Controllers
 {
     [Authorize]
-    public class ChatController : Controller
+    public class ChatController 
+        (IFriendRepository _friendRepository, IMessageRepository _messageRepository) : Controller
     {
-
-        IFriendRepository _friendRepository;
-        IMessageRepository _messageRepository;
-        public ChatController(IFriendRepository friendRepository, IMessageRepository messageRepository)
-        {
-            _friendRepository = friendRepository;
-            _messageRepository = messageRepository;
-        }
 
 
         [HttpGet("/chat/{userId}/{friendId}")]

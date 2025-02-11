@@ -5,19 +5,15 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
+using ChatApp.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ChatApp.Controllers
 {
-    public class AccountController : Controller
-    {
-
-        ChatContext _context;
-        IUserRepository _userRepository;
-        public AccountController(IUserRepository userRepository , ChatContext context)
-        {
-            _context = context;
-            _userRepository = userRepository;
-        }
+    public class AccountController
+        (IUserRepository _userRepository, ChatContext _context) : Controller
+    {        
 
 
         #region Register
@@ -26,12 +22,22 @@ namespace ChatApp.Controllers
             return View();
         }
 
+
         [HttpPost]
-        public IActionResult Register(UserModel user)
-        {
+        public IActionResult Register(RegisterViewModel user)
+        {            
             if (ModelState.IsValid)
-            {
-                _userRepository.AddUser(user);
+            {                
+                var RegisteredUser = new UserModel
+                {
+                    Name = user.Name,
+                    Username = user.Username,
+                    Email = user.Email,
+                    Password = user.Password,
+                    isAdmin = false,
+                    Picture = AddProfilePic(user)
+                };
+                _userRepository.AddUser(RegisteredUser);
                 _userRepository.SaveChanges();
                 return RedirectToAction("Login");
             }
@@ -39,6 +45,21 @@ namespace ChatApp.Controllers
             {
                 return View(user);
             }
+        }
+
+  
+        public string AddProfilePic(RegisterViewModel user)
+        {
+            string fileName = Guid.NewGuid().ToString() + user.Username.ToString() + Path.GetExtension(user.ProfilePicture.FileName);
+            string filePath = Path.Combine(Directory.GetCurrentDirectory(),
+                "wwwroot",
+                "ProfilePicture",
+                fileName);
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                user.ProfilePicture.CopyTo(stream);
+            }
+            return fileName;
         }
         #endregion
 
@@ -64,12 +85,14 @@ namespace ChatApp.Controllers
             {
                 new Claim (ClaimTypes.NameIdentifier , user.UserId.ToString() , ClaimValueTypes.Integer32),
                 new Claim (ClaimTypes.Name , user.Username, ClaimValueTypes.String),
-                new Claim (ClaimTypes.GivenName , user.Name , ClaimValueTypes.String)
+                new Claim (ClaimTypes.GivenName , user.Name , ClaimValueTypes.String),
+                new Claim ("Admin" , user.isAdmin.ToString() , ClaimValueTypes.Boolean)
             };
 
             var Identity = new ClaimsIdentity(claims, "login");
             var principal = new ClaimsPrincipal(Identity);
             HttpContext.SignInAsync(principal);
+
 
             return Redirect($"/{user.Username}");
         }
