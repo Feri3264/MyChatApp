@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 using ChatApp.ViewModels;
 using ChatApp.Areas.Admin.ViewModels;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
+using DataLayer.Repository;
 
 namespace ChatApp.Areas.Admin.Controllers
 {
@@ -18,13 +19,13 @@ namespace ChatApp.Areas.Admin.Controllers
     [Authorize]
     [Route("/Admin/User/{action=index}")]
     public class UserController 
-        (ChatContext _context) : Controller
+        (IUserRepository _userRepository) : Controller
     {
 
         // GET: Admin/User
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Users.ToListAsync());
+            return View(_userRepository.GetAllUsers());
         }
 
 
@@ -37,8 +38,7 @@ namespace ChatApp.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var userModel = await _context.Users
-                .FirstOrDefaultAsync(m => m.UserId == id);
+            var userModel = _userRepository.FindUserById(id);
             if (userModel == null)
             {
                 return NotFound();
@@ -65,8 +65,8 @@ namespace ChatApp.Areas.Admin.Controllers
             userModel.Friends = null;
             if (ModelState.IsValid)
             {
-                _context.Add(userModel);
-                await _context.SaveChangesAsync();
+                _userRepository.AddUser(userModel);
+                _userRepository.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             return View(userModel);
@@ -83,7 +83,7 @@ namespace ChatApp.Areas.Admin.Controllers
             }
 
 
-            var userModel = await _context.Users.FindAsync(id);
+            var userModel = _userRepository.FindUserById(id);
             if (userModel == null)
             {
                 return NotFound();
@@ -117,7 +117,7 @@ namespace ChatApp.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-                UserModel user = _context.Users.Find(UserId);
+                UserModel user = _userRepository.FindUserById(UserId);
                 user.UserId = userModel.UserId;
                 user.Name = userModel.Name;
                 user.Username = userModel.Username;
@@ -127,8 +127,8 @@ namespace ChatApp.Areas.Admin.Controllers
                 user.Picture = EditProfilePic(userModel, user);
                 try
                 {
-                    _context.Update(user);
-                    await _context.SaveChangesAsync();
+                    _userRepository.UpdateUser(user);
+                    _userRepository.SaveChanges();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -156,8 +156,7 @@ namespace ChatApp.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var userModel = await _context.Users
-                .FirstOrDefaultAsync(m => m.UserId == id);
+            var userModel = _userRepository.FindUserById(id);
             if (userModel == null)
             {
                 return NotFound();
@@ -171,13 +170,13 @@ namespace ChatApp.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int UserId)
         {
-            var userModel = await _context.Users.FindAsync(UserId);
+            var userModel = _userRepository.FindUserById(UserId);
             if (userModel != null)
             {
-                _context.Users.Remove(userModel);
+                _userRepository.RemoveUser(userModel);
             }
 
-            await _context.SaveChangesAsync();
+            _userRepository.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
 
@@ -186,7 +185,7 @@ namespace ChatApp.Areas.Admin.Controllers
         #region Tools
         private bool UserModelExists(int id)
         {
-            return _context.Users.Any(e => e.UserId == id);
+            return _userRepository.UserExists(id);
         }
 
 
