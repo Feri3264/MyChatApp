@@ -8,6 +8,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using ChatApp.ViewModels;
 using Microsoft.AspNetCore.Authorization;
+using ChatApp.Services;
 
 namespace ChatApp.Controllers
 {
@@ -24,8 +25,9 @@ namespace ChatApp.Controllers
 
 
         [HttpPost]
-        public IActionResult Register(RegisterViewModel user)
+        public IActionResult Register(CreateUserViewModel user)
         {            
+            user.isAdmin = false;
             if (ModelState.IsValid)
             {                
                 var RegisteredUser = new UserModel
@@ -34,8 +36,8 @@ namespace ChatApp.Controllers
                     Username = user.Username,
                     Email = user.Email,
                     Password = user.Password,
-                    isAdmin = false,
-                    Picture = AddProfilePic(user)
+                    isAdmin = user.isAdmin,
+                    Picture = ProfilePicure.Add(user)
                 };
                 _userRepository.AddUser(RegisteredUser);
                 _userRepository.SaveChanges();
@@ -46,25 +48,13 @@ namespace ChatApp.Controllers
                 return View(user);
             }
         }
-
-  
-        public string AddProfilePic(RegisterViewModel user)
-        {
-            string fileName = Guid.NewGuid().ToString() + user.Username.ToString() + Path.GetExtension(user.ProfilePicture.FileName);
-            string filePath = Path.Combine(Directory.GetCurrentDirectory(),
-                "wwwroot",
-                "ProfilePicture",
-                fileName);
-            using (var stream = new FileStream(filePath, FileMode.Create))
-            {
-                user.ProfilePicture.CopyTo(stream);
-            }
-            return fileName;
-        }
         #endregion
 
 
         #region Login
+
+        //=== Main Page ===
+        // /account/login
         public IActionResult Login()
         {
             return View();
@@ -94,7 +84,7 @@ namespace ChatApp.Controllers
             HttpContext.SignInAsync(principal);
 
 
-            return Redirect($"/{user.Username}");
+            return Redirect($"/Home/{user.Username}");
         }
         #endregion
 

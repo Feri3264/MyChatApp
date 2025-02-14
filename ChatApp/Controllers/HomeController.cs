@@ -13,12 +13,14 @@ namespace ChatApp.Controllers
     public class HomeController 
         (ChatContext _context) : Controller
     {
-        
-        [HttpGet("/{username}")]
+
+        //=== Getting Data From Login Page ===
+        [HttpGet("/Home/{username}")]
         public IActionResult Main(string username)
         {          
             UserModel user = _context.Users.Include(f => f.Friends).FirstOrDefault(u => u.Username == username);
             return View(user);
         }
+
     }
 }

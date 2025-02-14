@@ -8,12 +8,12 @@ namespace ChatApp.Components
         (IMessageRepository _messageRepository) : ViewComponent
     {
         
-        public IViewComponentResult Invoke(FriendModel friendship)
+        // === Getting Data --> ReturnMessageViewComponent Action (ChatController) --> Ajax (Chat View) ===
+        public async Task<IViewComponentResult> InvokeAsync(FriendModel friendship)
         {
-            List<MessageModel> messages = _messageRepository.FindMessagesByFriendship(friendship)
-                .OrderBy(m => m.MessageDate)
-                .ToList(); 
-            ViewData["MessageUserId"]= friendship.UserId;
+            var messages = await _messageRepository.FindMessagesByFriendship(friendship);            
+            var result = messages.OrderBy(m => m.MessageDate).ToList();
+            ViewData["MessageUserId"]= friendship.UserId; 
             return View("MessageVC", messages);                       
         }
     }

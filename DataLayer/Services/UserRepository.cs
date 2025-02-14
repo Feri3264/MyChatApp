@@ -12,20 +12,23 @@ using System.Threading.Tasks;
 namespace DataLayer.Services
 {
 
-    public class UserRepository : IUserRepository
+    public class UserRepository
+        (ChatContext _context) : IUserRepository
     {
-
-        private readonly ChatContext _context;
-
-        public UserRepository(ChatContext context)
+        public async Task<IEnumerable<UserModel>> GetAllUsers()
         {
-            _context = context;
+             var users = await _context.Users.ToListAsync();
+             return users;
         }
-
 
         public void AddUser(UserModel user)
         {
             _context.Users.Add(user);
+        }
+
+        public void UpdateUser(UserModel user)
+        {
+            _context.Update(user);
         }
 
         public void RemoveUser(UserModel user)
@@ -42,7 +45,7 @@ namespace DataLayer.Services
 
         public UserModel FindUser(UserModel user)
         {
-            UserModel FoundUser = _context.Users.FirstOrDefault(user);
+            UserModel FoundUser = _context.Users.Find(user);
             return FoundUser;
         }
 
@@ -52,10 +55,15 @@ namespace DataLayer.Services
             return user;
         }
 
-        public UserModel FindUserById(int userId)
+        public UserModel FindUserById(int? userId)
         {
             UserModel user = _context.Users.FirstOrDefault(u => u.UserId == userId);
             return user;
+        }
+
+        public bool UserExists(int id)
+        {
+           return _context.Users.Any(e => e.UserId == id);
         }
 
         public void SaveChanges()
