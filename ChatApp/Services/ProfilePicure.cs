@@ -6,7 +6,7 @@ namespace ChatApp.Services;
 public static class ProfilePicure
     {
         
-        //Edit Profile Picture
+        #region Edit Photo
         public static string Edit(EditUserViewModel userViewModel, UserModel FoundUser)
         {
             if (userViewModel.ProfilePicture == null || userViewModel.ProfilePicture.FileName == FoundUser.Picture)
@@ -29,8 +29,9 @@ public static class ProfilePicure
             System.IO.File.Delete(oldFilePath);
             return fileName;
         }
-        
-        //Add Profile Picture
+        #endregion
+
+        #region Add Photo
         public static string Add(CreateUserViewModel user)
         {
             string fileName = Guid.NewGuid().ToString() + user.Username.ToString() + Path.GetExtension(user.ProfilePicture.FileName);
@@ -44,4 +45,6 @@ public static class ProfilePicure
             }
             return fileName;
         }
+        #endregion
+
     }

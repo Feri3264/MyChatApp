@@ -45,7 +45,7 @@ namespace DataLayer.Services
 
         public UserModel FindUser(UserModel user)
         {
-            UserModel FoundUser = _context.Users.FirstOrDefault(user);
+            UserModel FoundUser = _context.Users.Find(user);
             return FoundUser;
         }
 

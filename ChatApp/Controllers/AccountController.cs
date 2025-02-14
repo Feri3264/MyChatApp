@@ -52,6 +52,9 @@ namespace ChatApp.Controllers
 
 
         #region Login
+
+        //=== Main Page ===
+        // /account/login
         public IActionResult Login()
         {
             return View();
@@ -81,7 +84,7 @@ namespace ChatApp.Controllers
             HttpContext.SignInAsync(principal);
 
 
-            return Redirect($"/{user.Username}");
+            return Redirect($"/Home/{user.Username}");
         }
         #endregion
 

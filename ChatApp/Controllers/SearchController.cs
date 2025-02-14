@@ -11,7 +11,7 @@ namespace ChatApp.Controllers
     {
 
 
-
+        // === Getting Data From User Page ===
         [HttpGet("/search/{userId}")]
         public IActionResult Search(int userId)
         {            
@@ -20,6 +20,7 @@ namespace ChatApp.Controllers
         }
 
 
+        // === Getting Data From Search Page ===
         [HttpGet("/AddFriend")]
         public IActionResult AddFriend(int friendId)
         {
@@ -43,6 +44,7 @@ namespace ChatApp.Controllers
         }
 
 
+        // === Getting Data --> Ajax (Search View) ===
         [HttpPost]
         public IActionResult ReturnSearchedFriendsViewComponent(string data)
         {

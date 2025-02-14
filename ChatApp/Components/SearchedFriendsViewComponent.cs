@@ -9,6 +9,7 @@ namespace ChatApp.Components
         (ChatContext _context) : ViewComponent
     {
        
+       // === Getting Data --> ReturnSearchedFriendsViewComponent Action (SearchController) --> Ajax (Search View)
         public IViewComponentResult Invoke(string username)
         {
             List<UserModel> friends = _context.Users

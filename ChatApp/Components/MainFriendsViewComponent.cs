@@ -9,7 +9,7 @@ namespace ChatApp.Components
         (IUserRepository _userRepository) : ViewComponent
     {       
 
-
+        // === Getting Data --> Main View --> Main Action (HomeController) ===
         public IViewComponentResult Invoke(UserModel model)
         {
             ViewData["UserId"] = model.UserId;

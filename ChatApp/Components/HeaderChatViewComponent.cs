@@ -8,7 +8,7 @@ namespace ChatApp.Components
         (IUserRepository _userRepository) : ViewComponent
     {
 
-
+        // === Getting Data --> Chat Page --> Chat Action (ChatController) ===
         public IViewComponentResult Invoke(int friendId)
         {
             UserModel friend = _userRepository.FindUserById(friendId);

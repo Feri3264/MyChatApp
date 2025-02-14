@@ -16,7 +16,7 @@ namespace ChatApp.Controllers
         (IFriendRepository _friendRepository, IMessageRepository _messageRepository) : Controller
     {
 
-
+        // === Getting Data From User Page ===
         [HttpGet("/chat/{userId}/{friendId}")]
         public IActionResult Chat(int userId, int friendId)
         {
@@ -28,6 +28,9 @@ namespace ChatApp.Controllers
             return View(friendship);
         }
 
+
+        // === Getting Data From Ajax in Chat cshtml ===
+        // === Adding Messages ===
         [HttpPost]
         public string AddMessageAction(MessageModel data)
         {
@@ -40,6 +43,9 @@ namespace ChatApp.Controllers
             return "";
         }
 
+
+        // === Getting Data From Ajax in Chat cshtml === 
+        // === Fetching Messages ===
         [HttpPost]
         public IActionResult ReturnMessageViewComponent(FriendModel data)
         {            
