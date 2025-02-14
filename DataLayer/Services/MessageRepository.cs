@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataLayer.Services
 {
@@ -36,9 +37,10 @@ namespace DataLayer.Services
             return message;
         }
 
-        public List<MessageModel> FindMessagesByFriendship(FriendModel friendship)
+        public async Task<IEnumerable<MessageModel>> FindMessagesByFriendship(FriendModel friendship)
         {
-            List<MessageModel> messages = _context.Messages.Where(m => m.Sender == friendship.UserId && m.Receiver == friendship.FreindId || m.Sender == friendship.FreindId && m.Receiver == friendship.UserId).ToList();
+            var messages = await _context.Messages.Where(m => m.Sender == friendship.UserId && m.Receiver == friendship.FreindId || m.Sender == friendship.FreindId && m.Receiver == friendship.UserId)
+            .ToListAsync();
             return messages;
         }
 

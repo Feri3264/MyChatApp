@@ -9,7 +9,7 @@ namespace DataLayer.Repository
 {
     public interface IUserRepository
     {
-        public IEnumerable<UserModel> GetAllUsers();
+        public Task<IEnumerable<UserModel>> GetAllUsers();
         public void AddUser(UserModel user);
         public void UpdateUser(UserModel user);
         public void RemoveUser(UserModel user);

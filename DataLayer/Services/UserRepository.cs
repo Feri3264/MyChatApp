@@ -15,9 +15,10 @@ namespace DataLayer.Services
     public class UserRepository
         (ChatContext _context) : IUserRepository
     {
-        public IEnumerable<UserModel> GetAllUsers()
+        public async Task<IEnumerable<UserModel>> GetAllUsers()
         {
-            return _context.Users.ToList();
+             var users = await _context.Users.ToListAsync();
+             return users;
         }
 
         public void AddUser(UserModel user)

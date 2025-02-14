@@ -26,13 +26,13 @@ namespace ChatApp.Areas.Admin.Controllers
         // GET: Admin/User
         public async Task<IActionResult> Index()
         {
-            return View(_userRepository.GetAllUsers());
+            return View(await _userRepository.GetAllUsers());
         }
         #endregion
 
         #region Details
         // GET: Admin/User/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Details(int? id)
         {
             if (id == null)
             {
@@ -59,7 +59,7 @@ namespace ChatApp.Areas.Admin.Controllers
         // POST: Admin/User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,ConfirmPassword,Password,isAdmin,ProfilePicture")] CreateUserViewModel userModel)
+        public IActionResult Create([Bind("UserId,Name,Username,Email,ConfirmPassword,Password,isAdmin,ProfilePicture")] CreateUserViewModel userModel)
         {                 
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace ChatApp.Areas.Admin.Controllers
 
         #region Edit
         // GET: Admin/User/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public IActionResult Edit(int? id)
         {
             if (id == null)
             {
@@ -110,7 +110,7 @@ namespace ChatApp.Areas.Admin.Controllers
         // POST: Admin/User/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int UserId, [Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] EditUserViewModel userModel)
+        public IActionResult Edit(int UserId, [Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] EditUserViewModel userModel)
         {
             if (UserId != userModel.UserId)
             {
@@ -140,7 +140,7 @@ namespace ChatApp.Areas.Admin.Controllers
 
         #region Delete
         // GET: Admin/User/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult Delete(int? id)
         {
             if (id == null)
             {
@@ -159,7 +159,7 @@ namespace ChatApp.Areas.Admin.Controllers
         // POST: Admin/User/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int UserId)
+        public IActionResult DeleteConfirmed(int UserId)
         {
             var userModel = _userRepository.FindUserById(UserId);
             if (userModel != null)

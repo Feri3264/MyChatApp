@@ -8,9 +8,9 @@ namespace ChatApp.Components
         (IMessageRepository _messageRepository) : ViewComponent
     {
         
-        public IViewComponentResult Invoke(FriendModel friendship)
+        public async Task<IViewComponentResult> InvokeAsync(FriendModel friendship)
         {
-            List<MessageModel> messages = _messageRepository.FindMessagesByFriendship(friendship)
+            List<MessageModel> messages = await _messageRepository.FindMessagesByFriendship(friendship)
                 .OrderBy(m => m.MessageDate)
                 .ToList(); 
             ViewData["MessageUserId"]= friendship.UserId;
