@@ -386,7 +386,6 @@ C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\staticwe
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.ChatApp.props
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.ChatApp.props
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ChatApp.csproj.Up2Date
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\ChatApp.dll
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\refint\ChatApp.dll
@@ -397,3 +396,4 @@ C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\scopedcs
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\scopedcss\projectbundle\ChatApp.bundle.scp.css
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\zsrykpp1ei-xv7490a582.gz
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\rkrrd15vgk-xv7490a582.gz
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

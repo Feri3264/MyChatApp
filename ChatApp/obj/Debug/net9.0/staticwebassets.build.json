@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "66s+6mc3fdTBlDHR1bsQB8SA7Q50aV1rUSJeUXF/vWs=",
+  "Hash": "zTGRtHsPEEnTD7wjYJ/19kEqvESCkrOL31Pgda9bngk=",
   "Source": "ChatApp",
   "BasePath": "_content/ChatApp",
   "Mode": "Default",
@@ -3307,8 +3307,8 @@
       "RelatedAsset": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ChatApp.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ttkynjhxg8",
-      "Integrity": "D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=",
+      "Fingerprint": "xm8sxroyud",
+      "Integrity": "R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\ChatApp.bundle.scp.css"
@@ -4000,8 +4000,8 @@
       "RelatedAsset": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\ChatApp.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ttkynjhxg8",
-      "Integrity": "D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=",
+      "Fingerprint": "xm8sxroyud",
+      "Integrity": "R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\obj\\Debug\\net9.0\\scopedcss\\bundle\\ChatApp.styles.css"
@@ -5435,6 +5435,27 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\79611c08-db2f-4b32-9fb3-5bd02ebdce49farid1010.jpg",
+      "SourceId": "ChatApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\",
+      "BasePath": "_content/ChatApp",
+      "RelativePath": "ProfilePicture/79611c08-db2f-4b32-9fb3-5bd02ebdce49farid1010#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0hmwmlqwic",
+      "Integrity": "PNxDtHWgNyr/JQ4qSRnS5j0x4iHcu8ZDjttl9OOtqhg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfilePicture\\79611c08-db2f-4b32-9fb3-5bd02ebdce49farid1010.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\92c92cf6-cb43-4a22-aadf-9e93a05f4165sarah1010.jpg",
       "SourceId": "ChatApp",
       "SourceType": "Discovered",
@@ -5506,7 +5527,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001851851852"
+          "Quality": "0.001855287570"
         }
       ],
       "ResponseHeaders": [
@@ -5516,15 +5537,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "539"
+          "Value": "538"
         },
         {
           "Name": "ETag",
-          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+          "Value": "\"R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5577,7 +5598,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5602,7 +5623,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "539"
+          "Value": "538"
         },
         {
           "Name": "Content-Type",
@@ -5610,11 +5631,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+          "Value": "\"R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5632,7 +5653,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE="
+          "Value": "sha256-R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg="
         }
       ]
     },
@@ -5643,7 +5664,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001851851852"
+          "Quality": "0.001855287570"
         }
       ],
       "ResponseHeaders": [
@@ -5653,15 +5674,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "539"
+          "Value": "538"
         },
         {
           "Name": "ETag",
-          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+          "Value": "\"R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5714,7 +5735,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5739,7 +5760,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "539"
+          "Value": "538"
         },
         {
           "Name": "Content-Type",
@@ -5747,11 +5768,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+          "Value": "\"R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5769,7 +5790,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE="
+          "Value": "sha256-R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg="
         }
       ]
     },
@@ -5780,7 +5801,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001851851852"
+          "Quality": "0.001855287570"
         }
       ],
       "ResponseHeaders": [
@@ -5790,15 +5811,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "539"
+          "Value": "538"
         },
         {
           "Name": "ETag",
-          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+          "Value": "\"R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5859,7 +5880,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5892,7 +5913,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "539"
+          "Value": "538"
         },
         {
           "Name": "Content-Type",
@@ -5900,11 +5921,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+          "Value": "\"R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5930,7 +5951,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE="
+          "Value": "sha256-R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg="
         }
       ]
     },
@@ -5941,7 +5962,7 @@
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001851851852"
+          "Quality": "0.001855287570"
         }
       ],
       "ResponseHeaders": [
@@ -5951,15 +5972,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "539"
+          "Value": "538"
         },
         {
           "Name": "ETag",
-          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+          "Value": "\"R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6020,7 +6041,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6053,7 +6074,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "539"
+          "Value": "538"
         },
         {
           "Name": "Content-Type",
@@ -6061,11 +6082,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE=\""
+          "Value": "\"R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:39:32 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6091,7 +6112,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-D29pi/qsR57Q1m9d2dHV1/EkZHw6nIu0POyh2/V6GPE="
+          "Value": "sha256-R9huxtpzkPD8qopyaHwv5DaQBdPMT/PrCNKXmnrgqTg="
         }
       ]
     },
@@ -36112,6 +36133,88 @@
       ]
     },
     {
+      "Route": "ProfilePicture/79611c08-db2f-4b32-9fb3-5bd02ebdce49farid1010.0hmwmlqwic.jpg",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\79611c08-db2f-4b32-9fb3-5bd02ebdce49farid1010.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1896257"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PNxDtHWgNyr/JQ4qSRnS5j0x4iHcu8ZDjttl9OOtqhg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 17:33:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0hmwmlqwic"
+        },
+        {
+          "Name": "label",
+          "Value": "ProfilePicture/79611c08-db2f-4b32-9fb3-5bd02ebdce49farid1010.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PNxDtHWgNyr/JQ4qSRnS5j0x4iHcu8ZDjttl9OOtqhg="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePicture/79611c08-db2f-4b32-9fb3-5bd02ebdce49farid1010.jpg",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\79611c08-db2f-4b32-9fb3-5bd02ebdce49farid1010.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1896257"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PNxDtHWgNyr/JQ4qSRnS5j0x4iHcu8ZDjttl9OOtqhg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 12 Feb 2025 17:33:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PNxDtHWgNyr/JQ4qSRnS5j0x4iHcu8ZDjttl9OOtqhg="
+        }
+      ]
+    },
+    {
       "Route": "ProfilePicture/92c92cf6-cb43-4a22-aadf-9e93a05f4165sarah1010.jpg",
       "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\ChatApp\\wwwroot\\ProfilePicture\\92c92cf6-cb43-4a22-aadf-9e93a05f4165sarah1010.jpg",
       "Selectors": [],
@@ -36134,7 +36237,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 19:30:25 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -36171,7 +36274,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 19:30:25 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -36216,7 +36319,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 19:07:02 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -36253,7 +36356,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Feb 2025 19:07:02 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -36298,7 +36401,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:03:12 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -36335,7 +36438,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Feb 2025 18:03:12 GMT"
+          "Value": "Tue, 11 Feb 2025 19:44:37 GMT"
         },
         {
           "Name": "Cache-Control",
