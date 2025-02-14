@@ -9,9 +9,9 @@ using DataLayer.Context;
 using DataLayer.Models;
 using Microsoft.AspNetCore.Authorization;
 using ChatApp.ViewModels;
-using ChatApp.Areas.Admin.ViewModels;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using DataLayer.Repository;
+using ChatApp.Services;
 
 namespace ChatApp.Areas.Admin.Controllers
 {
@@ -22,12 +22,13 @@ namespace ChatApp.Areas.Admin.Controllers
         (IUserRepository _userRepository) : Controller
     {
 
+        #region Index
         // GET: Admin/User
         public async Task<IActionResult> Index()
         {
             return View(_userRepository.GetAllUsers());
         }
-
+        #endregion
 
         #region Details
         // GET: Admin/User/Details/5
@@ -56,16 +57,22 @@ namespace ChatApp.Areas.Admin.Controllers
         }
 
         // POST: Admin/User/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,Password,isAdmin,Picture")] UserModel userModel)
-        {
-            userModel.Friends = null;
+        public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,ConfirmPassword,Password,isAdmin,ProfilePicture")] CreateUserViewModel userModel)
+        {                 
             if (ModelState.IsValid)
             {
-                _userRepository.AddUser(userModel);
+                UserModel user = new UserModel
+                {
+                    Name = userModel.Name,
+                    Username = userModel.Username,
+                    Email = userModel.Email,
+                    Password = userModel.Password,
+                    isAdmin = userModel.isAdmin,
+                    Picture = ProfilePicure.Add(userModel)
+                };
+                _userRepository.AddUser(user);
                 _userRepository.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
@@ -81,14 +88,13 @@ namespace ChatApp.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-
-
+            
             var userModel = _userRepository.FindUserById(id);
             if (userModel == null)
             {
                 return NotFound();
             }
-
+            
             var user = new EditUserViewModel()
             {
                 UserId = userModel.UserId,
@@ -102,8 +108,6 @@ namespace ChatApp.Areas.Admin.Controllers
         }
 
         // POST: Admin/User/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int UserId, [Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] EditUserViewModel userModel)
@@ -124,23 +128,10 @@ namespace ChatApp.Areas.Admin.Controllers
                 user.Email = userModel.Email;
                 user.Password = userModel.Password;
                 user.isAdmin = userModel.isAdmin;
-                user.Picture = EditProfilePic(userModel, user);
-                try
-                {
-                    _userRepository.UpdateUser(user);
-                    _userRepository.SaveChanges();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!UserModelExists(user.UserId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                user.Picture = ProfilePicure.Edit(userModel , user);
+                
+                _userRepository.UpdateUser(user);
+                _userRepository.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             return View(userModel);
@@ -188,27 +179,6 @@ namespace ChatApp.Areas.Admin.Controllers
             return _userRepository.UserExists(id);
         }
 
-
-        public string EditProfilePic(EditUserViewModel userViewModel, UserModel FoundUser)
-        {
-            if (userViewModel.ProfilePicture == null || userViewModel.ProfilePicture.FileName == FoundUser.Picture)
-            {
-                return FoundUser.Picture;
-            }
-
-            string fileName = Guid.NewGuid().ToString() + userViewModel.Username.ToString() + Path.GetExtension(userViewModel.ProfilePicture.FileName);
-            string path = Path.Combine(Directory.GetCurrentDirectory(),
-                "wwwroot",
-                "ProfilePicture");
-            string NewFilePath = Path.Combine(path, fileName);
-            using (var stream = new FileStream(NewFilePath, FileMode.Create))
-            {
-                userViewModel.ProfilePicture.CopyTo(stream);
-            }
-            string oldFilePath = Path.Combine(path, FoundUser.Picture);
-            System.IO.File.Delete(oldFilePath);
-            return fileName;
-        }
         #endregion
 
 
