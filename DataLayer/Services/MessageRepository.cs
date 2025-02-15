@@ -39,8 +39,9 @@ namespace DataLayer.Services
 
         public async Task<IEnumerable<MessageModel>> FindMessagesByFriendship(FriendModel friendship)
         {
-            var messages = await _context.Messages.Where(m => m.Sender == friendship.UserId && m.Receiver == friendship.FreindId || m.Sender == friendship.FreindId && m.Receiver == friendship.UserId)
-            .ToListAsync();
+            var messages = await _context.Messages
+                .Where(m => m.Sender == friendship.UserId && m.Receiver == friendship.FreindId || m.Sender == friendship.FreindId && m.Receiver == friendship.UserId)
+                .ToListAsync();
             return messages;
         }
 
