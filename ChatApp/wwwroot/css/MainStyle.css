@@ -4,8 +4,8 @@ body {
 }
 a {
     cursor: pointer;
-    text-decoration: none;
-    color: none;
+    text-decoration: none !important;
+    color: white !important;
 }
 /* .container {
   padding:0;
@@ -144,6 +144,13 @@ a {
     color: white;
 }
 
+.deleteMessageIcon {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.0);
+    font-size: 14px;
+    outline: none;
+    border: none;
+}
 
 
 /* ===== MENU ===== */
@@ -429,6 +436,7 @@ a {
         padding: 15px;
         border-radius: 12px;
         background-color: wheat;
+        padding-left: 30px;
     }
 
 .text-only {
@@ -450,6 +458,7 @@ a {
 }
 
 .response {  
+    display: flex;
     margin-right: 0px !important;
     margin-left: auto; /* flexbox alignment rule */
 }

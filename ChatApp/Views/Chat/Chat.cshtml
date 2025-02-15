@@ -17,13 +17,13 @@
 
 		@*Chat*@
 		<div id="message-update" class="messages-chat">
-			@await Component.InvokeAsync("Message" , Model)
+			@await Component.InvokeAsync("Message", Model)
 		</div>
 
 
 
 		@*Footer*@
-		@await Component.InvokeAsync("FooterChat" , Model)
+		@await Component.InvokeAsync("FooterChat", Model)
 
 
 	</section>
@@ -39,38 +39,41 @@
 
 @*===Ajax===*@
 
-@*Ajax to Show Messages*@
-
-<script type="text/javascript">
-	var data = {
-		FriendsRelationId: @Model.FriendsRelationId ,
-		FreindId: @Model.FreindId ,
-		UserId: @Model.UserId
-	}
-</script>
-
-<script type="text/javascript">	
-	setInterval(GetMessages , 10000);
-	function GetMessages() {
-			$.ajax({
-				type: "POST",
-				url: '@Url.Action("ReturnMessageViewComponent")',
-				data: {data},
-				dataType: "html",
-				success: function (html) {
-					$("#message-update").html(html);
-				},
-				error: function () {
-					alert("Error while inserting data");
-				}
-			});
-	}
-</script>
-
-@*Ajax to Add Messages*@
-
 @section Chat
 {
+
+	@*Ajax to Show Messages*@
+	<script type="text/javascript">
+		var data = {
+			FriendsRelationId: @Model.FriendsRelationId ,
+			FreindId: @Model.FreindId ,
+			UserId: @Model.UserId
+		}
+	</script>
+
+	<script type="text/javascript">
+
+		setInterval(GetMessages , 3000);
+		function GetMessages() {
+				$.ajax({
+					type: "POST",
+					url: '@Url.Action("ReturnMessageViewComponent")',
+					data: {data},
+					dataType: "html",
+					success: function (html) {
+						$("#message-update").html(html);
+					},
+					error: function () {
+						alert("Error while inserting data");
+					}
+				});
+		}
+	</script>
+
+
+	@*Ajax to Add Messages*@
+
+
 	<script type="text/javascript">
 		function AddMessage(){
 				$.ajax({
@@ -80,6 +83,26 @@
 					dataType: "text",
 					success: function (html) {
 						$("#message-input").val(html);
+					},
+					error: function () {
+						alert("Error while inserting data");
+					}
+				});
+		}
+	</script>
+
+
+	@*Ajax to Delete Message*@
+
+
+	<script type="text/javascript">
+		function DeleteMessage(messageId){
+			console.log(messageId);
+				$.ajax({
+					type: "GET",
+					url: '/chat/DeleteMessage?MessageId=' + messageId,
+					success: function () {
+						alert("Message Deleted");
 					},
 					error: function () {
 						alert("Error while inserting data");
