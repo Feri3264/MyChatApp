@@ -314,7 +314,6 @@ C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compress
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\v0zgfp0y55-87fc7y1x7t.gz
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\yfc7ypekbg-mlv21k5csn.gz
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\u1asda16b8-cdfenj4dob.gz
-C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\2b6kfzhc2n-0rn6o0mfyj.gz
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\k122m92u1e-b9sayid5wm.gz
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\t7em8rk3wv-61n19gt1b8.gz
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\v4gnfyq6tt-xtxxf3hu2r.gz
@@ -396,3 +395,5 @@ C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\scopedcs
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\scopedcss\projectbundle\ChatApp.bundle.scp.css
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\zsrykpp1ei-xv7490a582.gz
 C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\rkrrd15vgk-xv7490a582.gz
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Feri\Desktop\test\AspCoreTest\ChatApp\ChatApp\obj\Debug\net9.0\compressed\2b6kfzhc2n-47qnzujldp.gz

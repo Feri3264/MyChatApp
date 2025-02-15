@@ -43,6 +43,13 @@ namespace ChatApp.Controllers
             return "";
         }
 
+        
+        public void DeleteMessage(int MessageId)
+        {
+            _messageRepository.RemoveMessage(MessageId);
+            _messageRepository.SaveChanges();
+        }
+
 
         // === Getting Data From Ajax in Chat cshtml === 
         // === Fetching Messages ===
