@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using NuGet.Protocol.Plugins;
 using System;
 using System.Globalization;
+using System.Security.Claims;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ChatApp.Controllers
@@ -44,10 +45,18 @@ namespace ChatApp.Controllers
         }
 
         
-        public void DeleteMessage(int MessageId)
+        public void DeleteMessage(int MessageId , int sender)
         {
-            _messageRepository.RemoveMessage(MessageId);
-            _messageRepository.SaveChanges();
+            var claims = User.Claims.FirstOrDefault(m => m.Type == ClaimTypes.NameIdentifier);
+            if (claims.Value == sender.ToString())
+            {
+                _messageRepository.RemoveMessage(MessageId);
+                _messageRepository.SaveChanges();
+            }
+            else
+            {
+                NotFound();
+            }
         }
 
 

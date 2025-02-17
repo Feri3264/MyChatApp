@@ -96,11 +96,11 @@
 
 
 	<script type="text/javascript">
-		function DeleteMessage(messageId){
+		function DeleteMessage(messageId ,sender){
 			console.log(messageId);
 				$.ajax({
 					type: "GET",
-					url: '/chat/DeleteMessage?MessageId=' + messageId,
+					url: '/chat/DeleteMessage?MessageId=' + messageId + '&sender=' + sender,
 					success: function () {
 						alert("Message Deleted");
 					},

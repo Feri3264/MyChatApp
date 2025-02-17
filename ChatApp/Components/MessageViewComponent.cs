@@ -14,7 +14,7 @@ namespace ChatApp.Components
             var messages = await _messageRepository.FindMessagesByFriendship(friendship);            
             var result = messages.OrderBy(m => m.MessageDate).ToList();
             ViewData["MessageUserId"]= friendship.UserId; 
-            return View("MessageVC", messages);                       
+            return View("MessageVC", result);                       
         }
     }
 }

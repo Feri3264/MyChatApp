@@ -3,6 +3,7 @@ using DataLayer.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace ChatApp.Controllers
 {
     [Authorize]
@@ -25,12 +26,17 @@ namespace ChatApp.Controllers
         public IActionResult AddFriend(int friendId)
         {
             int userId = (int)TempData["userId"];
+            UserModel user = _userRepository.FindUserById(userId);
+
+            if (_friendRepository.FindFriendship(friendId , userId) != null)
+            {
+                return Redirect($"/Home/{user.Username}");
+            }
             FriendModel friendship = new FriendModel
             {
                 UserId = userId,
                 FreindId = friendId
             };
-
 
             if(friendship.UserId == null || friendship.FreindId == null)
                 return NotFound();
@@ -38,9 +44,8 @@ namespace ChatApp.Controllers
 
             _friendRepository.AddFriend(friendship);
             _friendRepository.SaveChanges();
-
-            UserModel user =  _userRepository.FindUserById(userId);
-            return Redirect($"/{user.Username}");
+            
+            return Redirect($"/Home/{user.Username}");
         }
 
 
