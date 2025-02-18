@@ -1,17 +1,17 @@
-﻿using DataLayer.Models;
-using DataLayer.Repository;
+﻿using ChatApp.Services.UserServices.Interface;
+using DataLayer.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChatApp.Components
 {
     public class HeaderChatViewComponent 
-        (IUserRepository _userRepository) : ViewComponent
+        (IUserService UserService) : ViewComponent
     {
 
         // === Getting Data --> Chat Page --> Chat Action (ChatController) ===
-        public IViewComponentResult Invoke(int friendId)
+        public async Task<IViewComponentResult> InvokeAsync(int friendId)
         {
-            UserModel friend = _userRepository.FindUserById(friendId);
+            UserModel friend = await UserService.GetByIdAsync(friendId);
             return View("HeaderChatVC" , friend);
         }
     }

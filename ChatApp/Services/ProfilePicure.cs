@@ -14,19 +14,19 @@ public static class ProfilePicure
                 return FoundUser.Picture;
             }
 
-            string fileName = Guid.NewGuid().ToString() + userViewModel.Username.ToString() +
+            string fileName = Guid.NewGuid().ToString() + userViewModel.Username+
                               Path.GetExtension(userViewModel.ProfilePicture.FileName);
             string path = Path.Combine(Directory.GetCurrentDirectory(),
                 "wwwroot",
                 "ProfilePicture");
-            string NewFilePath = Path.Combine(path, fileName);
-            using (var stream = new FileStream(NewFilePath, FileMode.Create))
+            string newFilePath = Path.Combine(path, fileName);
+            using (var stream = new FileStream(newFilePath, FileMode.Create))
             {
                 userViewModel.ProfilePicture.CopyTo(stream);
             }
 
             string oldFilePath = Path.Combine(path, FoundUser.Picture);
-            System.IO.File.Delete(oldFilePath);
+            File.Delete(oldFilePath);
             return fileName;
         }
         #endregion
@@ -34,7 +34,7 @@ public static class ProfilePicure
         #region Add Photo
         public static string Add(CreateUserViewModel user)
         {
-            string fileName = Guid.NewGuid().ToString() + user.Username.ToString() + Path.GetExtension(user.ProfilePicture.FileName);
+            string fileName = Guid.NewGuid().ToString() + user.Username+ Path.GetExtension(user.ProfilePicture.FileName);
             string filePath = Path.Combine(Directory.GetCurrentDirectory(),
                 "wwwroot",
                 "ProfilePicture",

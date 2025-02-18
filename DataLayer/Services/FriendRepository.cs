@@ -2,49 +2,31 @@
 using DataLayer.Models;
 using DataLayer.Repository;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataLayer.Services
 {
-    public class FriendRepository : IFriendRepository
+    public class FriendRepository
+        (ChatContext _context): IFriendRepository
     {
-        
-        ChatContext _context;
-        public FriendRepository(ChatContext context)
-        {
-            _context = context;
-        }
 
-        public void AddFriend(FriendModel friend)
+        public async Task AddFriendAsync(FriendModel friend)
         {
-            _context.Friends.Add(friend);
+            await _context.Friends.AddAsync(friend);
         }        
 
-        public void RemoveFriendship(int friendId, int userId)
+        public void Delete(FriendModel friendship)
         {
-            FriendModel friendship = FindFriendship(friendId, userId);
             _context.Friends.Remove(friendship);
         }
 
-        public FriendModel FindFriendshipById(int friendshipId)
+        public async Task<FriendModel> GetFriendshipAsync(int userId, int friendId)
         {
-            FriendModel friendship = _context.Friends.FirstOrDefault(x => x.FriendsRelationId == friendshipId);
-            return friendship;
+            return await _context.Friends.Include(m => m.Messages).FirstOrDefaultAsync(f => f.UserId == friendId && f.FreindId == userId);         
         }
-
-        public FriendModel FindFriendship(int friendId, int userId)
+        
+        public async Task SaveChangesAsync()
         {
-            FriendModel friendship = _context.Friends.Include(m => m.Messages).FirstOrDefault(f => f.UserId == userId && f.FreindId == friendId);         
-            return friendship;
-        }
-
-        public void SaveChanges()
-        {
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

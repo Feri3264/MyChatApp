@@ -8,6 +8,10 @@ using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Security.Claims;
 using ChatApp.Middlewares;
+using ChatApp.Services.FriendServices.Implementation;
+using ChatApp.Services.FriendServices.Interface;
+using ChatApp.Services.UserServices.Implementation;
+using ChatApp.Services.UserServices.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,11 +21,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
-#region DI
-builder.Services.AddScoped<ChatContext>();
+#region IoC Container
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IFriendRepository, FriendRepository>();
 builder.Services.AddScoped<IMessageRepository, MessageRepository>();
+
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IFriendService, FriendService>();
 #endregion
 
 
