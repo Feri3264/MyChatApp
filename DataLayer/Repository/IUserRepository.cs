@@ -1,23 +1,20 @@
 ﻿using DataLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DataLayer.Repository
 {
     public interface IUserRepository
     {
-        public Task<IEnumerable<UserModel>> GetAllUsers();
-        public void AddUser(UserModel user);
-        public void UpdateUser(UserModel user);
-        public void RemoveUser(UserModel user);
-        public void RemoveUser(int userId);        
-        public UserModel FindUser(UserModel user);
-        public UserModel FindUserByUsername(string username);
-        public UserModel FindUserById(int? userId);
-        public bool UserExists(int id);
-        public void SaveChanges();
+        public Task<IEnumerable<UserModel>> GetAllAsync();
+        public Task AddAsync(UserModel user);
+        public void Update(UserModel user);
+        public Task DeleteAsync(UserModel user);
+        public Task<UserModel> GetUserAsync(UserModel user);
+        public Task<UserModel> GetByUsernameAsync(string username);
+        public Task<UserModel> GetByEmailAsync(string email);
+        public Task<UserModel> GetByIdAsync(int userId);
+        public Task<bool> UserExistsAsync(int id);
+        public Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username);
+        public Task SaveChangesAsync();
     }
 }

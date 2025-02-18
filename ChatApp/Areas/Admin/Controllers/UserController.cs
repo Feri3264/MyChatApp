@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using DataLayer.Context;
-using DataLayer.Models;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using ChatApp.ViewModels;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
-using DataLayer.Repository;
-using ChatApp.Services;
+using ChatApp.Services.UserServices.Interface;
 
 namespace ChatApp.Areas.Admin.Controllers
 {
@@ -19,27 +9,27 @@ namespace ChatApp.Areas.Admin.Controllers
     [Authorize]
     [Route("/Admin/User/{action=index}")]
     public class UserController 
-        (IUserRepository _userRepository) : Controller
+        (IUserService UserService) : Controller
     {
 
         #region Index
         // GET: Admin/User
         public async Task<IActionResult> Index()
         {
-            return View(await _userRepository.GetAllUsers());
+            return View(await UserService.GetAllAsync());
         }
         #endregion
 
         #region Details
         // GET: Admin/User/Details/5
-        public IActionResult Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var userModel = _userRepository.FindUserById(id);
+            var userModel =await UserService.GetByIdAsync(((int)id));
             if (userModel == null)
             {
                 return NotFound();
@@ -59,21 +49,12 @@ namespace ChatApp.Areas.Admin.Controllers
         // POST: Admin/User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("UserId,Name,Username,Email,ConfirmPassword,Password,isAdmin,ProfilePicture")] CreateUserViewModel userModel)
+        public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,ConfirmPassword,Password,isAdmin,ProfilePicture")] CreateUserViewModel userModel)
         {                 
             if (ModelState.IsValid)
             {
-                UserModel user = new UserModel
-                {
-                    Name = userModel.Name,
-                    Username = userModel.Username,
-                    Email = userModel.Email,
-                    Password = userModel.Password,
-                    isAdmin = userModel.isAdmin,
-                    Picture = ProfilePicure.Add(userModel)
-                };
-                _userRepository.AddUser(user);
-                _userRepository.SaveChanges();
+                await UserService.CreateAsync(userModel);
+                await UserService.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(userModel);
@@ -82,56 +63,35 @@ namespace ChatApp.Areas.Admin.Controllers
 
         #region Edit
         // GET: Admin/User/Edit/5
-        public IActionResult Edit(int? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
             
-            var userModel = _userRepository.FindUserById(id);
+            var userModel = await UserService.GetForEdit((int)id);
             if (userModel == null)
             {
                 return NotFound();
             }
-            
-            var user = new EditUserViewModel()
-            {
-                UserId = userModel.UserId,
-                Name = userModel.Name,
-                Username = userModel.Username,
-                Email = userModel.Email,
-                Password = userModel.Password,
-                isAdmin = userModel.isAdmin,
-            };
-            return View(user);
+            return View(userModel);
         }
 
         // POST: Admin/User/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int UserId, [Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] EditUserViewModel userModel)
+        public async Task<IActionResult> Edit(int UserId, [Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] EditUserViewModel userModel)
         {
             if (UserId != userModel.UserId)
             {
                 return NotFound();
             }
-
-
-
+            
             if (ModelState.IsValid)
             {
-                UserModel user = _userRepository.FindUserById(UserId);
-                user.UserId = userModel.UserId;
-                user.Name = userModel.Name;
-                user.Username = userModel.Username;
-                user.Email = userModel.Email;
-                user.Password = userModel.Password;
-                user.isAdmin = userModel.isAdmin;
-                user.Picture = ProfilePicure.Edit(userModel , user);
-                
-                _userRepository.UpdateUser(user);
-                _userRepository.SaveChanges();
+                await UserService.Update(userModel);
+                await UserService.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(userModel);
@@ -140,43 +100,34 @@ namespace ChatApp.Areas.Admin.Controllers
 
         #region Delete
         // GET: Admin/User/Delete/5
-        public IActionResult Delete(int? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var userModel = _userRepository.FindUserById(id);
+            var userModel = await UserService.GetByIdAsync((int)id);
             if (userModel == null)
             {
                 return NotFound();
             }
-
             return View(userModel);
         }
 
         // POST: Admin/User/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public IActionResult DeleteConfirmed(int UserId)
+        public async Task<IActionResult> DeleteConfirmed(int UserId)
         {
-            var userModel = _userRepository.FindUserById(UserId);
-            if (userModel != null)
+            var userModel = UserService.DeleteAsync(UserId);
+            if (userModel == null)
             {
-                _userRepository.RemoveUser(userModel);
+                return NotFound();
             }
 
-            _userRepository.SaveChanges();
+            await UserService.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
-        }
-
-        #endregion
-
-        #region Tools
-        private bool UserModelExists(int id)
-        {
-            return _userRepository.UserExists(id);
         }
 
         #endregion

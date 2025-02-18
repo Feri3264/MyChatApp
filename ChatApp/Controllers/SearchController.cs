@@ -1,5 +1,6 @@
-﻿using DataLayer.Models;
-using DataLayer.Repository;
+﻿using ChatApp.Services.FriendServices.Interface;
+using ChatApp.Services.UserServices.Interface;
+using DataLayer.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,7 +9,7 @@ namespace ChatApp.Controllers
 {
     [Authorize]
     public class SearchController 
-        (IFriendRepository _friendRepository, IUserRepository _userRepository) : Controller
+        (IFriendService FriendService, IUserService UserService) : Controller
     {
 
 
@@ -23,27 +24,18 @@ namespace ChatApp.Controllers
 
         // === Getting Data From Search Page ===
         [HttpGet("/AddFriend")]
-        public IActionResult AddFriend(int friendId)
+        public async Task<IActionResult> AddFriend(int friendId)
         {
             int userId = (int)TempData["userId"];
-            UserModel user = _userRepository.FindUserById(userId);
+            UserModel user = await UserService.GetByIdAsync(userId);
 
-            if (_friendRepository.FindFriendship(friendId , userId) != null)
+            if (await FriendService.FriendshipExistsAsync(userId, friendId))
             {
                 return Redirect($"/Home/{user.Username}");
             }
-            FriendModel friendship = new FriendModel
-            {
-                UserId = userId,
-                FreindId = friendId
-            };
 
-            if(friendship.UserId == null || friendship.FreindId == null)
-                return NotFound();
-
-
-            _friendRepository.AddFriend(friendship);
-            _friendRepository.SaveChanges();
+            await FriendService.CreateAsync(userId, friendId);
+            await FriendService.SaveChangesAsync();
             
             return Redirect($"/Home/{user.Username}");
         }

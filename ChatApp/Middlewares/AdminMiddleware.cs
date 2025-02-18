@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Authentication;
-
-namespace ChatApp.Middlewares
+﻿namespace ChatApp.Middlewares
 {
     public class AdminMiddleware
         (RequestDelegate _next)

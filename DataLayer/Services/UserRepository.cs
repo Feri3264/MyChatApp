@@ -2,12 +2,7 @@
 using DataLayer.Models;
 using DataLayer.Repository;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace DataLayer.Services
 {
@@ -15,60 +10,64 @@ namespace DataLayer.Services
     public class UserRepository
         (ChatContext _context) : IUserRepository
     {
-        public async Task<IEnumerable<UserModel>> GetAllUsers()
+        public async Task<IEnumerable<UserModel>> GetAllAsync()
         {
-             var users = await _context.Users.ToListAsync();
-             return users;
+              return await _context.Users.ToListAsync();
         }
 
-        public void AddUser(UserModel user)
+        public async Task AddAsync(UserModel user)
         {
-            _context.Users.Add(user);
+            await _context.Users.AddAsync(user);
         }
 
-        public void UpdateUser(UserModel user)
+        public void Update(UserModel user)
         {
             _context.Update(user);
         }
 
-        public void RemoveUser(UserModel user)
+        public async Task DeleteAsync(UserModel user)
         {
-            UserModel result = FindUser(user);
+            UserModel result = await GetUserAsync(user);
             _context.Users.Remove(result);
         }
 
-        public void RemoveUser(int userId)
+        public async Task<UserModel> GetUserAsync(UserModel user)
         {
-            UserModel user = FindUserById(userId);
-            _context.Users.Remove(user);
+            return await _context.Users.FirstOrDefaultAsync(x => x == user);
         }
 
-        public UserModel FindUser(UserModel user)
+        public async Task<UserModel> GetByUsernameAsync(string username)
         {
-            UserModel FoundUser = _context.Users.Find(user);
-            return FoundUser;
+            return await _context.Users.Include(f => f.Friends).FirstOrDefaultAsync(u => u.Username == username);
         }
 
-        public UserModel FindUserByUsername(string username)
+        public async Task<UserModel> GetByEmailAsync(string email)
         {
-            UserModel user = _context.Users.Include(f => f.Friends).FirstOrDefault(u => u.Username == username);
-            return user;
+            return await _context.Users.Include(f => f.Friends).FirstOrDefaultAsync(u => u.Email == email);
         }
 
-        public UserModel FindUserById(int? userId)
+        public async Task<UserModel> GetByIdAsync(int userId)
         {
-            UserModel user = _context.Users.FirstOrDefault(u => u.UserId == userId);
-            return user;
+            return await _context.Users.FirstOrDefaultAsync(u => u.UserId == userId);
         }
 
-        public bool UserExists(int id)
+        public async Task<bool> UserExistsAsync(int id)
         {
-           return _context.Users.Any(e => e.UserId == id);
+           return await _context.Users.AnyAsync(e => e.UserId == id);
         }
 
-        public void SaveChanges()
+        public async Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username)
         {
-            _context.SaveChanges();
+           List<UserModel> users = await _context.Users
+                .Where(x => x.Username.Contains(username))
+                .Select(x => x)
+                .ToListAsync();
+           return users;
+        }
+
+        public async Task SaveChangesAsync()
+        {
+            await _context.SaveChangesAsync();
         }
     }
 }

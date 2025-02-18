@@ -1,19 +1,14 @@
-﻿using DataLayer.Context;
-using DataLayer.Models;
-using DataLayer.Repository;
+﻿using DataLayer.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
-using Microsoft.AspNetCore.Identity;
 using ChatApp.ViewModels;
-using Microsoft.AspNetCore.Authorization;
-using ChatApp.Services;
+using ChatApp.Services.UserServices.Interface;
 
 namespace ChatApp.Controllers
 {
     public class AccountController
-        (IUserRepository _userRepository, ChatContext _context) : Controller
+        (IUserService UserService) : Controller
     {        
 
 
@@ -25,22 +20,13 @@ namespace ChatApp.Controllers
 
 
         [HttpPost]
-        public IActionResult Register(CreateUserViewModel user)
+        public async Task<IActionResult> Register(CreateUserViewModel user)
         {            
             user.isAdmin = false;
             if (ModelState.IsValid)
             {                
-                var RegisteredUser = new UserModel
-                {
-                    Name = user.Name,
-                    Username = user.Username,
-                    Email = user.Email,
-                    Password = user.Password,
-                    isAdmin = user.isAdmin,
-                    Picture = ProfilePicure.Add(user)
-                };
-                _userRepository.AddUser(RegisteredUser);
-                _userRepository.SaveChanges();
+                await UserService.CreateAsync(user);
+                await UserService.SaveChangesAsync();
                 return RedirectToAction("Login");
             }
             else
@@ -62,28 +48,17 @@ namespace ChatApp.Controllers
 
 
         [HttpPost]
-        public IActionResult Login(string email, string password)
+        public async Task<IActionResult> Login(string email, string password)
         {
-            UserModel user = _context.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
-
-            if (user == null)
+            if (!await UserService.UserExistsAsync(email, password))
             {
                 return View();
             }
-
-            List<Claim> claims = new List<Claim>
-            {
-                new Claim (ClaimTypes.NameIdentifier , user.UserId.ToString() , ClaimValueTypes.Integer32),
-                new Claim (ClaimTypes.Name , user.Username, ClaimValueTypes.String),
-                new Claim (ClaimTypes.GivenName , user.Name , ClaimValueTypes.String),
-                new Claim ("Admin" , user.isAdmin.ToString() , ClaimValueTypes.Boolean)
-            };
-
-            var Identity = new ClaimsIdentity(claims, "login");
-            var principal = new ClaimsPrincipal(Identity);
-            HttpContext.SignInAsync(principal);
-
-
+            
+            UserModel user = await UserService.GetByEmailAsync(email);
+            var principal = UserService.PricipalUser(user);
+            await HttpContext.SignInAsync(principal);
+            
             return Redirect($"/Home/{user.Username}");
         }
         #endregion

@@ -10,44 +10,35 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataLayer.Services
 {
-    public class MessageRepository : IMessageRepository
+    public class MessageRepository
+        (ChatContext _context): IMessageRepository
     {
 
-        ChatContext _context;
-
-        public MessageRepository(ChatContext context)
+        public async Task AddMessageAsync(MessageModel message)
         {
-            _context = context;
+             await _context.Messages.AddAsync(message);            
         }
 
-        public void AddMessage(MessageModel message)
+        public void Delete(MessageModel message)
         {
-            _context.Messages.Add(message);            
-        }
-
-        public void RemoveMessage(int messageId)
-        {
-            MessageModel message = FindMessageById(messageId);
             _context.Messages.Remove(message);
         }
 
-        public MessageModel FindMessageById(int messageId)
+        public async Task<MessageModel> GetByIdAsync(int messageId)
         {
-            MessageModel message = _context.Messages.FirstOrDefault(m => m.MessageId == messageId);
-            return message;
+            return await _context.Messages.FirstOrDefaultAsync(m => m.MessageId == messageId);
         }
 
-        public async Task<IEnumerable<MessageModel>> FindMessagesByFriendship(FriendModel friendship)
+        public async Task<IEnumerable<MessageModel>> GetByFriendshipAsync(FriendModel friendship)
         {
-            var messages = await _context.Messages
+            return await _context.Messages
                 .Where(m => m.Sender == friendship.UserId && m.Receiver == friendship.FreindId || m.Sender == friendship.FreindId && m.Receiver == friendship.UserId)
                 .ToListAsync();
-            return messages;
         }
 
-        public void SaveChanges()
+        public async Task SaveChangesAsync()
         {
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
     }
 }

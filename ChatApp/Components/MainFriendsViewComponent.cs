@@ -1,23 +1,22 @@
-﻿using DataLayer.Context;
+﻿using ChatApp.Services.UserServices.Interface;
 using DataLayer.Models;
-using DataLayer.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChatApp.Components
 {
     public class MainFriendsViewComponent 
-        (IUserRepository _userRepository) : ViewComponent
+        (IUserService UserService) : ViewComponent
     {       
 
         // === Getting Data --> Main View --> Main Action (HomeController) ===
-        public IViewComponentResult Invoke(UserModel model)
+        public async Task<IViewComponentResult> InvokeAsync(UserModel model)
         {
             ViewData["UserId"] = model.UserId;
             List<UserModel> users = new List<UserModel>();
             
             foreach (var item in model.Friends)
             {
-                var result = _userRepository.FindUserById(item.FreindId);
+                var result = await UserService.GetByIdAsync(item.UserId);
                 users.Add(result);
             }
 
