@@ -1,0 +1,29 @@
+﻿@model List<MessageModel>
+
+
+
+@foreach (var item in Model)
+{
+	if (item.Sender == (int)ViewData["MessageUserId"])
+	{
+		<div class="message-Response text-only">
+			<div class="alignMessages-response">
+				<div class="response">
+					<button class="deleteMessageIcon" onclick="DeleteMessage(@item.MessageId , @item.Sender)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+					<p class="text-response"> @item.MessageText</p>					
+				</div>
+				<p class="response-time"> @item.MessageDate</p>
+			</div>
+		</div>
+	}
+	else
+	{
+		<div class="message">
+			<div class="alignMessages">
+				<p class="text">@item.MessageText</p>
+				<p class="time"> @item.MessageDate</p>
+			</div>			
+		</div>
+		
+	}
+}

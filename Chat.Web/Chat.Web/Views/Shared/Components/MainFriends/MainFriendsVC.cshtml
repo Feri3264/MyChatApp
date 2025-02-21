@@ -1,0 +1,30 @@
+﻿@model List<UserModel>
+@{
+    var userId = ViewData["UserId"];
+}
+
+
+@foreach (var item in Model)
+{
+    <a asp-controller="Chat" asp-action="Chat" 
+    asp-route-userId="@userId" 
+    asp-route-friendId="@item.UserId">
+        <div class="discussion message-active">
+            <img class="photo" src="/ProfilePicture/@item.Picture">
+            <div class="desc-contact">
+                <p class="name">@item.Name</p>
+                <form asp-controller="Home" asp-action="DeleteFriend" method="post">
+                    <input type="hidden" value="@item.UserId" name="friendId">
+                    <input type="hidden" value="@userId" name="userId">
+                    <button type="submit"><i class="fa fa-trash"></i></button>
+                </form>
+            </div>
+        </div>
+    </a>
+}
+
+
+@*<a asp-controller="Home"
+   asp-action="DeleteFriend"
+   asp-route-userId="@userId"
+   asp-route-friendId="@item.UserId"><button class="fa fa-trash"></button></a>*@
