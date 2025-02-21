@@ -1,0 +1,77 @@
+﻿@model CreateUserViewModel
+
+@{
+    ViewData["Title"] = "Sign In";
+    Layout = "_LoginLayout";
+}
+
+
+<div class="screen-1">
+
+    <form class="register-form" asp-controller="Account" asp-action="Register" method="post" enctype="multipart/form-data">
+        <div class="email">
+            <label asp-for="Name"></label>
+            <div class="sec-2">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" placeholder="Your Name" asp-for="Name" />
+            </div>
+            <span asp-validation-for="Name"></span>
+        </div>
+
+
+        <div class="email">
+            <label asp-for="Username"></label>
+            <div class="sec-2">
+                <ion-icon name="at-outline"></ion-icon>
+                <input type="text" placeholder="Your Username" asp-for="Username" />
+            </div>
+            <span asp-validation-for="Username"></span>
+        </div>
+
+        <div class="email">
+            <label asp-for="Email"></label>
+            <div class="sec-2">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" placeholder="Username@gmail.com" asp-for="Email" />
+            </div>
+            <span asp-validation-for="Email"></span>
+        </div>
+
+
+        <div class="password">
+            <label asp-for="Password"></label>
+            <div class="sec-2">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input class="pas" type="password" placeholder="············" asp-for="Password" />
+            </div>
+            <span asp-validation-for="Password"></span>
+        </div>
+
+        <div class="password">
+            <label asp-for="ConfirmPassword"></label>
+            <div class="sec-2">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input class="pas" type="password" placeholder="············" asp-for="ConfirmPassword" />
+            </div>
+            <span asp-validation-for="ConfirmPassword"></span>
+        </div>
+
+        <div class="password">
+            <label asp-for="ProfilePicture"></label>
+            <div class="sec-2">                
+                <input class="pas" asp-for="ProfilePicture" />
+            </div>
+            <span asp-validation-for="ProfilePicture"></span>
+        </div>
+
+
+        <button class="login d-block w-100">Sign Up </button>
+    </form>
+
+    <div class="footer"><a class="text-dark fw-bold text-decoration-none d-block m-auto" asp-action="Register">Login</a></div>
+</div>
+
+
+@section Validation {
+    <partial name="_ValidationScriptsPartial" />
+}                

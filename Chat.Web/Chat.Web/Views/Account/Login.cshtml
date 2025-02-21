@@ -1,0 +1,43 @@
+﻿@model UserModel
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "_LoginLayout";
+}
+
+
+
+
+<div class="screen-1">
+    <form class="login-form" asp-controller="Account" asp-action="Login" method="post">
+        <div class="email">
+            <label asp-for="Email"></label>
+            <div class="sec-2">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" placeholder="Username@gmail.com" asp-for="Email" />                
+            </div>
+            <span asp-validation-for="Email"></span>
+        </div>
+        <div class="password">
+            <label asp-for="Password"></label>
+            <div class="sec-2">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input type="password" placeholder="············" asp-for="Password" />                
+            </div>
+            <span asp-validation-for="Password"></span>
+            @if (ViewData["UserNotFound"] != null)
+            {
+                <span class="text-danger">@ViewData["UserNotFound"]</span>
+            }
+        </div>
+      
+
+        <button class="login w-100 d-block">Login</button>        
+    </form>
+
+    <div class="footer"><a class="text-dark fw-bold text-decoration-none d-block m-auto" asp-action="Register">Signup</a></div>
+</div>
+
+@section Validation {
+    <partial name="_ValidationScriptsPartial" />
+}   
