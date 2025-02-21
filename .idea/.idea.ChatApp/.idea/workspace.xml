@@ -13,8 +13,270 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1a7569a-47a7-468e-beb3-6e20b88a6ec4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChatApp/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChatApp/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ChatApp/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/ColorByRegexConfig.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/CopilotIndices/17.12.53.23981/CodeChunks.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/CopilotIndices/17.12.53.23981/SemanticSymbols.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/CopilotIndices/17.12.53.23981/SemanticSymbols.db-shm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/CopilotIndices/17.12.53.23981/SemanticSymbols.db-wal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/FileContentIndex/0107f8bb-6dd0-48be-93d8-226802312ce7.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/FileContentIndex/297932e7-4119-4af0-a08c-d5b4762215bd.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/FileContentIndex/4bc3d754-c339-4f51-9bf1-a8fdd617caf2.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/FileContentIndex/5dcc9576-7676-456c-ba34-4042c8e06ad7.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/FileContentIndex/a64aa2c5-a0f3-4b58-87ae-db3f683ac167.vsidx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/config/applicationhost.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/v17/.futdcache.v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/v17/.suo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ChatApp/v17/DocumentLayout.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/chatapp.metadata.v9.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/chatapp.projects.v9.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/chatapp.strings.v9.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/Chat.Application.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/bin/Debug/net9.0/Chat.Application.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/bin/Debug/net9.0/Chat.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/bin/Debug/net9.0/Chat.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/bin/Debug/net9.0/Chat.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/bin/Debug/net9.0/Chat.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/bin/Debug/net9.0/Chat.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Chat.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Chat.Application.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Chat.Application.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/ref/Chat.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/refint/Chat.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/Chat.Data.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/bin/Debug/net9.0/Chat.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/bin/Debug/net9.0/Chat.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/bin/Debug/net9.0/Chat.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/ref/Chat.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/refint/Chat.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Data/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/Chat.Domain.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/bin/Debug/net9.0/Chat.Domain.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/bin/Debug/net9.0/Chat.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/bin/Debug/net9.0/Chat.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Chat.Domain.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Chat.Domain.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/ref/Chat.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/refint/Chat.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/Chat.IOC.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/DependencyContainer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/bin/Debug/net9.0/Chat.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/bin/Debug/net9.0/Chat.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/bin/Debug/net9.0/Chat.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/bin/Debug/net9.0/Chat.Data.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/bin/Debug/net9.0/Chat.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/bin/Debug/net9.0/Chat.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/bin/Debug/net9.0/Chat.IOC.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/bin/Debug/net9.0/Chat.IOC.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/bin/Debug/net9.0/Chat.IOC.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Chat.IOC.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Chat.IOC.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Chat.IOC.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.csproj.Up2Date" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/ref/Chat.IOC.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/refint/Chat.IOC.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.IOC/obj/rider.project.restore.info" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Areas/Admin/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Chat.Web.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Chat.Web.csproj.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Components/MainFriendsViewComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Controllers/HomeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Models/ErrorViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Views/Shared/Components/MainFriends/MainFriendsVC.cshtml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Application.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Application.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Data.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Domain.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Domain.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.IOC.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.IOC.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Web.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Web.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Web.staticwebassets.runtime.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.SqlServer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Extensions.Caching.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Extensions.Caching.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Extensions.Logging.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Extensions.Options.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Configuration.ConfigurationManager.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Drawing.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Formats.Asn1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Security.Permissions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Text.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Windows.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Chat.Web.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.MvcApplicationPartsAssemblyInfo.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.csproj.BuildWithSkipAnalyzers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.csproj.Up2Date" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.sourcelink.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/0dpzm2ufg2-ltid2c489k.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/0sl7u77tvw-gye83jo8yx.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/1gh21y1s8x-tmc1g35s3z.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/20u5jddrp1-ynyaa8k90p.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/2547c7nakv-qesaa3a1fm.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/2g2ywx2b93-0j3bgjxly4.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/2mxi1w8xbw-r4e9w2rdcm.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/3qzijqpr1y-48y08845bh.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/4ckd480bsx-gk0pw8i4co.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/4dsbb1xfi1-q9ht133ko3.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/4lnufxz39r-4d85u1mtcx.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/5ox8u8457u-c2oey78nd0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/6rkvq5qi98-xtxxf3hu2r.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/6zaxi55vtx-j5mq2jizvt.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/7ud8i29wvp-83jwlth58m.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/8214xewi2w-keugtjm085.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/9cjeru111o-cosvhxvwiu.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/9u7xne1zgt-y7v9cxd14o.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/ahzlyacbog-fvhpjtyr6v.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/am74lp8q0z-ft3s53vfgj.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/aqhlqduus9-mlv21k5csn.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/asvhev7wxv-mrlpezrjn3.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/cgam2u62u0-m9qm4tazc0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/cjhmues1si-ee0r1s7dh0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/dfxsje7z4g-ttgo8qnofa.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/diikyfji2q-b9sayid5wm.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/e920gk5qc8-pj5nd1wqec.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/epp6k0zb1k-c63t5i9ira.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/fh1bqrx1z0-cdfenj4dob.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/fq8patsrkp-ts3pkdff0p.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/gq1hf57tib-xvp3kq03qx.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/hxxco2twh7-sejl45xvog.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/i4jeqkanmb-nvvlpmu67g.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/ir1vrvyx2x-d6nrnj6jjx.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/j4tm1481r9-jjsuc0puko.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/jeeqbg12ch-87fc7y1x7t.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/jgfzvw4kav-8vyfqsqgz1.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/jrtl9y0gbq-61n19gt1b8.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/k1rh7wfy0t-rxsg74s51o.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/kbhdidnztl-x0q3zqp4vz.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/kgd1noff2s-kbrnm935zg.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/ku8b0dcwhg-22vffe00uq.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/lxjb3neop0-356vix0kms.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/meeb7694qg-c2jlpeoesf.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/millkxbywl-h1s4sie4z3.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/o7095jwaaz-43atpzeawx.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/ojr2iz5cb3-worgj0nhwm.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/olj54abv9w-zub09dkrxp.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/osin8mxc8l-iovd86k7lj.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/paednfbz60-fsbi9cje9m.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/qkdlobf3bm-9vr69e8ynj.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/qxu5vaa6re-jd9uben2k1.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/rhhrr5q3w1-03hjc8e09r.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/s9pe32sd1k-wl58j5mj3v.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/u8nz0sdnau-4094rpi4f9.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/u9m0ndgev8-aexeepp0ev.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/uuhmd72u0w-hrwsygsryq.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/uzwsd1i3sp-g04xx6yixe.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/va2pjbacb8-u9q1upor1n.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/vi7cqj0bx0-t1cqhe9u97.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/vqdcjt3qfk-d4r6k3f320.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/wpt4wchs9h-v0zj4ognzu.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/x18upb86ng-hd3gran6i8.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/ypna9ugiux-ausgxo2sd3.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/ys2ee6kww6-6pdc2jztkx.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/compressed/zdcbjujbms-g04xx6yixe.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/ref/Chat.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/refint/Chat.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/staticwebassets.build.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/staticwebassets.development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/staticwebassets.references.upToDateCheck.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/staticwebassets.removed.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Chat.Web.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Chat.Web.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/ProfilePicture/02bcdc19-212a-41dc-bd68-b4a37ffd52e0ghasem1010.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/ProfilePicture/42cff33e-6821-4a30-b7d1-625317771734sarah1010.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatApp.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ChatApp.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Areas/Admin/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Areas/Admin/Controllers/UserController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Areas/Admin/Views/User/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Areas/Admin/Views/User/Create.cshtml" afterDir="false" />
@@ -27,17 +289,17 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/ChatApp.csproj.user" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Components/FooterChatViewComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Components/FooterChatViewComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Components/HeaderChatViewComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Components/HeaderChatViewComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/Components/MainFriendsViewComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Components/MainFriendsViewComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/Components/MainFriendsViewComponent.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Components/MessageViewComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Components/MessageViewComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Components/SearchedFriendsViewComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Components/SearchedFriendsViewComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Components/UserInfoViewComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Components/UserInfoViewComponent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Controllers/AccountController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Controllers/ChatController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Controllers/ChatController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/Controllers/HomeController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Controllers/SearchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Controllers/SearchController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Middlewares/AdminMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/Middlewares/AdminMiddleware.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Properties/launchSettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Properties/serviceDependencies.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Properties/serviceDependencies.local.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Properties/serviceDependencies.local.json.user" beforeDir="false" />
@@ -45,7 +307,7 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/Services/FriendServices/Interface/IFriendService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/Services/FriendServices/Interface/IFriendService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Services/MessageServices/Implementation/MessageService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/Services/MessageServices/Implementation/MessageService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Services/MessageServices/Interface/IMessageService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/Services/MessageServices/Interface/IMessageService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/Services/ProfilePicure.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/Services/ProfilePicure.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/Services/ProfilePictureServices/ProfilePicure.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Services/UserServices/Implementation/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/Services/UserServices/Implementation/UserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Services/UserServices/Interface/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/Services/UserServices/Interface/IUserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/ViewModels/CreateUserViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Domain/ViewModels/CreateUserViewModel.cs" afterDir="false" />
@@ -58,7 +320,7 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/Views/Search/Search.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Views/Search/Search.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Views/Shared/Components/FooterChat/FooterChatVC.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Views/Shared/Components/FooterChat/FooterChatVC.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Views/Shared/Components/HeaderChat/HeaderChatVC.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Views/Shared/Components/HeaderChat/HeaderChatVC.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/Views/Shared/Components/MainFriends/MainFriendsVC.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Views/Shared/Components/MainFriends/MainFriendsVC.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/Views/Shared/Components/MainFriends/MainFriendsVC.cshtml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Views/Shared/Components/Message/MessageVC.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Views/Shared/Components/Message/MessageVC.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Views/Shared/Components/SearchedFriends/SearchedFriendsVC.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Views/Shared/Components/SearchedFriends/SearchedFriendsVC.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Views/Shared/Components/UserInfo/UserInfoVC.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Views/Shared/Components/UserInfo/UserInfoVC.cshtml" afterDir="false" />
@@ -70,65 +332,65 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Views/_ViewImports.cshtml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/Views/_ViewStart.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/Views/_ViewStart.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Azure.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Azure.Identity.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Azure.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Azure.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Azure.Identity.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Azure.Identity.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ChatApp.deps.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ChatApp.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ChatApp.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ChatApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Web.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ChatApp.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ChatApp.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ChatApp.staticwebassets.endpoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ChatApp.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Web.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ChatApp.staticwebassets.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Chat.Web.staticwebassets.endpoints.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ChatApp.staticwebassets.runtime.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/DataLayer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/DataLayer.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Humanizer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/DataLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/bin/Debug/net9.0/Chat.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Humanizer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Humanizer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.UI.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.AspNetCore.Razor.Language.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Build.Framework.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Build.Locator.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Build.Locator.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Build.Locator.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Build.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Features.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.CodeAnalysis.CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.Elfie.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.Features.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.Razor.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.Scripting.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.CodeAnalysis.Workspaces.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.CodeAnalysis.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Data.SqlClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Data.SqlClient.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.DiaSymReader.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.DotNet.Scaffolding.Shared.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Design.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Identity.Client.Extensions.Msal.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Identity.Client.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.EntityFrameworkCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Extensions.DependencyModel.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Identity.Client.Extensions.Msal.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Identity.Client.Extensions.Msal.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.Identity.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.Identity.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.IdentityModel.Protocols.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.NET.StringTools.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.SqlServer.Server.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.SqlServer.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Microsoft.SqlServer.Server.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Mono.TextTemplating.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Mono.TextTemplating.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/Mono.TextTemplating.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/Newtonsoft.Json.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/NuGet.Common.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/NuGet.Configuration.dll" beforeDir="false" />
@@ -139,21 +401,21 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/NuGet.ProjectModel.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/NuGet.Protocol.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/NuGet.Versioning.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.ClientModel.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.CodeDom.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Composition.AttributedModel.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Composition.Convention.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Composition.Hosting.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Composition.Runtime.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Composition.TypedParts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.ClientModel.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.ClientModel.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.CodeDom.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.CodeDom.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Composition.AttributedModel.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Composition.AttributedModel.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Composition.Convention.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Composition.Convention.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Composition.Hosting.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Composition.Hosting.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Composition.Runtime.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Composition.Runtime.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Composition.TypedParts.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Composition.TypedParts.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Memory.Data.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Memory.Data.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Memory.Data.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Reflection.MetadataLoadContext.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Runtime.Caching.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/System.Runtime.Caching.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/af/Humanizer.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/appsettings.Development.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/appsettings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ar/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/az/Humanizer.resources.dll" beforeDir="false" />
@@ -161,46 +423,46 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/bn-BD/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/da/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/dotnet-aspnet-codegenerator-design.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/el/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fa/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fi-FI/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr-BE/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/fr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/he/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/hr/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/hu/Humanizer.resources.dll" beforeDir="false" />
@@ -209,31 +471,31 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/is/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/it/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ja/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko-KR/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ko/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ku/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/lv/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ms-MY/Humanizer.resources.dll" beforeDir="false" />
@@ -243,39 +505,39 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/nl/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/pl/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/pt/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ro/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/ru/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/unix/lib/net6.0/Microsoft.Data.SqlClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/Microsoft.Data.SqlClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/sk/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/sl/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/sr-Latn/Humanizer.resources.dll" beforeDir="false" />
@@ -284,13 +546,13 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/th-TH/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/uk/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/uz-Cyrl-UZ/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/uz-Latn-UZ/Humanizer.resources.dll" beforeDir="false" />
@@ -298,56 +560,56 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-CN/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Humanizer.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/ChatApp.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/ChatApp.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/ChatApp.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/ChatApp.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/Chat.Data.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/ChatApp.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Chat.Web.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/ChatApp.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Chat.Web.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/.ChatApp.AssemblyInfo.cs.swp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/.ChatApp.AssemblyInfo_BASE_2010.cs.swp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/.ChatApp.AssemblyInfo_LOCAL_2010.cs.swp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/.ChatApp.AssemblyInfo_REMOTE_2010.cs.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/3df504fc-9198-4713-bb6a-03700f240118_ChatApp.pdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/7d06f912-5430-4d45-9166-a7ce77443d55_ChatApp.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ApiEndpoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ApiEndpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/ApiEndpoints.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.AssemblyInfo.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.AssemblyInfo_BACKUP_2010.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.AssemblyInfo_BASE_2010.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.AssemblyInfo_LOCAL_2010.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.AssemblyInfo_REMOTE_2010.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.AssemblyInfo_BACKUP_2010.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.AssemblyInfo_BASE_2010.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.AssemblyInfo_LOCAL_2010.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.AssemblyInfo_REMOTE_2010.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.App.921D51AF.Up2Date" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.RazorAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.RazorAssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.RazorAssemblyInfo.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.RazorAssemblyInfo.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.RazorAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/Chat.Web.RazorAssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.assets.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.csproj.BuildWithSkipAnalyzers" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.csproj.BuildWithSkipAnalyzers" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.csproj.CoreCompileInputs.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.csproj.Up2Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.csproj.Up2Date" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.csproj.BuildWithSkipAnalyzers" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.genruntimeconfig.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.pdb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ChatApp.sourcelink.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/compressed/08ffymg4sg-cosvhxvwiu.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/compressed/0k1i85ntyh-6cfz1n2cew.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/compressed/0sncy8dlx5-mlv21k5csn.gz" beforeDir="false" />
@@ -478,22 +740,22 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/compressed/zzna4nrm5w-notf2xhcfb.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/ref/ChatApp.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/refint/ChatApp.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/scopedcss/bundle/ChatApp.styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/scopedcss/projectbundle/ChatApp.bundle.scp.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/scopedcss/bundle/ChatApp.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/scopedcss/bundle/Chat.Web.styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/scopedcss/projectbundle/ChatApp.bundle.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/scopedcss/projectbundle/Chat.Web.bundle.scp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets.build.endpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/staticwebassets.build.endpoints.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets.build.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets.development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets.pack.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets.references.upToDateCheck.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets.removed.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets.references.upToDateCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.csproj.Up2Date" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets.removed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Domain/obj/Debug/net9.0/Chat.Domain.csproj.BuildWithSkipAnalyzers" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets.upToDateCheck.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets/msbuild.ChatApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets/msbuild.ChatApp.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets/msbuild.build.ChatApp.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets/msbuild.ChatApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/staticwebassets/msbuild.Chat.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets/msbuild.ChatApp.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/staticwebassets/msbuild.Chat.Web.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets/msbuild.build.ChatApp.props" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/Debug/net9.0/staticwebassets/msbuild.build.Chat.Web.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.ChatApp.props" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.ChatApp.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/project.nuget.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/project.packagespec.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/obj/rider.project.model.nuget.info" beforeDir="false" />
@@ -507,68 +769,68 @@
       <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/css/LoginStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/css/LoginStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/css/MainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/css/MainStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/js/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.slim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.slim.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery-validation/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery-validation/dist/additional-methods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery/dist/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery/dist/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery/dist/jquery.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery/dist/jquery.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery/dist/jquery.slim.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatApp/wwwroot/lib/jquery/dist/jquery.slim.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Web/Chat.Web/wwwroot/lib/jquery/dist/jquery.slim.min.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/Context/ChatContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/Context/ChatContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/DataLayer.csproj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/Migrations/20250128173610_initDB.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/Migrations/20250128173610_initDB.Designer.cs" afterDir="false" />
@@ -582,41 +844,41 @@
       <change beforePath="$PROJECT_DIR$/DataLayer/Migrations/20250211193839_isAdmin-NotNullable-Friends-isNullable-Pictures-NotNullable.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/Migrations/20250211193839_isAdmin-NotNullable-Friends-isNullable-Pictures-NotNullable.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/Migrations/20250211193839_isAdmin-NotNullable-Friends-isNullable-Pictures-NotNullable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/Migrations/20250211193839_isAdmin-NotNullable-Friends-isNullable-Pictures-NotNullable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/Migrations/ChatContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/Migrations/ChatContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/Models/FriendModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/Models/MessageModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/Models/UserModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/Models/FriendModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Domain/Models/FriendModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/Models/MessageModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Domain/Models/MessageModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/Models/UserModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Domain/Models/UserModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/Repository/IFriendRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Domain/Interfaces/IFriendRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/Repository/IMessageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Domain/Interfaces/IMessageRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/Repository/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Domain/Interfaces/IUserRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/Services/FriendRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/Repository/FriendRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/Services/MessageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/Repository/MessageRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/Services/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/Repository/UserRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/bin/Debug/net9.0/DataLayer.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/bin/Debug/net9.0/DataLayer.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/bin/Debug/net9.0/Chat.Data.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/bin/Debug/net9.0/DataLayer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/bin/Debug/net9.0/DataLayer.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/bin/Debug/net9.0/DataLayer.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/DataLayer.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/DataLayer.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/DataLayer.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/bin/Debug/net9.0/DataLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/bin/Debug/net9.0/Chat.Data.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/bin/Debug/net9.0/DataLayer.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/bin/Debug/net9.0/Chat.Data.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/DataLayer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Domain/obj/Chat.Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/DataLayer.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/Chat.Data.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/DataLayer.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/Chat.Data.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/3a80e5b1-308a-4bd9-b739-cca7c9732e6d_DataLayer.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Application/obj/Debug/net9.0/Chat.Application.GlobalUsings.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.csproj.BuildWithSkipAnalyzers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.csproj.BuildWithSkipAnalyzers" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.IOC/obj/Debug/net9.0/Chat.IOC.csproj.BuildWithSkipAnalyzers" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.csproj.CoreCompileInputs.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.csproj.FileListAbsolute.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/Debug/net9.0/Chat.Data.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/DataLayer.sourcelink.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/ref/DataLayer.dll" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/Debug/net9.0/refint/DataLayer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataLayer/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataLayer/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Chat.Data/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/project.packagespec.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/rider.project.model.nuget.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DataLayer/obj/rider.project.restore.info" beforeDir="false" />
@@ -662,23 +924,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Chat.Web: http.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.ChatApp: IIS Express.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develope&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;file.status.colors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Chat.Web: http.executor": "Run",
+    ".NET Launch Settings Profile.ChatApp: IIS Express.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "file.status.colors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Chat.Web: http">
     <configuration name="ChatApp: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Chat.Web/Chat.Web/Chat.Web.csproj" />
@@ -804,6 +1066,7 @@
       <workItem from="1740057571452" duration="6897000" />
       <workItem from="1740087207813" duration="6179000" />
       <workItem from="1740142727716" duration="1916000" />
+      <workItem from="1740144821281" duration="416000" />
     </task>
     <servers />
   </component>
