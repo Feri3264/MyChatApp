@@ -1,4 +1,5 @@
-﻿using Chat.Application.Services.FriendServices.Interface;
+﻿using System.Security.Claims;
+using Chat.Application.Services.FriendServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -15,8 +16,8 @@ namespace Chat.Web.Controllers
         // === Getting Data From User Page ===
         [HttpGet("/search/{userId}")]
         public IActionResult Search(int userId)
-        {            
-            TempData["userId"] = userId;
+        {           
+            TempData["UserId"] = userId;
             return View();
         }
 
@@ -25,7 +26,7 @@ namespace Chat.Web.Controllers
         [HttpGet("/AddFriend")]
         public async Task<IActionResult> AddFriend(int friendId)
         {
-            int userId = (int)TempData["userId"];
+            int userId = Convert.ToInt32(TempData["UserId"]);
             UserModel user = await UserService.GetByIdAsync(userId);
             
             if (await FriendService.FriendshipExistsAsync(userId , friendId))

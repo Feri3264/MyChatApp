@@ -1,6 +1,7 @@
 using Chat.Application.Services.FriendServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.Models;
+using Chat.Domain.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,6 +29,5 @@ namespace Chat.Web.Controllers
             var user = await UserService.GetByIdAsync(userId);
             return Redirect($"/Home/{user.Username}");
         }
-
     }
 }

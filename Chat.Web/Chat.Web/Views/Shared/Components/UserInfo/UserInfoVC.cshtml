@@ -5,4 +5,15 @@
         <img class="UserPhoto" src="/ProfilePicture/@(Model.Picture)">
         <span class="UserName">@Model.Name</span>
     </div>
+    <div class="user-buttons">
+        <div class="edit-Profile-button">
+            <a asp-controller="Account" asp-action="EditProfile" asp-route-userId="@Model.UserId"><i class="fa fa-pencil-square-o text-black" aria-hidden="true"></i></a>
+        </div>
+        @if (Model.isAdmin)
+        {
+            <div class="admin-button">
+                <a asp-area="Admin" asp-controller="User" asp-action="Index"><i class="fa fa-user-circle-o text-black" aria-hidden="true"></i></a>
+            </div>
+        }
+    </div>
 </div>

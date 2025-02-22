@@ -85,5 +85,32 @@ namespace Chat.Web.Controllers
         }
         #endregion
 
+
+        #region EditProfile
+        [HttpGet]
+        public async Task<IActionResult> EditProfile(int userId)
+        {
+            var userViewModel = await UserService.GetForEdit(userId);
+            return View(userViewModel);
+        }
+        
+        [HttpPost]
+        public async Task<IActionResult> EditProfile(EditUserViewModel model)
+        {
+            var user = await UserService.GetByIdAsync(model.UserId);
+            model.isAdmin = user.isAdmin;
+            
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            await UserService.Update(model);
+            await UserService.SaveChangesAsync();
+            return Redirect($"/Home/{model.Username}");
+        }
+        #endregion
+        
+
     }
 }

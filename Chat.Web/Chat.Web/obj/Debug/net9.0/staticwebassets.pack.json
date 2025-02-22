@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\Chat.Web.g04xx6yixe.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\ProfilePicture\\02bcdc19-212a-41dc-bd68-b4a37ffd52e0ghasem1010.jpg",
+      "PackagePath": "staticwebassets\\ProfilePicture\\02bcdc19-212a-41dc-bd68-b4a37ffd52e0ghasem1010.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\ProfilePicture\\42cff33e-6821-4a30-b7d1-625317771734sarah1010.jpg",
+      "PackagePath": "staticwebassets\\ProfilePicture\\42cff33e-6821-4a30-b7d1-625317771734sarah1010.jpg"
+    },
+    {
       "Id": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\css\\LoginStyle.css",
       "PackagePath": "staticwebassets\\css\\LoginStyle.css"
     },
