@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Zi+hul8Bk2OUWF79WgQMwDNaRLsXP7Me05ZD1a9XVA0=",
+  "Hash": "h6PPEwsch2W5wO7H6Bew+xGHCSo1zIjEYcroAVZSNtM=",
   "Source": "Chat.Web",
   "BasePath": "_content/Chat.Web",
   "Mode": "Default",
@@ -2829,6 +2829,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProfilePicture\\02bcdc19-212a-41dc-bd68-b4a37ffd52e0ghasem1010.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\ProfilePicture\\0db4dbaa-7b40-4264-af9b-31cb44c31964faridBoyyy.jpg",
+      "SourceId": "Chat.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\",
+      "BasePath": "_content/Chat.Web",
+      "RelativePath": "ProfilePicture/0db4dbaa-7b40-4264-af9b-31cb44c31964faridBoyyy#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uc8b8ge682",
+      "Integrity": "8ljYkbPH0p6jwpueKsn40xHlrTkZYgJpiArB9obBLgQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfilePicture\\0db4dbaa-7b40-4264-af9b-31cb44c31964faridBoyyy.jpg"
     },
     {
       "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\ProfilePicture\\42cff33e-6821-4a30-b7d1-625317771734sarah1010.jpg",
@@ -22682,6 +22703,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-LKS8oeQacxLZjnhv7ipuJd1fEl+GfXx5Gb6Cip2lC9I="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePicture/0db4dbaa-7b40-4264-af9b-31cb44c31964faridBoyyy.jpg",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\ProfilePicture\\0db4dbaa-7b40-4264-af9b-31cb44c31964faridBoyyy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1563463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ljYkbPH0p6jwpueKsn40xHlrTkZYgJpiArB9obBLgQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 18:02:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ljYkbPH0p6jwpueKsn40xHlrTkZYgJpiArB9obBLgQ="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePicture/0db4dbaa-7b40-4264-af9b-31cb44c31964faridBoyyy.uc8b8ge682.jpg",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\ProfilePicture\\0db4dbaa-7b40-4264-af9b-31cb44c31964faridBoyyy.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1563463"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8ljYkbPH0p6jwpueKsn40xHlrTkZYgJpiArB9obBLgQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 18:02:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uc8b8ge682"
+        },
+        {
+          "Name": "label",
+          "Value": "ProfilePicture/0db4dbaa-7b40-4264-af9b-31cb44c31964faridBoyyy.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8ljYkbPH0p6jwpueKsn40xHlrTkZYgJpiArB9obBLgQ="
         }
       ]
     },

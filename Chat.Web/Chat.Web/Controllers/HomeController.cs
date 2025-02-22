@@ -13,10 +13,13 @@ namespace Chat.Web.Controllers
     {
 
         //=== Getting Data From Login Page ===
-        [HttpGet("/Home/{username}")]
-        public async Task<IActionResult> Main(string username)
+        [HttpGet]
+        public async Task<IActionResult> Index(string username)
         {         
             UserModel user = await UserService.GetByUsernameAsync(username);
+            if(user == null)
+                return NotFound();
+            
             return View(user);
         }
 
@@ -27,7 +30,33 @@ namespace Chat.Web.Controllers
             await FriendService.SaveChangesAsync();
             
             var user = await UserService.GetByIdAsync(userId);
-            return Redirect($"/Home/{user.Username}");
+            return RedirectToAction("Index" , new { username = user.Username });
+        }
+        
+        [HttpGet]
+        public async Task<IActionResult> EditProfile(int userId)
+        {
+            var userViewModel = await UserService.GetForEdit(userId);
+            if(userViewModel == null)
+                return NotFound();
+            
+            return View(userViewModel);
+        }
+        
+        [HttpPost]
+        public async Task<IActionResult> EditProfile(EditUserViewModel model)
+        {
+            var user = await UserService.GetByIdAsync(model.UserId);
+            model.isAdmin = user.isAdmin;
+            
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            await UserService.Update(model);
+            await UserService.SaveChangesAsync();
+            return RedirectToAction("Index" , new { username = user.Username });
         }
     }
 }

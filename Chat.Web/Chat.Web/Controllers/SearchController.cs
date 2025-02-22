@@ -11,10 +11,9 @@ namespace Chat.Web.Controllers
     public class SearchController 
         (IFriendService FriendService, IUserService UserService) : Controller
     {
-
-
+        
         // === Getting Data From User Page ===
-        [HttpGet("/search/{userId}")]
+        [HttpGet]
         public IActionResult Search(int userId)
         {           
             TempData["UserId"] = userId;
@@ -23,21 +22,24 @@ namespace Chat.Web.Controllers
 
 
         // === Getting Data From Search Page ===
-        [HttpGet("/AddFriend")]
+        //[HttpGet("/AddFriend")]
+        [HttpGet]
         public async Task<IActionResult> AddFriend(int friendId)
         {
             int userId = Convert.ToInt32(TempData["UserId"]);
             UserModel user = await UserService.GetByIdAsync(userId);
+            if (user == null)
+                return NotFound();
             
             if (await FriendService.FriendshipExistsAsync(userId , friendId))
             {
-                return Redirect($"/Home/{user.Username}");
+                return RedirectToAction("Index" , "Home" , new { username = user.Username });
             }
 
             await FriendService.CreateAsync(userId, friendId);
             await FriendService.SaveChangesAsync();
             
-            return Redirect($"/Home/{user.Username}");
+            return RedirectToAction("Index" , "Home" , new { username = user.Username });
         }
 
 
