@@ -13,7 +13,7 @@ namespace Chat.Web.Controllers
     {
 
         // === Getting Data From User Page ===
-        [HttpGet("/chat/{userId}/{friendId}")]
+        [HttpGet]
         public async Task<IActionResult> Chat(int userId, int friendId)
         {
             FriendModel friendship = await FriendService.GetByIdAsync(userId, friendId);

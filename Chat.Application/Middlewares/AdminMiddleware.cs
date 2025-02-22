@@ -19,10 +19,7 @@ namespace Chat.Application.Middlewares
                     context.Response.Redirect("/account/AccessDenied");
                 }
             }
-            else
-            {
-                await _next(context);  
-            }
+            await _next(context);  
         }
 
     }

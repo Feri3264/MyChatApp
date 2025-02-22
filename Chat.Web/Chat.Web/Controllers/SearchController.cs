@@ -1,4 +1,5 @@
-﻿using Chat.Application.Services.FriendServices.Interface;
+﻿using System.Security.Claims;
+using Chat.Application.Services.FriendServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -10,33 +11,35 @@ namespace Chat.Web.Controllers
     public class SearchController 
         (IFriendService FriendService, IUserService UserService) : Controller
     {
-
-
+        
         // === Getting Data From User Page ===
-        [HttpGet("/search/{userId}")]
+        [HttpGet]
         public IActionResult Search(int userId)
-        {            
-            TempData["userId"] = userId;
+        {           
+            TempData["UserId"] = userId;
             return View();
         }
 
 
         // === Getting Data From Search Page ===
-        [HttpGet("/AddFriend")]
+        //[HttpGet("/AddFriend")]
+        [HttpGet]
         public async Task<IActionResult> AddFriend(int friendId)
         {
-            int userId = (int)TempData["userId"];
+            int userId = Convert.ToInt32(TempData["UserId"]);
             UserModel user = await UserService.GetByIdAsync(userId);
+            if (user == null)
+                return NotFound();
             
             if (await FriendService.FriendshipExistsAsync(userId , friendId))
             {
-                return Redirect($"/Home/{user.Username}");
+                return RedirectToAction("Index" , "Home" , new { username = user.Username });
             }
 
             await FriendService.CreateAsync(userId, friendId);
             await FriendService.SaveChangesAsync();
             
-            return Redirect($"/Home/{user.Username}");
+            return RedirectToAction("Index" , "Home" , new { username = user.Username });
         }
 
 

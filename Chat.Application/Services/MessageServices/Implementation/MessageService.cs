@@ -9,12 +9,20 @@ public class MessageService
 {
     public async Task<IEnumerable<MessageModel>> GetByFriendshipAsync(FriendModel friendship)
     {
-        return await messageRepository.GetByFriendshipAsync(friendship);
+        var messages = await messageRepository.GetByFriendshipAsync(friendship);
+        if (messages == null)
+            return null;
+        
+        return messages;
     }
 
     public async Task<MessageModel> GetByIdAsync(int id)
     {
-        return await messageRepository.GetByIdAsync(id);
+        var message =await messageRepository.GetByIdAsync(id);
+        if (message == null)
+            return null;
+        
+        return message; 
     }
 
     public async Task CreateAsync(MessageModel message)

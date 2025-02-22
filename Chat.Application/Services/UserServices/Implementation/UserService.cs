@@ -17,17 +17,29 @@ public class UserService
 
     public async Task<UserModel> GetByIdAsync(int id)
     {
-        return await userRepository.GetByIdAsync(id);
+        var user = await userRepository.GetByIdAsync(id);
+        if (user == null)
+            return null;
+        
+        return user;
     }
 
     public async Task<UserModel> GetByEmailAsync(string email)
     {
-        return await userRepository.GetByEmailAsync(email);
+        var user = await userRepository.GetByEmailAsync(email);
+        if (user == null)
+            return null;
+        
+        return user;
     }
 
     public async Task<UserModel> GetByUsernameAsync(string username)
     {
-        return await userRepository.GetByUsernameAsync(username);
+        var user = await userRepository.GetByUsernameAsync(username);
+        if (user == null)
+            return null;
+
+        return user;
     }
 
     public async Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username)
@@ -66,6 +78,9 @@ public class UserService
     public async Task<EditUserViewModel> GetForEdit(int id)
     {
         UserModel user = await GetByIdAsync(id);
+        if (user == null)
+            return null;
+        
         var editUser = new EditUserViewModel()
         {
             UserId = user.UserId,

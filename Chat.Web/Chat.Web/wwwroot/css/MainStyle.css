@@ -75,7 +75,7 @@ a {
         cursor: pointer;
         color: #cfe5ff;
     }
-
+    
 .SignOutButton {
     position: relative;
     top: 475px;
@@ -92,7 +92,23 @@ a {
         cursor: pointer;
         color: #cfe5ff;
     }
-
+    
+.user-buttons {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+} 
+.admin-button {
+     font-size: 20pt;
+ }
+ .edit-Profile-button {
+     font-size: 20pt;
+ }
+ .search-button {
+     font-size: 18pt;
+ }
+    
 .UserPhoto {
     border-radius: 50%;
     height: 70px;
@@ -220,7 +236,7 @@ a {
     .discussions .UserInfo {
         display: flex;
         align-items: center;
-        justify-items: center;
+        justify-content: space-between;
         height: 120px;
         padding: 20px;
     }

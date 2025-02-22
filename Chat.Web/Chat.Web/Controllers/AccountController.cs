@@ -60,7 +60,7 @@ namespace Chat.Web.Controllers
             var principal = UserService.PricipalUser(user);
             await HttpContext.SignInAsync(principal);
             
-            return Redirect($"/Home/{user.Username}");
+            return RedirectToAction("Index" , "Home" , new {username = user.Username});
         }
         #endregion
 

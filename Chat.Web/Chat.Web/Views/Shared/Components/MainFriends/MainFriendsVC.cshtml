@@ -1,6 +1,6 @@
 ﻿@model List<UserModel>
 @{
-    var userId = ViewData["UserId"];
+    int userId = Convert.ToInt32(ViewData["UserId"]);
 }
 
 
@@ -22,9 +22,3 @@
         </div>
     </a>
 }
-
-
-@*<a asp-controller="Home"
-   asp-action="DeleteFriend"
-   asp-route-userId="@userId"
-   asp-route-friendId="@item.UserId"><button class="fa fa-trash"></button></a>*@

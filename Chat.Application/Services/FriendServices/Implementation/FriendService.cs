@@ -9,7 +9,11 @@ public class FriendService
 {
     public async Task<FriendModel> GetByIdAsync(int userId, int friendId)
     {
-        return await friendRepository.GetFriendshipAsync(userId, friendId);
+        var friendship = await friendRepository.GetFriendshipAsync(userId, friendId);
+        if (friendship == null)
+            return null;
+        
+        return friendship;
     }
 
     public async Task DeleteAsync(int userId, int friendId)
