@@ -20,12 +20,11 @@ namespace Chat.Web.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Register(CreateUserViewModel user)
+        public async Task<IActionResult> Register(RegisterViewModel user)
         {            
-            user.isAdmin = false;
             if (ModelState.IsValid)
             {                
-                await UserService.CreateAsync(user);
+                await UserService.RegisterAsync(user);
                 await UserService.SaveChangesAsync();
                 return RedirectToAction("Login");
             }

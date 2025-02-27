@@ -547,6 +547,88 @@
       ]
     },
     {
+      "Route": "ProfilePicture/49bffaaa-e293-4278-9748-8dd69f1f5703arash1010.2mzcg0w39y.jpg",
+      "AssetFile": "ProfilePicture/49bffaaa-e293-4278-9748-8dd69f1f5703arash1010.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4913085"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Sg9xZIpAbi1jy56pJeo6StJ4pgF0mVrj3XcegJ62YQQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 14:17:28 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2mzcg0w39y"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Sg9xZIpAbi1jy56pJeo6StJ4pgF0mVrj3XcegJ62YQQ="
+        },
+        {
+          "Name": "label",
+          "Value": "ProfilePicture/49bffaaa-e293-4278-9748-8dd69f1f5703arash1010.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePicture/49bffaaa-e293-4278-9748-8dd69f1f5703arash1010.jpg",
+      "AssetFile": "ProfilePicture/49bffaaa-e293-4278-9748-8dd69f1f5703arash1010.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4913085"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Sg9xZIpAbi1jy56pJeo6StJ4pgF0mVrj3XcegJ62YQQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Feb 2025 14:17:28 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Sg9xZIpAbi1jy56pJeo6StJ4pgF0mVrj3XcegJ62YQQ="
+        }
+      ]
+    },
+    {
       "Route": "css/LoginStyle.cdfenj4dob.css",
       "AssetFile": "css/LoginStyle.css.gz",
       "Selectors": [

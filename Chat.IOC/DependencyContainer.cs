@@ -8,6 +8,8 @@ using Chat.Application.Services.FriendServices.Implementation;
 using Chat.Application.Services.MessageServices.Interface;
 using Chat.Application.Services.MessageServices.Implementation;
 using Chat.Data.Context;
+using Chat.Application.Services.ProfilePictureServices.Implementation;
+using Chat.Application.Services.ProfilePictureServices.Interface;
 
 namespace Chat.IOC;
 
@@ -23,5 +25,6 @@ public static class DependencyContainer
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IFriendService, FriendService>();
         services.AddScoped<IMessageService, MessageService>();
+        services.AddScoped<IProfilePicture, ProfilePicure>();
     }
 }

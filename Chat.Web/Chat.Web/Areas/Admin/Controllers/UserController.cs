@@ -1,5 +1,5 @@
 ﻿using Chat.Application.Services.FriendServices.Interface;
-using Chat.Application.Services.ProfilePictureServices;
+using Chat.Application.Services.ProfilePictureServices.Implementation;
 using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.ViewModels;
 using Microsoft.AspNetCore.Authorization;
@@ -51,7 +51,7 @@ namespace Chat.Web.Areas.Admin.Controllers
         // POST: Admin/User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,ConfirmPassword,Password,isAdmin,ProfilePicture")] CreateUserViewModel userModel)
+        public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] CreateUserViewModel userModel)
         {                 
             if (ModelState.IsValid)
             {

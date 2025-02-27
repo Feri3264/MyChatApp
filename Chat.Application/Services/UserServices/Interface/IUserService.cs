@@ -19,6 +19,8 @@ public interface IUserService
     Task<bool> UserExistsAsync(string email ,string password);
     
     Task CreateAsync(CreateUserViewModel user);
+
+    Task RegisterAsync(RegisterViewModel user);
     
     Task<EditUserViewModel> GetForEdit(int id);
     

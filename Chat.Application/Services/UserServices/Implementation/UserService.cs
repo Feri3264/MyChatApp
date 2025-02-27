@@ -1,5 +1,6 @@
 ﻿using System.Security.Claims;
-using Chat.Application.Services.ProfilePictureServices;
+using Chat.Application.Services.ProfilePictureServices.Implementation;
+using Chat.Application.Services.ProfilePictureServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.Interfaces;
 using Chat.Domain.Models;
@@ -8,7 +9,7 @@ using Chat.Domain.ViewModels;
 namespace Chat.Application.Services.UserServices.Implementation;
 
 public class UserService
-    (IUserRepository userRepository)  : IUserService
+    (IUserRepository userRepository , IProfilePicture profilePicture)  : IUserService
 {
     public async Task<IEnumerable<UserModel>> GetAllAsync()
     {
@@ -69,9 +70,24 @@ public class UserService
             Email = user.Email,
             Password = user.Password,
             isAdmin = user.isAdmin,
-            Picture = ProfilePicure.Add(user)
+            Picture = profilePicture.Add(user)
         };
         
+        await userRepository.AddAsync(newUser);
+    }
+
+    public async Task RegisterAsync(RegisterViewModel user)
+    {
+        UserModel newUser = new UserModel
+        {
+            Name = user.Name,
+            Username = user.Username,
+            Email = user.Email,
+            Password = user.Password,
+            isAdmin = false,
+            Picture = profilePicture.Add(user)
+        };
+
         await userRepository.AddAsync(newUser);
     }
 
@@ -102,7 +118,7 @@ public class UserService
         user.Email = model.Email;
         user.Password = model.Password;
         user.isAdmin = model.isAdmin;
-        user.Picture = ProfilePicure.Edit(model , user);
+        user.Picture = profilePicture.Edit(model , user);
         
         userRepository.Update(user);
     }
