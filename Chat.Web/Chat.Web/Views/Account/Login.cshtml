@@ -1,4 +1,4 @@
-﻿@model UserModel
+﻿@model LoginDTO
 
 @{
     ViewData["Title"] = "Login";
@@ -14,7 +14,7 @@
             <label asp-for="Email"></label>
             <div class="sec-2">
                 <ion-icon name="mail-outline"></ion-icon>
-                <input type="email" placeholder="Username@gmail.com" asp-for="Email" />                
+                <input asp-for="Email" placeholder="Username@gmail.com"/>                
             </div>
             <span asp-validation-for="Email"></span>
         </div>
@@ -25,10 +25,6 @@
                 <input type="password" placeholder="············" asp-for="Password" />                
             </div>
             <span asp-validation-for="Password"></span>
-            @if (ViewData["UserNotFound"] != null)
-            {
-                <span class="text-danger">@ViewData["UserNotFound"]</span>
-            }
         </div>
       
 

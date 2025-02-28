@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Http;
 
-namespace Chat.Domain.ViewModels.AdminViewModels;
+namespace Chat.Domain.DTOs.AdminDTOs;
 
 public class AdminCreateUserDTO
 {

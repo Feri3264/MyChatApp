@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Http;
 
-namespace Chat.Domain.ViewModels;
+namespace Chat.Domain.DTOs;
 
 public class RegisterDTO
 {

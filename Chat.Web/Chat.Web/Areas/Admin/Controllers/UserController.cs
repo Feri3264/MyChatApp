@@ -2,7 +2,7 @@
 using Chat.Application.Services.ProfilePictureServices.Implementation;
 using Chat.Application.Services.ProfilePictureServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
-using Chat.Domain.ViewModels.AdminViewModels;
+using Chat.Domain.DTOs.AdminDTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

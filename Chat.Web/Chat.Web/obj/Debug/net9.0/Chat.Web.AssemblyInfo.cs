@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Chat.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85dbe76a7ad7a719a58ceb96bc6018d33dfec132")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+148fb3fcc7b8b0633cebe85f68903b7da371bba8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Chat.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Chat.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

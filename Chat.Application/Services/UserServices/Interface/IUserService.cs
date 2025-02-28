@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
 using Chat.Domain.Models;
-using Chat.Domain.ViewModels;
-using Chat.Domain.ViewModels.AdminViewModels;
+using Chat.Domain.DTOs;
+using Chat.Domain.DTOs.AdminDTOs;
 
 namespace Chat.Application.Services.UserServices.Interface;
 

@@ -1,7 +1,7 @@
 using Chat.Application.Services.FriendServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.Models;
-using Chat.Domain.ViewModels;
+using Chat.Domain.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

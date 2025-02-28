@@ -1,8 +1,8 @@
 ﻿using Chat.Application.Services.ProfilePictureServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.Models;
-using Chat.Domain.ViewModels;
-using Chat.Domain.ViewModels.AdminViewModels;
+using Chat.Domain.DTOs;
+using Chat.Domain.DTOs.AdminDTOs;
 using System.Threading.Tasks;
 
 namespace Chat.Application.Services.ProfilePictureServices.Implementation;

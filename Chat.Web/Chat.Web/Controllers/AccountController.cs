@@ -1,6 +1,6 @@
 ﻿using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.Models;
-using Chat.Domain.ViewModels;
+using Chat.Domain.DTOs;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
@@ -47,15 +47,14 @@ namespace Chat.Web.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Login(string email, string password)
+        public async Task<IActionResult> Login(LoginDTO model)
         {
-            if (!await UserService.UserExistsAsync(email, password))
+            if (!await UserService.UserExistsAsync(model.Email, model.Password))
             {
-                ViewData["UserNotFound"] = "There is No such an account.";
-                return View();
+                ModelState.AddModelError("" , "User Not Found");
             }
             
-            UserModel user = await UserService.GetByEmailAsync(email);
+            UserModel user = await UserService.GetByEmailAsync(model.Email);
             var principal = UserService.PricipalUser(user);
             await HttpContext.SignInAsync(principal);
             

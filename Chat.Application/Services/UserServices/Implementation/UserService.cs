@@ -4,8 +4,8 @@ using Chat.Application.Services.ProfilePictureServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.Interfaces;
 using Chat.Domain.Models;
-using Chat.Domain.ViewModels;
-using Chat.Domain.ViewModels.AdminViewModels;
+using Chat.Domain.DTOs;
+using Chat.Domain.DTOs.AdminDTOs;
 
 namespace Chat.Application.Services.UserServices.Implementation;
 
