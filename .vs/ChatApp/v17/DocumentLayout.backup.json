@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7373F11C-29AA-4CD2-B200-F48A923D82D3}|Chat.Application\\Chat.Application.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.application\\services\\userservices\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7373F11C-29AA-4CD2-B200-F48A923D82D3}|Chat.Application\\Chat.Application.csproj|solutionrelative:chat.application\\services\\userservices\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7373F11C-29AA-4CD2-B200-F48A923D82D3}|Chat.Application\\Chat.Application.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.application\\services\\userservices\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7373F11C-29AA-4CD2-B200-F48A923D82D3}|Chat.Application\\Chat.Application.csproj|solutionrelative:chat.application\\services\\userservices\\interface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786B125F-EB50-4887-833F-CFE67997C50D}|Chat.Web\\Chat.Web\\Chat.Web.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.web\\chat.web\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{786B125F-EB50-4887-833F-CFE67997C50D}|Chat.Web\\Chat.Web\\Chat.Web.csproj|solutionrelative:chat.web\\chat.web\\areas\\admin\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC590DC-354E-4CCD-B82B-3C9005B5349F}|Chat.Domain\\Chat.Domain.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.domain\\viewmodels\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC590DC-354E-4CCD-B82B-3C9005B5349F}|Chat.Domain\\Chat.Domain.csproj|solutionrelative:chat.domain\\viewmodels\\editprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786B125F-EB50-4887-833F-CFE67997C50D}|Chat.Web\\Chat.Web\\Chat.Web.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.web\\chat.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{786B125F-EB50-4887-833F-CFE67997C50D}|Chat.Web\\Chat.Web\\Chat.Web.csproj|solutionrelative:chat.web\\chat.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786B125F-EB50-4887-833F-CFE67997C50D}|Chat.Web\\Chat.Web\\Chat.Web.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.web\\chat.web\\views\\home\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{786B125F-EB50-4887-833F-CFE67997C50D}|Chat.Web\\Chat.Web\\Chat.Web.csproj|solutionrelative:chat.web\\chat.web\\views\\home\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786B125F-EB50-4887-833F-CFE67997C50D}|Chat.Web\\Chat.Web\\Chat.Web.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.web\\chat.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{786B125F-EB50-4887-833F-CFE67997C50D}|Chat.Web\\Chat.Web\\Chat.Web.csproj|solutionrelative:chat.web\\chat.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7373F11C-29AA-4CD2-B200-F48A923D82D3}|Chat.Application\\Chat.Application.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.application\\services\\profilepictureservices\\implementation\\profilepicure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7373F11C-29AA-4CD2-B200-F48A923D82D3}|Chat.Application\\Chat.Application.csproj|solutionrelative:chat.application\\services\\profilepictureservices\\implementation\\profilepicure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7373F11C-29AA-4CD2-B200-F48A923D82D3}|Chat.Application\\Chat.Application.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.application\\services\\profilepictureservices\\interface\\iprofilepicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7373F11C-29AA-4CD2-B200-F48A923D82D3}|Chat.Application\\Chat.Application.csproj|solutionrelative:chat.application\\services\\profilepictureservices\\interface\\iprofilepicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786B125F-EB50-4887-833F-CFE67997C50D}|Chat.Web\\Chat.Web\\Chat.Web.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.web\\chat.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786B125F-EB50-4887-833F-CFE67997C50D}|Chat.Web\\Chat.Web\\Chat.Web.csproj|solutionrelative:chat.web\\chat.web\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7373F11C-29AA-4CD2-B200-F48A923D82D3}|Chat.Application\\Chat.Application.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.application\\services\\userservices\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7373F11C-29AA-4CD2-B200-F48A923D82D3}|Chat.Application\\Chat.Application.csproj|solutionrelative:chat.application\\services\\userservices\\implementation\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A3E0C1F-C453-4941-B62D-B7C4DF7EDA25}|Chat.IOC\\Chat.IOC.csproj|c:\\users\\feri\\desktop\\test\\aspcoretest\\chatapp\\chat.ioc\\dependencycontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A3E0C1F-C453-4941-B62D-B7C4DF7EDA25}|Chat.IOC\\Chat.IOC.csproj|solutionrelative:chat.ioc\\dependencycontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +46,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Application\\Services\\UserServices\\Implementation\\UserService.cs",
-              "RelativeDocumentMoniker": "Chat.Application\\Services\\UserServices\\Implementation\\UserService.cs",
-              "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Application\\Services\\UserServices\\Implementation\\UserService.cs",
-              "RelativeToolTip": "Chat.Application\\Services\\UserServices\\Implementation\\UserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAYAAAAAAAAAA==",
+              "Title": "EditProfileViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Domain\\ViewModels\\EditProfileViewModel.cs",
+              "RelativeDocumentMoniker": "Chat.Domain\\ViewModels\\EditProfileViewModel.cs",
+              "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Domain\\ViewModels\\EditProfileViewModel.cs",
+              "RelativeToolTip": "Chat.Domain\\ViewModels\\EditProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:03:45.606Z",
+              "WhenOpened": "2025-02-28T15:54:35.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Chat.Web\\Chat.Web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Chat.Web\\Chat.Web\\Areas\\Admin\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T15:51:17.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Chat.Web\\Chat.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Chat.Web\\Chat.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T15:49:34.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Chat.Web\\Chat.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Chat.Web\\Chat.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T15:48:23.478Z",
               "EditorCaption": ""
             },
             {
@@ -51,41 +110,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Chat.Web\\Chat.Web\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Chat.Web\\Chat.Web\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:03:29.3Z",
+              "DocumentIndex": 5,
+              "Title": "EditProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\Views\\Home\\EditProfile.cshtml",
+              "RelativeDocumentMoniker": "Chat.Web\\Chat.Web\\Views\\Home\\EditProfile.cshtml",
+              "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\Views\\Home\\EditProfile.cshtml",
+              "RelativeToolTip": "Chat.Web\\Chat.Web\\Views\\Home\\EditProfile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T15:48:15.221Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IProfilePicture.cs",
-              "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Application\\Services\\ProfilePictureServices\\Interface\\IProfilePicture.cs",
-              "RelativeDocumentMoniker": "Chat.Application\\Services\\ProfilePictureServices\\Interface\\IProfilePicture.cs",
-              "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Application\\Services\\ProfilePictureServices\\Interface\\IProfilePicture.cs",
-              "RelativeToolTip": "Chat.Application\\Services\\ProfilePictureServices\\Interface\\IProfilePicture.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T14:55:08.94Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "ProfilePicure.cs",
               "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Application\\Services\\ProfilePictureServices\\Implementation\\ProfilePicure.cs",
               "RelativeDocumentMoniker": "Chat.Application\\Services\\ProfilePictureServices\\Implementation\\ProfilePicure.cs",
               "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Application\\Services\\ProfilePictureServices\\Implementation\\ProfilePicure.cs",
               "RelativeToolTip": "Chat.Application\\Services\\ProfilePictureServices\\Implementation\\ProfilePicure.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T14:51:31.105Z",
+              "WhenOpened": "2025-02-28T15:35:00.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Application\\Services\\UserServices\\Interface\\IUserService.cs",
+              "RelativeDocumentMoniker": "Chat.Application\\Services\\UserServices\\Interface\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Application\\Services\\UserServices\\Interface\\IUserService.cs*",
+              "RelativeToolTip": "Chat.Application\\Services\\UserServices\\Interface\\IUserService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T15:24:08.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Application\\Services\\UserServices\\Implementation\\UserService.cs",
+              "RelativeDocumentMoniker": "Chat.Application\\Services\\UserServices\\Implementation\\UserService.cs",
+              "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Application\\Services\\UserServices\\Implementation\\UserService.cs",
+              "RelativeToolTip": "Chat.Application\\Services\\UserServices\\Implementation\\UserService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T15:23:29.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DependencyContainer.cs",
+              "DocumentMoniker": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.IOC\\DependencyContainer.cs",
+              "RelativeDocumentMoniker": "Chat.IOC\\DependencyContainer.cs",
+              "ToolTip": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.IOC\\DependencyContainer.cs",
+              "RelativeToolTip": "Chat.IOC\\DependencyContainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T15:23:02.598Z",
               "EditorCaption": ""
             }
           ]

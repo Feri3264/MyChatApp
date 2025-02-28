@@ -22,9 +22,9 @@ public static class DependencyContainer
         services.AddScoped<IFriendRepository, FriendRepository>();
         services.AddScoped<IMessageRepository, MessageRepository>();
 
+        services.AddScoped<IProfilePicture, ProfilePicure>();
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IFriendService, FriendService>();
-        services.AddScoped<IMessageService, MessageService>();
-        services.AddScoped<IProfilePicture, ProfilePicure>();
+        services.AddScoped<IMessageService, MessageService>();        
     }
 }

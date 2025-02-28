@@ -5,6 +5,7 @@ using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.Interfaces;
 using Chat.Domain.Models;
 using Chat.Domain.ViewModels;
+using Chat.Domain.ViewModels.AdminViewModels;
 
 namespace Chat.Application.Services.UserServices.Implementation;
 
@@ -61,7 +62,7 @@ public class UserService
         }
     }
 
-    public async Task CreateAsync(CreateUserViewModel user)
+    public async Task CreateAsync(AdminCreateUserViewModel user)
     {
         UserModel newUser = new UserModel
         {
@@ -91,13 +92,30 @@ public class UserService
         await userRepository.AddAsync(newUser);
     }
 
-    public async Task<EditUserViewModel> GetForEdit(int id)
+    public async Task<EditProfileViewModel> GetForEditProfile(int id)
     {
         UserModel user = await GetByIdAsync(id);
         if (user == null)
             return null;
-        
-        var editUser = new EditUserViewModel()
+
+        var editUser = new EditProfileViewModel()
+        {
+            UserId = user.UserId,
+            Name = user.Name,
+            Username = user.Username,
+            Email = user.Email,
+            Password = user.Password,           
+        };
+        return editUser;
+    }
+
+    public async Task<AdminEditUserViewModel> GetForEditAdmin(int id)
+    {
+        UserModel user = await GetByIdAsync(id);
+        if (user == null)
+            return null;
+
+        var editUser = new AdminEditUserViewModel()
         {
             UserId = user.UserId,
             Name = user.Name,
@@ -109,7 +127,7 @@ public class UserService
         return editUser;
     }
 
-    public async Task Update(EditUserViewModel model)
+    public async Task Update(AdminEditUserViewModel model)
     {
         UserModel user = await GetByIdAsync(model.UserId);
         user.UserId = model.UserId;
@@ -120,6 +138,20 @@ public class UserService
         user.isAdmin = model.isAdmin;
         user.Picture = profilePicture.Edit(model , user);
         
+        userRepository.Update(user);
+    }
+
+    public async Task Update(EditProfileViewModel model)
+    {
+        UserModel user = await GetByIdAsync(model.UserId);
+        user.UserId = model.UserId;
+        user.Name = model.Name;
+        user.Username = model.Username;
+        user.Email = model.Email;
+        user.Password = model.Password;
+        user.isAdmin = user.isAdmin;
+        user.Picture = profilePicture.Edit(model, user);
+
         userRepository.Update(user);
     }
 

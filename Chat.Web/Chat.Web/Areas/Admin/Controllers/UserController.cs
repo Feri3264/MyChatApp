@@ -1,7 +1,8 @@
 ﻿using Chat.Application.Services.FriendServices.Interface;
 using Chat.Application.Services.ProfilePictureServices.Implementation;
+using Chat.Application.Services.ProfilePictureServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
-using Chat.Domain.ViewModels;
+using Chat.Domain.ViewModels.AdminViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,7 +12,7 @@ namespace Chat.Web.Areas.Admin.Controllers
     [Authorize]
     [Route("/Admin/User/{action=index}")]
     public class UserController 
-        (IUserService UserService , IFriendService FriendService) : Controller
+        (IUserService UserService , IFriendService FriendService , IProfilePicture profilePicture) : Controller
     {
 
         #region Index
@@ -51,7 +52,7 @@ namespace Chat.Web.Areas.Admin.Controllers
         // POST: Admin/User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] CreateUserViewModel userModel)
+        public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] AdminCreateUserViewModel userModel)
         {                 
             if (ModelState.IsValid)
             {
@@ -72,7 +73,7 @@ namespace Chat.Web.Areas.Admin.Controllers
                 return NotFound();
             }
             
-            var userModel = await UserService.GetForEdit((int)id);
+            var userModel = await UserService.GetForEditAdmin((int)id);
             if (userModel == null)
             {
                 return NotFound();
@@ -83,7 +84,7 @@ namespace Chat.Web.Areas.Admin.Controllers
         // POST: Admin/User/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int UserId, [Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] EditUserViewModel userModel)
+        public async Task<IActionResult> Edit(int UserId, [Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] AdminEditUserViewModel userModel)
         {
             if (UserId != userModel.UserId)
             {
@@ -127,7 +128,7 @@ namespace Chat.Web.Areas.Admin.Controllers
             
             await UserService.DeleteAsync(UserId);
             await UserService.SaveChangesAsync();
-            ProfilePicure.Delete(userModel);
+            profilePicture.Delete(userModel);
             return RedirectToAction(nameof(Index));
         }
 

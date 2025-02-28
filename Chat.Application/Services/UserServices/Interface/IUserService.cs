@@ -1,6 +1,7 @@
 ﻿using System.Security.Claims;
 using Chat.Domain.Models;
 using Chat.Domain.ViewModels;
+using Chat.Domain.ViewModels.AdminViewModels;
 
 namespace Chat.Application.Services.UserServices.Interface;
 
@@ -18,13 +19,17 @@ public interface IUserService
     
     Task<bool> UserExistsAsync(string email ,string password);
     
-    Task CreateAsync(CreateUserViewModel user);
+    Task CreateAsync(AdminCreateUserViewModel user);
 
     Task RegisterAsync(RegisterViewModel user);
     
-    Task<EditUserViewModel> GetForEdit(int id);
+    Task<EditProfileViewModel> GetForEditProfile(int id);
+
+    Task<AdminEditUserViewModel> GetForEditAdmin(int id);
     
-    Task Update(EditUserViewModel user);
+    Task Update(AdminEditUserViewModel user);
+
+    Task Update(EditProfileViewModel user);
     
     Task DeleteAsync(int id);
     

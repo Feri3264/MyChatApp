@@ -36,7 +36,7 @@ namespace Chat.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> EditProfile(int userId)
         {
-            var userViewModel = await UserService.GetForEdit(userId);
+            var userViewModel = await UserService.GetForEditProfile(userId);
             if(userViewModel == null)
                 return NotFound();
             
@@ -44,10 +44,9 @@ namespace Chat.Web.Controllers
         }
         
         [HttpPost]
-        public async Task<IActionResult> EditProfile(EditUserViewModel model)
+        public async Task<IActionResult> EditProfile(EditProfileViewModel model)
         {
-            var user = await UserService.GetByIdAsync(model.UserId);
-            model.isAdmin = user.isAdmin;
+            var user = await UserService.GetByIdAsync(model.UserId);            
             
             if (!ModelState.IsValid)
             {
