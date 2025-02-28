@@ -52,7 +52,7 @@ namespace Chat.Web.Areas.Admin.Controllers
         // POST: Admin/User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] AdminCreateUserViewModel userModel)
+        public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] AdminCreateUserDTO userModel)
         {                 
             if (ModelState.IsValid)
             {
@@ -84,7 +84,7 @@ namespace Chat.Web.Areas.Admin.Controllers
         // POST: Admin/User/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int UserId, [Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] AdminEditUserViewModel userModel)
+        public async Task<IActionResult> Edit(int UserId, [Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] AdminEditUserDTO userModel)
         {
             if (UserId != userModel.UserId)
             {

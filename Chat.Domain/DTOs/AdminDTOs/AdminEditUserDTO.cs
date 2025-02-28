@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace Chat.Domain.ViewModels.AdminViewModels
 {
-    public class AdminEditUserViewModel
+    public class AdminEditUserDTO
     {
         public int UserId { get; set; }
 

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Chat.Domain.ViewModels
 {
-    public class EditProfileViewModel
+    public class EditProfileDTO
     {
         public int UserId { get; set; }
 

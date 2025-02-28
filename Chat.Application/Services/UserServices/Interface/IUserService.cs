@@ -19,17 +19,17 @@ public interface IUserService
     
     Task<bool> UserExistsAsync(string email ,string password);
     
-    Task CreateAsync(AdminCreateUserViewModel user);
+    Task CreateAsync(AdminCreateUserDTO user);
 
-    Task RegisterAsync(RegisterViewModel user);
+    Task RegisterAsync(RegisterDTO user);
     
-    Task<EditProfileViewModel> GetForEditProfile(int id);
+    Task<EditProfileDTO> GetForEditProfile(int id);
 
-    Task<AdminEditUserViewModel> GetForEditAdmin(int id);
+    Task<AdminEditUserDTO> GetForEditAdmin(int id);
     
-    Task Update(AdminEditUserViewModel user);
+    Task Update(AdminEditUserDTO user);
 
-    Task Update(EditProfileViewModel user);
+    Task Update(EditProfileDTO user);
     
     Task DeleteAsync(int id);
     

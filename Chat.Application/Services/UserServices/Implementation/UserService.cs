@@ -62,7 +62,7 @@ public class UserService
         }
     }
 
-    public async Task CreateAsync(AdminCreateUserViewModel user)
+    public async Task CreateAsync(AdminCreateUserDTO user)
     {
         UserModel newUser = new UserModel
         {
@@ -77,7 +77,7 @@ public class UserService
         await userRepository.AddAsync(newUser);
     }
 
-    public async Task RegisterAsync(RegisterViewModel user)
+    public async Task RegisterAsync(RegisterDTO user)
     {
         UserModel newUser = new UserModel
         {
@@ -92,13 +92,13 @@ public class UserService
         await userRepository.AddAsync(newUser);
     }
 
-    public async Task<EditProfileViewModel> GetForEditProfile(int id)
+    public async Task<EditProfileDTO> GetForEditProfile(int id)
     {
         UserModel user = await GetByIdAsync(id);
         if (user == null)
             return null;
 
-        var editUser = new EditProfileViewModel()
+        var editUser = new EditProfileDTO()
         {
             UserId = user.UserId,
             Name = user.Name,
@@ -109,13 +109,13 @@ public class UserService
         return editUser;
     }
 
-    public async Task<AdminEditUserViewModel> GetForEditAdmin(int id)
+    public async Task<AdminEditUserDTO> GetForEditAdmin(int id)
     {
         UserModel user = await GetByIdAsync(id);
         if (user == null)
             return null;
 
-        var editUser = new AdminEditUserViewModel()
+        var editUser = new AdminEditUserDTO()
         {
             UserId = user.UserId,
             Name = user.Name,
@@ -127,7 +127,7 @@ public class UserService
         return editUser;
     }
 
-    public async Task Update(AdminEditUserViewModel model)
+    public async Task Update(AdminEditUserDTO model)
     {
         UserModel user = await GetByIdAsync(model.UserId);
         user.UserId = model.UserId;
@@ -141,7 +141,7 @@ public class UserService
         userRepository.Update(user);
     }
 
-    public async Task Update(EditProfileViewModel model)
+    public async Task Update(EditProfileDTO model)
     {
         UserModel user = await GetByIdAsync(model.UserId);
         user.UserId = model.UserId;

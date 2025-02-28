@@ -44,7 +44,7 @@ namespace Chat.Web.Controllers
         }
         
         [HttpPost]
-        public async Task<IActionResult> EditProfile(EditProfileViewModel model)
+        public async Task<IActionResult> EditProfile(EditProfileDTO model)
         {
             var user = await UserService.GetByIdAsync(model.UserId);            
             

@@ -1,9 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Http;
 
-namespace Chat.Domain.ViewModels.AdminViewModels;
+namespace Chat.Domain.ViewModels;
 
-public class AdminCreateUserViewModel
+public class RegisterDTO
 {
     [Required(ErrorMessage = "Please Enter Your {0}"), MaxLength(100)]
     public string Name { get; set; }
@@ -17,7 +17,8 @@ public class AdminCreateUserViewModel
     [Required(ErrorMessage = "Please Enter Your {0}"), MaxLength(100)]
     public string Password { get; set; }
 
-    public bool isAdmin { get; set; }
+    [Compare("Password")]
+    public string ConfirmPassword { get; set; }
 
     [Required(ErrorMessage = "Please Select Your {0}")]
     public IFormFile ProfilePicture { get; set; }

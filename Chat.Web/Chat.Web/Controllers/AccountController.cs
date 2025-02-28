@@ -20,7 +20,7 @@ namespace Chat.Web.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Register(RegisterViewModel user)
+        public async Task<IActionResult> Register(RegisterDTO user)
         {            
             if (ModelState.IsValid)
             {                

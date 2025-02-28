@@ -10,7 +10,7 @@ namespace Chat.Application.Services.ProfilePictureServices.Implementation;
 public class ProfilePicure : IProfilePicture
 {
     #region Edit Photo
-    public string Edit(AdminEditUserViewModel userViewModel, UserModel FoundUser)
+    public string Edit(AdminEditUserDTO userViewModel, UserModel FoundUser)
     {
         if (userViewModel.ProfilePicture == null || userViewModel.ProfilePicture.FileName == FoundUser.Picture)
         {
@@ -32,7 +32,7 @@ public class ProfilePicure : IProfilePicture
         return fileName;
     }
 
-    public string Edit(EditProfileViewModel userViewModel, UserModel FoundUser)
+    public string Edit(EditProfileDTO userViewModel, UserModel FoundUser)
     {
         if (userViewModel.ProfilePicture == null || userViewModel.ProfilePicture.FileName == FoundUser.Picture)
         {
@@ -56,7 +56,7 @@ public class ProfilePicure : IProfilePicture
     #endregion
 
     #region Add Photo
-    public string Add(AdminCreateUserViewModel user)
+    public string Add(AdminCreateUserDTO user)
     {
         string fileName = Guid.NewGuid().ToString() + user.Username + Path.GetExtension(user.ProfilePicture.FileName);
         string filePath = Path.Combine(Directory.GetCurrentDirectory(),
@@ -70,7 +70,7 @@ public class ProfilePicure : IProfilePicture
         return fileName;
     }
 
-    public string Add(RegisterViewModel user)
+    public string Add(RegisterDTO user)
     {
         string fileName = Guid.NewGuid().ToString() + user.Username + Path.GetExtension(user.ProfilePicture.FileName);
         string filePath = Path.Combine(Directory.GetCurrentDirectory(),

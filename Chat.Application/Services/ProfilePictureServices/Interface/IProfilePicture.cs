@@ -11,10 +11,10 @@ namespace Chat.Application.Services.ProfilePictureServices.Interface
 {
     public interface IProfilePicture
     {
-        string Edit(AdminEditUserViewModel userViewModel, UserModel FoundUser);
-        string Edit(EditProfileViewModel userViewModel, UserModel FoundUser);
-        string Add(AdminCreateUserViewModel user);
-        string Add(RegisterViewModel user);
+        string Edit(AdminEditUserDTO userViewModel, UserModel FoundUser);
+        string Edit(EditProfileDTO userViewModel, UserModel FoundUser);
+        string Add(AdminCreateUserDTO user);
+        string Add(RegisterDTO user);
         void Delete(UserModel model);
     }
 }
