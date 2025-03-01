@@ -49,12 +49,11 @@ namespace Chat.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginDTO model)
         {
-            if (!await UserService.UserExistsAsync(model.Email, model.Password))
-            {
-                ModelState.AddModelError("" , "User Not Found");
-            }
-            
-            UserModel user = await UserService.GetByEmailAsync(model.Email);
+            if (!await UserService.UserExistsAsync(model.EmailOrUsername, model.Password))
+                ModelState.AddModelError("Password", "User Not Found");
+
+
+            UserModel user = await UserService.GetByEmailOrUsernameAsync(model.EmailOrUsername);
             var principal = UserService.PricipalUser(user);
             await HttpContext.SignInAsync(principal);
             

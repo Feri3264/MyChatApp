@@ -26,22 +26,9 @@ public class UserService
         return user;
     }
 
-    public async Task<UserModel> GetByEmailAsync(string email)
+    public async Task<UserModel> GetByEmailOrUsernameAsync(string emailOrUsername)
     {
-        var user = await userRepository.GetByEmailAsync(email);
-        if (user == null)
-            return null;
-        
-        return user;
-    }
-
-    public async Task<UserModel> GetByUsernameAsync(string username)
-    {
-        var user = await userRepository.GetByUsernameAsync(username);
-        if (user == null)
-            return null;
-
-        return user;
+        return await userRepository.GetByEmailOrUsernameAsync(emailOrUsername);
     }
 
     public async Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username)
@@ -49,9 +36,9 @@ public class UserService
         return await userRepository.ContainsUsernameAsync(username);
     }
 
-    public async Task<bool> UserExistsAsync(string email, string password)
+    public async Task<bool> UserExistsAsync(string emailOrUsername, string password)
     {
-        UserModel user = await GetByEmailAsync(email);
+        var user = await GetByEmailOrUsernameAsync(emailOrUsername);       
         if (user != null && user.Password == password)
         {
             return true;

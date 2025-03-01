@@ -16,7 +16,7 @@ namespace Chat.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(string username)
         {         
-            UserModel user = await UserService.GetByUsernameAsync(username);
+            UserModel user = await UserService.GetByEmailOrUsernameAsync(username);
             if(user == null)
                 return NotFound();
             

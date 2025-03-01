@@ -10,14 +10,12 @@ public interface IUserService
     Task<IEnumerable<UserModel>> GetAllAsync();
     
     Task<UserModel> GetByIdAsync(int id);
-    
-    Task<UserModel> GetByEmailAsync(string email);
-    
-    Task<UserModel> GetByUsernameAsync(string username);
+
+    Task<UserModel> GetByEmailOrUsernameAsync(string emailOrUsername); 
     
     Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username);
     
-    Task<bool> UserExistsAsync(string email ,string password);
+    Task<bool> UserExistsAsync(string emailOrUsername ,string password);
     
     Task CreateAsync(AdminCreateUserDTO user);
 

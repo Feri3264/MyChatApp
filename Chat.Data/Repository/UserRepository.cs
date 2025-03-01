@@ -11,7 +11,7 @@ namespace Chat.Data.Repository
     {
         public async Task<IEnumerable<UserModel>> GetAllAsync()
         {
-              return await _context.Users.ToListAsync();
+            return await _context.Users.ToListAsync();
         }
 
         public async Task AddAsync(UserModel user)
@@ -35,14 +35,10 @@ namespace Chat.Data.Repository
             return await _context.Users.Include(f => f.Friends).FirstOrDefaultAsync(x => x == user);
         }
 
-        public async Task<UserModel> GetByUsernameAsync(string username)
+        public async Task<UserModel> GetByEmailOrUsernameAsync(string emailOrUsername)
         {
-            return await _context.Users.Include(f => f.Friends).FirstOrDefaultAsync(u => u.Username == username);
-        }
-
-        public async Task<UserModel> GetByEmailAsync(string email)
-        {
-            return await _context.Users.Include(f => f.Friends).FirstOrDefaultAsync(u => u.Email == email);
+            return await _context.Users
+            .FirstOrDefaultAsync(u => u.Email == emailOrUsername || u.Username == emailOrUsername);
         }
 
         public async Task<UserModel> GetByIdAsync(int userId)
@@ -52,16 +48,16 @@ namespace Chat.Data.Repository
 
         public async Task<bool> UserExistsAsync(int id)
         {
-           return await _context.Users.AnyAsync(e => e.UserId == id);
+            return await _context.Users.AnyAsync(e => e.UserId == id);
         }
 
         public async Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username)
         {
-           List<UserModel> users = await _context.Users
-                .Where(x => x.Username.Contains(username))
-                .Select(x => x)
-                .ToListAsync();
-           return users;
+            List<UserModel> users = await _context.Users
+                 .Where(x => x.Username.Contains(username))
+                 .Select(x => x)
+                 .ToListAsync();
+            return users;
         }
 
         public async Task SaveChangesAsync()
