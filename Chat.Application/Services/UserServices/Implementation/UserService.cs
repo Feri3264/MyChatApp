@@ -6,6 +6,7 @@ using Chat.Domain.Interfaces;
 using Chat.Domain.Models;
 using Chat.Domain.DTOs;
 using Chat.Domain.DTOs.AdminDTOs;
+using Chat.Domain.Enum;
 
 namespace Chat.Application.Services.UserServices.Implementation;
 
@@ -49,8 +50,29 @@ public class UserService
         }
     }
 
-    public async Task CreateAsync(AdminCreateUserDTO user)
+    public async Task<bool> EmailExistsAsync(string email)
     {
+        return await userRepository.EmailExistsAsync(email);
+    }
+
+    public async Task<bool> UsernameExistsAsync(string username)
+    {
+        return await userRepository.UsernameExistsAsync(username);
+    }
+
+    public async Task<CreateUserResultEnum> CreateAsync(AdminCreateUserDTO user)
+    {
+
+        if (await UsernameExistsAsync(user.Username))
+            return CreateUserResultEnum.UsernameAlreadyExists;
+
+        if (await EmailExistsAsync(user.Email))
+            return CreateUserResultEnum.EmailAlreadyExists;
+
+        if (!await IsPasswordValid(user.Password))
+            return CreateUserResultEnum.PasswordNotValid;
+
+
         UserModel newUser = new UserModel
         {
             Name = user.Name,
@@ -62,10 +84,22 @@ public class UserService
         };
         
         await userRepository.AddAsync(newUser);
+        return CreateUserResultEnum.Success;
     }
 
-    public async Task RegisterAsync(RegisterDTO user)
+    public async Task<RegisterUserResultEnum> RegisterAsync(RegisterDTO user)
     {
+
+        if (await UsernameExistsAsync(user.Username))
+            return RegisterUserResultEnum.UsernameAlreadyExists;
+
+        if (await EmailExistsAsync(user.Email))
+            return RegisterUserResultEnum.EmailAlreadyExists;
+
+        if (!await IsPasswordValid(user.Password))
+            return RegisterUserResultEnum.PasswordNotValid;
+
+
         UserModel newUser = new UserModel
         {
             Name = user.Name,
@@ -77,6 +111,7 @@ public class UserService
         };
 
         await userRepository.AddAsync(newUser);
+        return RegisterUserResultEnum.Success;
     }
 
     public async Task<EditProfileDTO> GetForEditProfile(int id)
@@ -161,6 +196,11 @@ public class UserService
         var identity = new ClaimsIdentity(claims, "login");
         var principal = new ClaimsPrincipal(identity);
         return principal;
+    }
+
+    public async Task<bool> IsPasswordValid(string password)
+    {
+        return true;
     }
 
     public async Task SaveChangesAsync()

@@ -3,6 +3,7 @@ using Chat.Application.Services.ProfilePictureServices.Implementation;
 using Chat.Application.Services.ProfilePictureServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.DTOs.AdminDTOs;
+using Chat.Domain.Enum;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -56,7 +57,29 @@ namespace Chat.Web.Areas.Admin.Controllers
         {                 
             if (ModelState.IsValid)
             {
-                await UserService.CreateAsync(userModel);
+                var result = await UserService.CreateAsync(userModel);
+                switch (result)
+                {
+                    case CreateUserResultEnum.Success:
+                        await UserService.SaveChangesAsync();
+                        return RedirectToAction("Login");
+
+                    case CreateUserResultEnum.UserAlreadyExists:
+                        ModelState.AddModelError("", "User Alreay Exists");
+                        break;
+
+                    case CreateUserResultEnum.EmailAlreadyExists:
+                        ModelState.AddModelError("Email", "Email Alreay Exists");
+                        break;
+
+                    case CreateUserResultEnum.UsernameAlreadyExists:
+                        ModelState.AddModelError("Username", "Username Alreay Exists");
+                        break;
+
+                    case CreateUserResultEnum.PasswordNotValid:
+                        ModelState.AddModelError("Password", "Password Not Valid");
+                        break;
+                }
                 await UserService.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

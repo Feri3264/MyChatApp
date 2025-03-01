@@ -51,6 +51,16 @@ namespace Chat.Data.Repository
             return await _context.Users.AnyAsync(e => e.UserId == id);
         }
 
+        public async Task<bool> EmailExistsAsync(string email)
+        {
+            return await _context.Users.AnyAsync(u => u.Email == email);
+        }
+
+        public async Task<bool> UsernameExistsAsync(string username)
+        {
+            return await _context.Users.AnyAsync(u => u.Username == username);
+        }
+
         public async Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username)
         {
             List<UserModel> users = await _context.Users

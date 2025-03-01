@@ -2,6 +2,7 @@
 using Chat.Domain.Models;
 using Chat.Domain.DTOs;
 using Chat.Domain.DTOs.AdminDTOs;
+using Chat.Domain.Enum;
 
 namespace Chat.Application.Services.UserServices.Interface;
 
@@ -16,10 +17,14 @@ public interface IUserService
     Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username);
     
     Task<bool> UserExistsAsync(string emailOrUsername ,string password);
-    
-    Task CreateAsync(AdminCreateUserDTO user);
 
-    Task RegisterAsync(RegisterDTO user);
+    Task<bool> EmailExistsAsync(string email);
+
+    Task<bool> UsernameExistsAsync(string username);
+    
+    Task<CreateUserResultEnum> CreateAsync(AdminCreateUserDTO user);
+
+    Task<RegisterUserResultEnum> RegisterAsync(RegisterDTO user);
     
     Task<EditProfileDTO> GetForEditProfile(int id);
 
@@ -32,6 +37,8 @@ public interface IUserService
     Task DeleteAsync(int id);
     
     ClaimsPrincipal PricipalUser(UserModel user);
+
+    Task<bool> IsPasswordValid(string password);
     
     Task SaveChangesAsync();
 }

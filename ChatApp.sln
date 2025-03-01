@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{97858B3A-1BEE-48FD-A4AD-91A17121396A}"
 EndProject
@@ -47,9 +47,9 @@ Global
 		{6A3E0C1F-C453-4941-B62D-B7C4DF7EDA25}.Release|Any CPU.Build.0 = Release|Any CPU
 		{786B125F-EB50-4887-833F-CFE67997C50D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{786B125F-EB50-4887-833F-CFE67997C50D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786B125F-EB50-4887-833F-CFE67997C50D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{786B125F-EB50-4887-833F-CFE67997C50D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{786B125F-EB50-4887-833F-CFE67997C50D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{786B125F-EB50-4887-833F-CFE67997C50D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +60,8 @@ Global
 		{7373F11C-29AA-4CD2-B200-F48A923D82D3} = {90CC541F-A42A-49DE-A496-D88A2FA61775}
 		{6A3E0C1F-C453-4941-B62D-B7C4DF7EDA25} = {EE69C384-A3D6-4354-BDD4-3263419B9E19}
 		{786B125F-EB50-4887-833F-CFE67997C50D} = {9B33773F-CCF7-4DC3-89E4-BEFA9F38D673}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE0C78EA-B75E-4E03-8503-F8C7E074CCEC}
 	EndGlobalSection
 EndGlobal

@@ -4,6 +4,7 @@ using Chat.Domain.DTOs;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Chat.Domain.Enum;
 
 namespace Chat.Web.Controllers
 {
@@ -24,9 +25,27 @@ namespace Chat.Web.Controllers
         {            
             if (ModelState.IsValid)
             {                
-                await UserService.RegisterAsync(user);
-                await UserService.SaveChangesAsync();
-                return RedirectToAction("Login");
+                var result = await UserService.RegisterAsync(user);
+                switch(result)
+                {
+                    case RegisterUserResultEnum.Success:
+                        await UserService.SaveChangesAsync();
+                        return RedirectToAction("Login");
+
+                    case RegisterUserResultEnum.UsernameAlreadyExists:
+                        ModelState.AddModelError("Username", "Username Alreay Exists");
+                        break;
+
+                    case RegisterUserResultEnum.EmailAlreadyExists:
+                        ModelState.AddModelError("Email", "Email Alreay Exists");
+                        break;
+
+                    case RegisterUserResultEnum.PasswordNotValid:
+                        ModelState.AddModelError("Password", "Password Not Valid");
+                        break;
+                }
+                return View(user);
+
             }
             else
             {
@@ -72,7 +91,7 @@ namespace Chat.Web.Controllers
 
         #region Logout
         public IActionResult Logout()
-        {
+        {chrome://vivaldi-webui/startpage?section=Speed-dials&background-color=#1e201e
             if (User.Identity.IsAuthenticated)
             {
                 HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
