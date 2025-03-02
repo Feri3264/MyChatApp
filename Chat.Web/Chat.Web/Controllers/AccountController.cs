@@ -41,7 +41,7 @@ namespace Chat.Web.Controllers
                         break;
 
                     case RegisterUserResultEnum.PasswordNotValid:
-                        ModelState.AddModelError("Password", "Password Not Valid");
+                        ModelState.AddModelError("Password", "Password Must Contains 8 Characters");
                         break;
                 }
                 return View(user);
@@ -69,8 +69,10 @@ namespace Chat.Web.Controllers
         public async Task<IActionResult> Login(LoginDTO model)
         {
             if (!await UserService.UserExistsAsync(model.EmailOrUsername, model.Password))
+            {
                 ModelState.AddModelError("Password", "User Not Found");
-
+                return View(model);
+            }                                    
 
             UserModel user = await UserService.GetByEmailOrUsernameAsync(model.EmailOrUsername);
             var principal = UserService.PricipalUser(user);

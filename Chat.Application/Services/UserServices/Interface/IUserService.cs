@@ -21,14 +21,18 @@ public interface IUserService
     Task<bool> EmailExistsAsync(string email);
 
     Task<bool> UsernameExistsAsync(string username);
-    
+
+    Task<bool> EditEmailExistsAsync(string email, int usersId);
+
+    Task<bool> EditUsernameExistsAsync(string username, int usersId);
+
     Task<CreateUserResultEnum> CreateAsync(AdminCreateUserDTO user);
 
     Task<RegisterUserResultEnum> RegisterAsync(RegisterDTO user);
     
     Task<EditProfileDTO> GetForEditProfile(int id);
 
-    Task<AdminEditUserDTO> GetForEditAdmin(int id);
+    Task<AdminEditUserDTO> GetForEditUser(int id);
 
     Task<EditUserResultEnum> Update(AdminEditUserDTO user);
 
@@ -37,8 +41,6 @@ public interface IUserService
     Task DeleteAsync(int id);
     
     ClaimsPrincipal PricipalUser(UserModel user);
-
-    Task<bool> IsPasswordValid(string password);
     
     Task SaveChangesAsync();
 }

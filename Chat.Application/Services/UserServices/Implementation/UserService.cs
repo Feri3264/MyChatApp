@@ -1,17 +1,18 @@
 ﻿using System.Security.Claims;
-using Chat.Application.Services.ProfilePictureServices.Implementation;
 using Chat.Application.Services.ProfilePictureServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
+using Chat.Application.Security.Password;
 using Chat.Domain.Interfaces;
 using Chat.Domain.Models;
 using Chat.Domain.DTOs;
 using Chat.Domain.DTOs.AdminDTOs;
 using Chat.Domain.Enum;
+using Chat.Application.Security.Password.Interface;
 
 namespace Chat.Application.Services.UserServices.Implementation;
 
 public class UserService
-    (IUserRepository userRepository , IProfilePicture profilePicture)  : IUserService
+    (IUserRepository userRepository , IProfilePicture profilePicture , IPassword passwordService)  : IUserService
 {
     public async Task<IEnumerable<UserModel>> GetAllAsync()
     {
@@ -39,8 +40,9 @@ public class UserService
 
     public async Task<bool> UserExistsAsync(string emailOrUsername, string password)
     {
+        
         var user = await GetByEmailOrUsernameAsync(emailOrUsername);       
-        if (user != null && user.Password == password)
+        if (user != null && user.Password == passwordService.HashMD5(password))
         {
             return true;
         }
@@ -66,9 +68,9 @@ public class UserService
         var user = await GetByEmailOrUsernameAsync(email);
 
         if (IsEmailExists && user.UserId != usersId)
-            return false;
+            return true;
 
-        return true;
+        return false;
     }
 
     public async Task<bool> EditUsernameExistsAsync(string username, int usersId)
@@ -77,9 +79,9 @@ public class UserService
         var user = await GetByEmailOrUsernameAsync(username);
 
         if (IsUsernameExists && user.UserId != usersId)
-            return false;     
+            return true;     
 
-        return true;
+        return false;
     }
 
     public async Task<CreateUserResultEnum> CreateAsync(AdminCreateUserDTO user)
@@ -91,7 +93,7 @@ public class UserService
         if (await EmailExistsAsync(user.Email))
             return CreateUserResultEnum.EmailAlreadyExists;
 
-        if (!await IsPasswordValid(user.Password))
+        if (!passwordService.IsPasswordValid(user.Password))
             return CreateUserResultEnum.PasswordNotValid;
 
 
@@ -100,7 +102,7 @@ public class UserService
             Name = user.Name,
             Username = user.Username,
             Email = user.Email,
-            Password = user.Password,
+            Password = passwordService.HashMD5(user.Password),
             isAdmin = user.isAdmin,
             Picture = profilePicture.Add(user)
         };
@@ -118,7 +120,7 @@ public class UserService
         if (await EmailExistsAsync(user.Email))
             return RegisterUserResultEnum.EmailAlreadyExists;
 
-        if (!await IsPasswordValid(user.Password))
+        if (!passwordService.IsPasswordValid(user.Password))
             return RegisterUserResultEnum.PasswordNotValid;
 
 
@@ -127,7 +129,7 @@ public class UserService
             Name = user.Name,
             Username = user.Username,
             Email = user.Email,
-            Password = user.Password,
+            Password = passwordService.HashMD5(user.Password),
             isAdmin = false,
             Picture = profilePicture.Add(user)
         };
@@ -153,7 +155,7 @@ public class UserService
         return editUser;
     }
 
-    public async Task<AdminEditUserDTO> GetForEditAdmin(int id)
+    public async Task<AdminEditUserDTO> GetForEditUser(int id)
     {
         UserModel user = await GetByIdAsync(id);
         if (user == null)
@@ -180,7 +182,7 @@ public class UserService
         if (await EditEmailExistsAsync(model.Email , model.UserId))
             return EditUserResultEnum.EmailAlreadyExists;
 
-        if (!await IsPasswordValid(model.Password))
+        if (!passwordService.IsPasswordValid(model.Password))
             return EditUserResultEnum.PasswordNotValid;
 
 
@@ -189,7 +191,7 @@ public class UserService
         user.Name = model.Name;
         user.Username = model.Username;
         user.Email = model.Email;
-        user.Password = model.Password;
+        user.Password = passwordService.HashMD5(model.Password);
         user.isAdmin = model.isAdmin;
         user.Picture = profilePicture.Edit(model , user);
         
@@ -204,7 +206,7 @@ public class UserService
         user.Name = model.Name;
         user.Username = model.Username;
         user.Email = model.Email;
-        user.Password = model.Password;
+        user.Password = passwordService.HashMD5(model.Password);
         user.isAdmin = user.isAdmin;
         user.Picture = profilePicture.Edit(model, user);
 
@@ -230,11 +232,6 @@ public class UserService
         var identity = new ClaimsIdentity(claims, "login");
         var principal = new ClaimsPrincipal(identity);
         return principal;
-    }
-
-    public async Task<bool> IsPasswordValid(string password)
-    {
-        return true;
     }
 
     public async Task SaveChangesAsync()

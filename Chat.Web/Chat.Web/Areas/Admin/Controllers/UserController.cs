@@ -73,7 +73,7 @@ namespace Chat.Web.Areas.Admin.Controllers
                         break;
 
                     case CreateUserResultEnum.PasswordNotValid:
-                        ModelState.AddModelError("Password", "Password Not Valid");
+                        ModelState.AddModelError("Password", "Password Must Contains 8 Characters");
                         break;
                 }
                 await UserService.SaveChangesAsync();
@@ -92,7 +92,7 @@ namespace Chat.Web.Areas.Admin.Controllers
                 return NotFound();
             }
             
-            var userModel = await UserService.GetForEditAdmin((int)id);
+            var userModel = await UserService.GetForEditUser((int)id);
             if (userModel == null)
             {
                 return NotFound();
@@ -128,7 +128,7 @@ namespace Chat.Web.Areas.Admin.Controllers
                         break;
 
                     case EditUserResultEnum.PasswordNotValid:
-                        ModelState.AddModelError("Password", "Password Not Valid");
+                        ModelState.AddModelError("Password", "Password Must Contains 8 Characters");
                         break;
                 }               
             }

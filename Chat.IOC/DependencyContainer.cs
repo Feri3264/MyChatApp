@@ -10,6 +10,8 @@ using Chat.Application.Services.MessageServices.Implementation;
 using Chat.Data.Context;
 using Chat.Application.Services.ProfilePictureServices.Implementation;
 using Chat.Application.Services.ProfilePictureServices.Interface;
+using Chat.Application.Security.Password.Interface;
+using Chat.Application.Security.Password.Implementation;
 
 namespace Chat.IOC;
 
@@ -21,10 +23,12 @@ public static class DependencyContainer
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IFriendRepository, FriendRepository>();
         services.AddScoped<IMessageRepository, MessageRepository>();
-
-        services.AddScoped<IProfilePicture, ProfilePicure>();
+       
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IFriendService, FriendService>();
-        services.AddScoped<IMessageService, MessageService>();        
+        services.AddScoped<IMessageService, MessageService>();
+
+        services.AddScoped<IProfilePicture, ProfilePicure>();
+        services.AddScoped<IPassword , Password>();
     }
 }
