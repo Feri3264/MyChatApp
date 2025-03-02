@@ -29,8 +29,8 @@ public interface IUserService
     Task<EditProfileDTO> GetForEditProfile(int id);
 
     Task<AdminEditUserDTO> GetForEditAdmin(int id);
-    
-    Task Update(AdminEditUserDTO user);
+
+    Task<EditUserResultEnum> Update(AdminEditUserDTO user);
 
     Task Update(EditProfileDTO user);
     

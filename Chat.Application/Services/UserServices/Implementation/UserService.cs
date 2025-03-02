@@ -60,6 +60,28 @@ public class UserService
         return await userRepository.UsernameExistsAsync(username);
     }
 
+    public async Task<bool> EditEmailExistsAsync(string email , int usersId)
+    {
+        var IsEmailExists = await EmailExistsAsync(email);
+        var user = await GetByEmailOrUsernameAsync(email);
+
+        if (IsEmailExists && user.UserId != usersId)
+            return false;
+
+        return true;
+    }
+
+    public async Task<bool> EditUsernameExistsAsync(string username, int usersId)
+    {
+        var IsUsernameExists = await UsernameExistsAsync(username);
+        var user = await GetByEmailOrUsernameAsync(username);
+
+        if (IsUsernameExists && user.UserId != usersId)
+            return false;     
+
+        return true;
+    }
+
     public async Task<CreateUserResultEnum> CreateAsync(AdminCreateUserDTO user)
     {
 
@@ -149,8 +171,19 @@ public class UserService
         return editUser;
     }
 
-    public async Task Update(AdminEditUserDTO model)
+    public async Task<EditUserResultEnum> Update(AdminEditUserDTO model)
     {
+
+        if (await EditUsernameExistsAsync(model.Username , model.UserId))
+            return EditUserResultEnum.UsernameAlreadyExists;
+
+        if (await EditEmailExistsAsync(model.Email , model.UserId))
+            return EditUserResultEnum.EmailAlreadyExists;
+
+        if (!await IsPasswordValid(model.Password))
+            return EditUserResultEnum.PasswordNotValid;
+
+
         UserModel user = await GetByIdAsync(model.UserId);
         user.UserId = model.UserId;
         user.Name = model.Name;
@@ -161,6 +194,7 @@ public class UserService
         user.Picture = profilePicture.Edit(model , user);
         
         userRepository.Update(user);
+        return EditUserResultEnum.Success;
     }
 
     public async Task Update(EditProfileDTO model)

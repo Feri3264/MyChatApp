@@ -53,7 +53,7 @@ namespace Chat.Web.Areas.Admin.Controllers
         // POST: Admin/User/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] AdminCreateUserDTO userModel)
+        public async Task<IActionResult> Create([Bind("Name,Username,Email,Password,isAdmin,ProfilePicture")] AdminCreateUserDTO userModel)
         {                 
             if (ModelState.IsValid)
             {
@@ -63,10 +63,6 @@ namespace Chat.Web.Areas.Admin.Controllers
                     case CreateUserResultEnum.Success:
                         await UserService.SaveChangesAsync();
                         return RedirectToAction("Login");
-
-                    case CreateUserResultEnum.UserAlreadyExists:
-                        ModelState.AddModelError("", "User Alreay Exists");
-                        break;
 
                     case CreateUserResultEnum.EmailAlreadyExists:
                         ModelState.AddModelError("Email", "Email Alreay Exists");
@@ -116,10 +112,27 @@ namespace Chat.Web.Areas.Admin.Controllers
             
             if (ModelState.IsValid)
             {
-                await UserService.Update(userModel);
-                await UserService.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                var result = await UserService.Update(userModel);
+                switch (result)
+                {
+                    case EditUserResultEnum.Success:
+                        await UserService.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
+
+                    case EditUserResultEnum.EmailAlreadyExists:
+                        ModelState.AddModelError("Email", "Email Alreay Exists");
+                        break;
+
+                    case EditUserResultEnum.UsernameAlreadyExists:
+                        ModelState.AddModelError("Username", "Username Alreay Exists");
+                        break;
+
+                    case EditUserResultEnum.PasswordNotValid:
+                        ModelState.AddModelError("Password", "Password Not Valid");
+                        break;
+                }               
             }
+
             return View(userModel);
         }
         #endregion
