@@ -4,15 +4,25 @@ namespace Chat.Application.Services.FriendServices.Interface;
 
 public interface IFriendService
 {
-    Task<FriendModel> GetByIdAsync(int userId , int friendId);
 
-    Task DeleteAsync(int userId, int friendId);
-    
-    Task DeleteAllFriendsAsync(IEnumerable<FriendModel> friends);
-    
-    Task<bool> FriendshipExistsAsync(int userId , int friendId);
-    
+    #region GetBy
+    Task<FriendModel> GetByIdAsync(int userId, int friendId);
+    #endregion
+
+    #region Create
     Task CreateAsync(int userId, int friendId);
-    
+    #endregion
+
+    #region Exists
+    Task<bool> FriendshipExistsAsync(int userId, int friendId);
+    #endregion
+
+    #region Delete
+    Task DeleteAsync(int userId, int friendId);
+    #endregion
+
+    #region Save
     Task SaveChangesAsync();
+    #endregion
+
 }

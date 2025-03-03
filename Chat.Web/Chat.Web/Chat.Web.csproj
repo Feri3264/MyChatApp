@@ -52,9 +52,4 @@
       <ProjectReference Include="..\..\Chat.IOC\Chat.IOC.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Areas\UserPanel\Data\" />
-      <Folder Include="Areas\UserPanel\Models\" />
-    </ItemGroup>
-
 </Project>

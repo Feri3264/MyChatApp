@@ -14,6 +14,7 @@ namespace Chat.Application.Services.UserServices.Implementation;
 public class UserService
     (IUserRepository userRepository , IProfilePicture profilePicture , IPassword passwordService)  : IUserService
 {
+    #region GetBy
     public async Task<IEnumerable<UserModel>> GetAllAsync()
     {
         return await userRepository.GetAllAsync();
@@ -24,7 +25,7 @@ public class UserService
         var user = await userRepository.GetByIdAsync(id);
         if (user == null)
             return null;
-        
+
         return user;
     }
 
@@ -35,18 +36,15 @@ public class UserService
 
     public async Task<List<UserModel>> GetByTakeAsync(int take = 10, int skip = 0)
     {
-        return await userRepository.GetByTakeAsync(take , skip);
+        return await userRepository.GetByTakeAsync(take, skip);
     }
+    #endregion
 
-    public async Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username)
-    {
-        return await userRepository.ContainsUsernameAsync(username);
-    }
-
+    #region Exists
     public async Task<bool> UserExistsAsync(string emailOrUsername, string password)
     {
-        
-        var user = await GetByEmailOrUsernameAsync(emailOrUsername);       
+
+        var user = await GetByEmailOrUsernameAsync(emailOrUsername);
         if (user != null && user.Password == passwordService.HashMD5(password))
         {
             return true;
@@ -67,7 +65,7 @@ public class UserService
         return await userRepository.UsernameExistsAsync(username);
     }
 
-    public async Task<bool> EditEmailExistsAsync(string email , int usersId)
+    public async Task<bool> EditEmailExistsAsync(string email, int usersId)
     {
         var IsEmailExists = await EmailExistsAsync(email);
         var user = await GetByEmailOrUsernameAsync(email);
@@ -84,11 +82,13 @@ public class UserService
         var user = await GetByEmailOrUsernameAsync(username);
 
         if (IsUsernameExists && user.UserId != usersId)
-            return true;     
+            return true;
 
         return false;
     }
+    #endregion
 
+    #region Create
     public async Task<CreateUserResultEnum> CreateAsync(AdminCreateUserDTO user)
     {
 
@@ -111,7 +111,7 @@ public class UserService
             isAdmin = user.isAdmin,
             Picture = profilePicture.Add(user)
         };
-        
+
         await userRepository.AddAsync(newUser);
         return CreateUserResultEnum.Success;
     }
@@ -142,7 +142,9 @@ public class UserService
         await userRepository.AddAsync(newUser);
         return RegisterUserResultEnum.Success;
     }
+    #endregion
 
+    #region Edit
     public async Task<EditProfileDTO> GetForEditProfile(int id)
     {
         UserModel user = await GetByIdAsync(id);
@@ -154,7 +156,7 @@ public class UserService
             UserId = user.UserId,
             Name = user.Name,
             Username = user.Username,
-            Email = user.Email,                     
+            Email = user.Email,
         };
         return editUser;
     }
@@ -170,36 +172,19 @@ public class UserService
             UserId = user.UserId,
             Name = user.Name,
             Username = user.Username,
-            Email = user.Email,            
+            Email = user.Email,
             isAdmin = user.isAdmin,
         };
         return editUser;
     }
 
-    public async Task<int> GetCount()
-    {
-        return await userRepository.GetCount();
-    }
-
-    public async Task<ChangePasswordResultEnum> ChangePassword(int userId , string password)
-    {
-        if (!passwordService.IsPasswordValid(password))
-            return ChangePasswordResultEnum.PasswordNotValid;
-
-        var user = await GetByIdAsync(userId);
-        user.Password = passwordService.HashMD5(password);
-
-        userRepository.Update(user);
-        return ChangePasswordResultEnum.Success;
-    }
-
     public async Task<EditUserResultEnum> Update(AdminEditUserDTO model)
     {
 
-        if (await EditUsernameExistsAsync(model.Username , model.UserId))
+        if (await EditUsernameExistsAsync(model.Username, model.UserId))
             return EditUserResultEnum.UsernameAlreadyExists;
 
-        if (await EditEmailExistsAsync(model.Email , model.UserId))
+        if (await EditEmailExistsAsync(model.Email, model.UserId))
             return EditUserResultEnum.EmailAlreadyExists;
 
 
@@ -207,10 +192,10 @@ public class UserService
         user.UserId = model.UserId;
         user.Name = model.Name;
         user.Username = model.Username;
-        user.Email = model.Email;        
+        user.Email = model.Email;
         user.isAdmin = model.isAdmin;
-        user.Picture = profilePicture.Edit(model , user);
-        
+        user.Picture = profilePicture.Edit(model, user);
+
         userRepository.Update(user);
         return EditUserResultEnum.Success;
     }
@@ -221,19 +206,15 @@ public class UserService
         user.UserId = model.UserId;
         user.Name = model.Name;
         user.Username = model.Username;
-        user.Email = model.Email;        
+        user.Email = model.Email;
         user.isAdmin = user.isAdmin;
         user.Picture = profilePicture.Edit(model, user);
 
         userRepository.Update(user);
     }
+    #endregion
 
-    public async Task DeleteAsync(int id)
-    {
-        var user = await GetByIdAsync(id);
-        await userRepository.DeleteAsync(user);
-    }
-
+    #region Authentication
     public ClaimsPrincipal PricipalUser(UserModel user)
     {
         List<Claim> claims = new List<Claim>
@@ -248,9 +229,44 @@ public class UserService
         var principal = new ClaimsPrincipal(identity);
         return principal;
     }
+    #endregion
 
+    #region Delete
+    public async Task DeleteAsync(int id)
+    {
+        var user = await GetByIdAsync(id);
+        await userRepository.DeleteAsync(user);
+    }
+    #endregion
+
+    #region Tools
+    public async Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username)
+    {
+        return await userRepository.ContainsUsernameAsync(username);
+    }
+
+    public async Task<int> GetCount()
+    {
+        return await userRepository.GetCount();
+    }
+
+    public async Task<ChangePasswordResultEnum> ChangePassword(int userId, string password)
+    {
+        if (!passwordService.IsPasswordValid(password))
+            return ChangePasswordResultEnum.PasswordNotValid;
+
+        var user = await GetByIdAsync(userId);
+        user.Password = passwordService.HashMD5(password);
+
+        userRepository.Update(user);
+        return ChangePasswordResultEnum.Success;
+    }
+    #endregion
+
+    #region Save
     public async Task SaveChangesAsync()
     {
         await userRepository.SaveChangesAsync();
     }
+    #endregion
 }

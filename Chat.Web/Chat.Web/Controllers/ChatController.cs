@@ -12,6 +12,7 @@ namespace Chat.Web.Controllers
         (IFriendService FriendService, IMessageService MessageService) : Controller
     {
 
+        #region Index
         // === Getting Data From User Page ===
         [HttpGet]
         public async Task<IActionResult> Chat(int userId, int friendId)
@@ -23,8 +24,9 @@ namespace Chat.Web.Controllers
             }
             return View(friendship);
         }
+        #endregion
 
-
+        #region Add Message
         // === Getting Data From Ajax in Chat cshtml ===
         // === Adding Messages ===
         [HttpPost]
@@ -38,9 +40,10 @@ namespace Chat.Web.Controllers
             await MessageService.SaveChangesAsync();
             return "";
         }
+        #endregion
 
-        
-        public async Task DeleteMessage(int MessageId , int sender)
+        #region Delete Message
+        public async Task DeleteMessage(int MessageId, int sender)
         {
             var claims = User.Claims.FirstOrDefault(m => m.Type == ClaimTypes.NameIdentifier);
             if (claims.Value == sender.ToString())
@@ -53,14 +56,17 @@ namespace Chat.Web.Controllers
                 NotFound();
             }
         }
+        #endregion
 
-
+        #region ViewComponent
         // === Getting Data From Ajax in Chat cshtml === 
         // === Fetching Messages ===
         [HttpPost]
         public IActionResult ReturnMessageViewComponent(FriendModel data)
-        {            
-            return ViewComponent("Message" , data);
+        {
+            return ViewComponent("Message", data);
         }
+        #endregion
+
     }
 }
