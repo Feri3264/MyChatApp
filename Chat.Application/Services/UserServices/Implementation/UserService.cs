@@ -33,6 +33,11 @@ public class UserService
         return await userRepository.GetByEmailOrUsernameAsync(emailOrUsername);
     }
 
+    public async Task<List<UserModel>> GetByTakeAsync(int take = 10, int skip = 0)
+    {
+        return await userRepository.GetByTakeAsync(take , skip);
+    }
+
     public async Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username)
     {
         return await userRepository.ContainsUsernameAsync(username);
@@ -171,6 +176,11 @@ public class UserService
             isAdmin = user.isAdmin,
         };
         return editUser;
+    }
+
+    public async Task<int> GetCount()
+    {
+        return await userRepository.GetCount();
     }
 
     public async Task<EditUserResultEnum> Update(AdminEditUserDTO model)

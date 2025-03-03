@@ -46,6 +46,20 @@ namespace Chat.Data.Repository
             return await _context.Users.Include(f => f.Friends).FirstOrDefaultAsync(u => u.UserId == userId);
         }
 
+        public async Task<List<UserModel>> GetByTakeAsync(int take, int skip)
+        {
+            return await _context.Users
+                .OrderByDescending(u => u.UserId)
+                .Skip(skip)
+                .Take(take)
+                .ToListAsync();
+        }
+
+        public async Task<int> GetCount()
+        {
+            return await _context.Users.CountAsync();
+        }
+
         public async Task<bool> UserExistsAsync(int id)
         {
             return await _context.Users.AnyAsync(e => e.UserId == id);

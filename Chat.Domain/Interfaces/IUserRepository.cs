@@ -11,6 +11,8 @@ namespace Chat.Domain.Interfaces
         public Task<UserModel> GetUserAsync(UserModel user);
         public Task<UserModel> GetByEmailOrUsernameAsync(string emailOrUsername);
         public Task<UserModel> GetByIdAsync(int userId);
+        public Task<List<UserModel>> GetByTakeAsync(int take, int skip);
+        public Task<int> GetCount();
         public Task<bool> UserExistsAsync(int id);
         public Task<bool> EmailExistsAsync(string email);
         public Task<bool> UsernameExistsAsync(string username);

@@ -4,6 +4,7 @@ using Chat.Application.Services.ProfilePictureServices.Interface;
 using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.DTOs.AdminDTOs;
 using Chat.Domain.Enum;
+using Chat.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,9 +19,16 @@ namespace Chat.Web.Areas.Admin.Controllers
 
         #region Index
         // GET: Admin/User
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int pageId = 1)
         {
-            return View(await UserService.GetAllAsync());
+            int take = 10;
+            int pageCount = await UserService.GetCount() / take;
+            int skip = (pageId - 1) * take;
+            var userModel = await UserService.GetByTakeAsync(take , skip);
+
+            ViewBag.CurrentPage = pageId;
+            ViewBag.PageCount = pageCount;
+            return View(userModel);
         }
         #endregion
 
@@ -170,6 +178,5 @@ namespace Chat.Web.Areas.Admin.Controllers
 
         #endregion
 
-
     }
-}
+}    

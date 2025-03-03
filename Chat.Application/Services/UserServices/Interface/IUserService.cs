@@ -12,7 +12,9 @@ public interface IUserService
     
     Task<UserModel> GetByIdAsync(int id);
 
-    Task<UserModel> GetByEmailOrUsernameAsync(string emailOrUsername); 
+    Task<UserModel> GetByEmailOrUsernameAsync(string emailOrUsername);
+
+    Task<List<UserModel>> GetByTakeAsync(int take, int skip);
     
     Task<IEnumerable<UserModel>> ContainsUsernameAsync(string username);
     
@@ -33,6 +35,8 @@ public interface IUserService
     Task<EditProfileDTO> GetForEditProfile(int id);
 
     Task<AdminEditUserDTO> GetForEditUser(int id);
+
+    Task<int> GetCount();
 
     Task<EditUserResultEnum> Update(AdminEditUserDTO user);
 
