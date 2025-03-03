@@ -27,7 +27,7 @@ namespace Chat.Data.Repository
         public async Task DeleteAsync(UserModel user)
         {
             UserModel result = await GetUserAsync(user);
-            _context.Users.Remove(result);
+            user.isDelete = !user.isDelete;
         }
 
         public async Task<UserModel> GetUserAsync(UserModel user)
@@ -38,6 +38,7 @@ namespace Chat.Data.Repository
         public async Task<UserModel> GetByEmailOrUsernameAsync(string emailOrUsername)
         {
             return await _context.Users
+                .Include(u => u.Friends)
             .FirstOrDefaultAsync(u => u.Email == emailOrUsername || u.Username == emailOrUsername);
         }
 

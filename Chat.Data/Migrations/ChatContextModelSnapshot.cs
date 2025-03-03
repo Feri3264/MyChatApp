@@ -17,12 +17,12 @@ namespace DataLayer.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.1")
+                .HasAnnotation("ProductVersion", "9.0.2")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("DataLayer.Models.FriendModel", b =>
+            modelBuilder.Entity("Chat.Domain.Models.FriendModel", b =>
                 {
                     b.Property<int>("FriendsRelationId")
                         .ValueGeneratedOnAdd()
@@ -43,7 +43,7 @@ namespace DataLayer.Migrations
                     b.ToTable("Friends");
                 });
 
-            modelBuilder.Entity("DataLayer.Models.MessageModel", b =>
+            modelBuilder.Entity("Chat.Domain.Models.MessageModel", b =>
                 {
                     b.Property<int>("MessageId")
                         .ValueGeneratedOnAdd()
@@ -74,13 +74,16 @@ namespace DataLayer.Migrations
                     b.ToTable("Messages");
                 });
 
-            modelBuilder.Entity("DataLayer.Models.UserModel", b =>
+            modelBuilder.Entity("Chat.Domain.Models.UserModel", b =>
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -109,14 +112,17 @@ namespace DataLayer.Migrations
                     b.Property<bool>("isAdmin")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("isDelete")
+                        .HasColumnType("bit");
+
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("DataLayer.Models.FriendModel", b =>
+            modelBuilder.Entity("Chat.Domain.Models.FriendModel", b =>
                 {
-                    b.HasOne("DataLayer.Models.UserModel", "User")
+                    b.HasOne("Chat.Domain.Models.UserModel", "User")
                         .WithMany("Friends")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -125,9 +131,9 @@ namespace DataLayer.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("DataLayer.Models.MessageModel", b =>
+            modelBuilder.Entity("Chat.Domain.Models.MessageModel", b =>
                 {
-                    b.HasOne("DataLayer.Models.FriendModel", "Friends")
+                    b.HasOne("Chat.Domain.Models.FriendModel", "Friends")
                         .WithMany("Messages")
                         .HasForeignKey("FriendsRelationId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -136,12 +142,12 @@ namespace DataLayer.Migrations
                     b.Navigation("Friends");
                 });
 
-            modelBuilder.Entity("DataLayer.Models.FriendModel", b =>
+            modelBuilder.Entity("Chat.Domain.Models.FriendModel", b =>
                 {
                     b.Navigation("Messages");
                 });
 
-            modelBuilder.Entity("DataLayer.Models.UserModel", b =>
+            modelBuilder.Entity("Chat.Domain.Models.UserModel", b =>
                 {
                     b.Navigation("Friends");
                 });

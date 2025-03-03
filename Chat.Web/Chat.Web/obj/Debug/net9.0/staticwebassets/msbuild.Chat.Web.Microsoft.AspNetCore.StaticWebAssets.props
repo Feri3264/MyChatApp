@@ -1188,66 +1188,48 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\02bcdc19-212a-41dc-bd68-b4a37ffd52e0ghasem1010.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\16368546-2830-4552-a719-31f06634d8f4arash1010.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Chat.Web</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Chat.Web</BasePath>
-      <RelativePath>ProfilePicture/02bcdc19-212a-41dc-bd68-b4a37ffd52e0ghasem1010.jpg</RelativePath>
+      <RelativePath>ProfilePicture/16368546-2830-4552-a719-31f06634d8f4arash1010.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>sax50pigyk</Fingerprint>
-      <Integrity>LKS8oeQacxLZjnhv7ipuJd1fEl+GfXx5Gb6Cip2lC9I=</Integrity>
+      <Fingerprint>uc8b8ge682</Fingerprint>
+      <Integrity>8ljYkbPH0p6jwpueKsn40xHlrTkZYgJpiArB9obBLgQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\02bcdc19-212a-41dc-bd68-b4a37ffd52e0ghasem1010.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\16368546-2830-4552-a719-31f06634d8f4arash1010.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\42cff33e-6821-4a30-b7d1-625317771734sarah1010.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\6b6ec58f-77cd-4546-8fb7-a239f4342f50ramin1010.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Chat.Web</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Chat.Web</BasePath>
-      <RelativePath>ProfilePicture/42cff33e-6821-4a30-b7d1-625317771734sarah1010.jpg</RelativePath>
+      <RelativePath>ProfilePicture/6b6ec58f-77cd-4546-8fb7-a239f4342f50ramin1010.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9qa3dc4chm</Fingerprint>
-      <Integrity>74kAsgRJlkO5CNV8/4kK1Wug4D0y20cA+EzDmtwkrUE=</Integrity>
+      <Fingerprint>l91j03me37</Fingerprint>
+      <Integrity>KVnvmSypXgUqniX3g1/E3M8pc3spdYsrF4HtnjhSFbM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\42cff33e-6821-4a30-b7d1-625317771734sarah1010.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\6b6ec58f-77cd-4546-8fb7-a239f4342f50ramin1010.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\49bffaaa-e293-4278-9748-8dd69f1f5703arash1010.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\6f44aa57-5308-4a9f-bf72-1b3032599451ghasem1010.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Chat.Web</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Chat.Web</BasePath>
-      <RelativePath>ProfilePicture/49bffaaa-e293-4278-9748-8dd69f1f5703arash1010.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2mzcg0w39y</Fingerprint>
-      <Integrity>Sg9xZIpAbi1jy56pJeo6StJ4pgF0mVrj3XcegJ62YQQ=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\49bffaaa-e293-4278-9748-8dd69f1f5703arash1010.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\af9ee2e8-5fd9-4528-b4a4-87f984d58105ramin1010.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Chat.Web</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Chat.Web</BasePath>
-      <RelativePath>ProfilePicture/af9ee2e8-5fd9-4528-b4a4-87f984d58105ramin1010.jpg</RelativePath>
+      <RelativePath>ProfilePicture/6f44aa57-5308-4a9f-bf72-1b3032599451ghasem1010.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1258,14 +1240,14 @@
       <Integrity>PNxDtHWgNyr/JQ4qSRnS5j0x4iHcu8ZDjttl9OOtqhg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\af9ee2e8-5fd9-4528-b4a4-87f984d58105ramin1010.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\6f44aa57-5308-4a9f-bf72-1b3032599451ghasem1010.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\ef255012-3e65-45c4-9792-5c99e6ce7802faridBoyyy.jpg'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\f0574915-8ba3-48df-b362-70d83b9de9c3faridboyyy.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Chat.Web</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/Chat.Web</BasePath>
-      <RelativePath>ProfilePicture/ef255012-3e65-45c4-9792-5c99e6ce7802faridBoyyy.jpg</RelativePath>
+      <RelativePath>ProfilePicture/f0574915-8ba3-48df-b362-70d83b9de9c3faridboyyy.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -1276,7 +1258,7 @@
       <Integrity>l+nlsGc+Zx4/5+MuknQW/pK2D/mMlJ6iJD0mzoFVrD8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\ef255012-3e65-45c4-9792-5c99e6ce7802faridBoyyy.jpg'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\f0574915-8ba3-48df-b362-70d83b9de9c3faridboyyy.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

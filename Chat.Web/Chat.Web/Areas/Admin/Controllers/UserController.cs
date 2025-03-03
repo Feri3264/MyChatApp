@@ -70,7 +70,7 @@ namespace Chat.Web.Areas.Admin.Controllers
                 {
                     case CreateUserResultEnum.Success:
                         await UserService.SaveChangesAsync();
-                        return RedirectToAction("Login");
+                        return RedirectToAction(nameof(Index));
 
                     case CreateUserResultEnum.EmailAlreadyExists:
                         ModelState.AddModelError("Email", "Email Alreay Exists");
@@ -83,9 +83,8 @@ namespace Chat.Web.Areas.Admin.Controllers
                     case CreateUserResultEnum.PasswordNotValid:
                         ModelState.AddModelError("Password", "Password Must Contains 8 Characters");
                         break;
-                }
-                await UserService.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                }                
+                
             }
             return View(userModel);
         }
@@ -167,8 +166,7 @@ namespace Chat.Web.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int UserId)
         {
-            var userModel = await UserService.GetByIdAsync(UserId);
-            await FriendService.DeleteAllFriendsAsync(userModel.Friends);
+            var userModel = await UserService.GetByIdAsync(UserId);            
             
             await UserService.DeleteAsync(UserId);
             await UserService.SaveChangesAsync();

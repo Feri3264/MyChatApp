@@ -23,7 +23,7 @@ namespace Chat.Web.Components
             foreach (var item in model.Friends)
             {
                 var friends = await UserService.GetByIdAsync(item.FreindId);
-                if (friends != null)
+                if (friends.isDelete == false)
                 {
                     result.Add(friends);
                 }
