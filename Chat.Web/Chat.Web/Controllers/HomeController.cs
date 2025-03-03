@@ -18,6 +18,10 @@ namespace Chat.Web.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(string username)
         {
+            var claimedUser = User.FindFirstValue(ClaimTypes.Name);
+            if (claimedUser != username)
+                return NotFound();
+
             UserModel user = await UserService.GetByEmailOrUsernameAsync(username);
             if (user == null)
                 return NotFound();
