@@ -1,12 +1,20 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Chat.Application.Middlewares;
 using Chat.IOC;
+using Chat.Data.Context;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+
+#region Context
+builder.Services.AddDbContext<ChatContext>( options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ChatConnectionString"))
+);
+#endregion
 
 #region Authentication
 builder.Services.AddAuthentication()

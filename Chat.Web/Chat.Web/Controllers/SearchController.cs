@@ -11,18 +11,19 @@ namespace Chat.Web.Controllers
     public class SearchController 
         (IFriendService FriendService, IUserService UserService) : Controller
     {
-        
+
+        #region Index
         // === Getting Data From User Page ===
         [HttpGet]
         public IActionResult Search(int userId)
-        {           
+        {
             TempData["UserId"] = userId;
             return View();
         }
+        #endregion
 
-
-        // === Getting Data From Search Page ===
-        //[HttpGet("/AddFriend")]
+        #region Add Friend
+        // === Getting Data From Search Page ===       
         [HttpGet]
         public async Task<IActionResult> AddFriend(int friendId)
         {
@@ -30,24 +31,27 @@ namespace Chat.Web.Controllers
             UserModel user = await UserService.GetByIdAsync(userId);
             if (user == null)
                 return NotFound();
-            
-            if (await FriendService.FriendshipExistsAsync(userId , friendId))
+
+            if (await FriendService.FriendshipExistsAsync(userId, friendId))
             {
-                return RedirectToAction("Index" , "Home" , new { username = user.Username });
+                return RedirectToAction("Index", "Home", new { username = user.Username });
             }
 
             await FriendService.CreateAsync(userId, friendId);
             await FriendService.SaveChangesAsync();
-            
-            return RedirectToAction("Index" , "Home" , new { username = user.Username });
+
+            return RedirectToAction("Index", "Home", new { username = user.Username });
         }
+        #endregion
 
-
+        #region ViewComponent
         // === Getting Data --> Ajax (Search View) ===
         [HttpPost]
         public IActionResult ReturnSearchedFriendsViewComponent(string data)
         {
             return ViewComponent("SearchedFriends", data);
         }
+        #endregion
+
     }
 }

@@ -21,6 +21,5 @@ namespace Chat.Application.Middlewares
             }
             await _next(context);  
         }
-
     }
 }

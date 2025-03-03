@@ -19,7 +19,11 @@ namespace Chat.Domain.Models
         [Required(ErrorMessage = "Please Enter Your {0}"), MaxLength(100)]
         public string Password { get; set; }
 
+        public DateTime CreateDate { get; set; }
+
         public bool isAdmin { get; set; }
+
+        public bool isDelete { get; set; }
 
         [Required(ErrorMessage = "Please Select Your {0}")]
         public string Picture { get; set; }

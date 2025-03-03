@@ -4,7 +4,7 @@
 
 @foreach (var item in Model)
 {
-	if (item.Sender == (int)ViewData["MessageUserId"])
+	if (item.Sender == Convert.ToInt32(ViewData["MessageUserId"]))
 	{
 		<div class="message-Response text-only">
 			<div class="alignMessages-response">
@@ -12,7 +12,7 @@
 					<button class="deleteMessageIcon" onclick="DeleteMessage(@item.MessageId , @item.Sender)"><i class="fa fa-trash" aria-hidden="true"></i></button>
 					<p class="text-response"> @item.MessageText</p>					
 				</div>
-				<p class="response-time"> @item.MessageDate</p>
+				<p class="response-time"> @item.MessageDate.ToString("HH:mm")</p>
 			</div>
 		</div>
 	}
@@ -21,7 +21,7 @@
 		<div class="message">
 			<div class="alignMessages">
 				<p class="text">@item.MessageText</p>
-				<p class="time"> @item.MessageDate</p>
+				<p class="time"> @item.MessageDate.ToString("HH:mm")</p>
 			</div>			
 		</div>
 		

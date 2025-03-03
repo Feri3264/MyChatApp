@@ -14,17 +14,22 @@ namespace Chat.Web.Components
         {
             ViewData["UserId"] = model.UserId;
             List<UserModel> result = new List<UserModel>();
-            
+
+
+            if (model.Friends == null)
+                return View("MainFriendsVC" , result);
+
+
             foreach (var item in model.Friends)
             {
                 var friends = await UserService.GetByIdAsync(item.FreindId);
-                if (friends != null)
+                if (friends.isDelete == false)
                 {
-                    result.Add(friends);    
+                    result.Add(friends);
                 }
                 continue;
             }
-            
+
             return View("MainFriendsVC" , result);
         }
     }

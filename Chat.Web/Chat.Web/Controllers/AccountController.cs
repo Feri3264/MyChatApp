@@ -1,9 +1,10 @@
 ﻿using Chat.Application.Services.UserServices.Interface;
 using Chat.Domain.Models;
-using Chat.Domain.ViewModels;
+using Chat.Domain.DTOs;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Chat.Domain.Enum;
 
 namespace Chat.Web.Controllers
 {
@@ -20,14 +21,31 @@ namespace Chat.Web.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Register(CreateUserViewModel user)
+        public async Task<IActionResult> Register(RegisterDTO user)
         {            
-            user.isAdmin = false;
             if (ModelState.IsValid)
             {                
-                await UserService.CreateAsync(user);
-                await UserService.SaveChangesAsync();
-                return RedirectToAction("Login");
+                var result = await UserService.RegisterAsync(user);
+                switch(result)
+                {
+                    case RegisterUserResultEnum.Success:
+                        await UserService.SaveChangesAsync();
+                        return RedirectToAction("Login");
+
+                    case RegisterUserResultEnum.UsernameAlreadyExists:
+                        ModelState.AddModelError("Username", "Username Alreay Exists");
+                        break;
+
+                    case RegisterUserResultEnum.EmailAlreadyExists:
+                        ModelState.AddModelError("Email", "Email Alreay Exists");
+                        break;
+
+                    case RegisterUserResultEnum.PasswordNotValid:
+                        ModelState.AddModelError("Password", "Password Must Contains 8 Characters");
+                        break;
+                }
+                return View(user);
+
             }
             else
             {
@@ -48,15 +66,15 @@ namespace Chat.Web.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Login(string email, string password)
+        public async Task<IActionResult> Login(LoginDTO model)
         {
-            if (!await UserService.UserExistsAsync(email, password))
+            if (!await UserService.UserExistsAsync(model.EmailOrUsername, model.Password))
             {
-                ViewData["UserNotFound"] = "There is No such an account.";
-                return View();
-            }
-            
-            UserModel user = await UserService.GetByEmailAsync(email);
+                ModelState.AddModelError("Password", "User Not Found");
+                return View(model);
+            }                                    
+
+            UserModel user = await UserService.GetByEmailOrUsernameAsync(model.EmailOrUsername);
             var principal = UserService.PricipalUser(user);
             await HttpContext.SignInAsync(principal);
             
@@ -75,7 +93,7 @@ namespace Chat.Web.Controllers
 
         #region Logout
         public IActionResult Logout()
-        {
+        {chrome://vivaldi-webui/startpage?section=Speed-dials&background-color=#1e201e
             if (User.Identity.IsAuthenticated)
             {
                 HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
