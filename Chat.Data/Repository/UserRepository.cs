@@ -50,7 +50,7 @@ namespace Chat.Data.Repository
         public async Task<List<UserModel>> GetByTakeAsync(int take, int skip)
         {
             return await _context.Users
-                .OrderByDescending(u => u.UserId)
+                .OrderByDescending(u => u.CreateDate)
                 .Skip(skip)
                 .Take(take)
                 .ToListAsync();

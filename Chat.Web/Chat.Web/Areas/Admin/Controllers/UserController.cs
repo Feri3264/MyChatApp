@@ -110,7 +110,7 @@ namespace Chat.Web.Areas.Admin.Controllers
         // POST: Admin/User/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int UserId, [Bind("UserId,Name,Username,Email,Password,isAdmin,ProfilePicture")] AdminEditUserDTO userModel)
+        public async Task<IActionResult> Edit(int UserId, [Bind("UserId,Name,Username,Email,isAdmin,ProfilePicture")] AdminEditUserDTO userModel)
         {
             if (UserId != userModel.UserId)
             {
@@ -132,10 +132,6 @@ namespace Chat.Web.Areas.Admin.Controllers
 
                     case EditUserResultEnum.UsernameAlreadyExists:
                         ModelState.AddModelError("Username", "Username Alreay Exists");
-                        break;
-
-                    case EditUserResultEnum.PasswordNotValid:
-                        ModelState.AddModelError("Password", "Password Must Contains 8 Characters");
                         break;
                 }               
             }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Chat.IOC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc5224104ee2f6a31ae6bb644948a63e63873ca1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca93c7f86394841fe2e69bacffcccde97fc05c9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Chat.IOC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Chat.IOC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

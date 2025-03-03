@@ -45,10 +45,16 @@
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\..\Chat.IOC\Chat.IOC.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Areas\UserPanel\Data\" />
+      <Folder Include="Areas\UserPanel\Models\" />
     </ItemGroup>
 
 </Project>

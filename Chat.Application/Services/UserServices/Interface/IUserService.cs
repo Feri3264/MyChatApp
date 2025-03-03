@@ -38,6 +38,8 @@ public interface IUserService
 
     Task<int> GetCount();
 
+    Task<ChangePasswordResultEnum> ChangePassword(int userId, string password);
+
     Task<EditUserResultEnum> Update(AdminEditUserDTO user);
 
     Task Update(EditProfileDTO user);

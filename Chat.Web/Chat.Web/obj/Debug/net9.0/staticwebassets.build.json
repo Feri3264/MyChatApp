@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1TcllRGVshGCvXuuYKfooltyKd03VXMMJJifSqSKYBM=",
+  "Hash": "KWPY2OaJyscQwbx/ZT4ec0Cp9h++i84vBr1iRnVXItg=",
   "Source": "Chat.Web",
   "BasePath": "_content/Chat.Web",
   "Mode": "Default",
@@ -2829,6 +2829,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ProfilePicture\\16368546-2830-4552-a719-31f06634d8f4arash1010.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\ProfilePicture\\5ef5793b-788f-420a-b286-198b0f18cfdesarah1010.jpg",
+      "SourceId": "Chat.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\",
+      "BasePath": "_content/Chat.Web",
+      "RelativePath": "ProfilePicture/5ef5793b-788f-420a-b286-198b0f18cfdesarah1010#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cb6w4d205h",
+      "Integrity": "+N9u+UA2OtN/pacwKenkjlwMKo4HCNEZF4T2TfIInHA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ProfilePicture\\5ef5793b-788f-420a-b286-198b0f18cfdesarah1010.jpg"
     },
     {
       "Identity": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\ProfilePicture\\6b6ec58f-77cd-4546-8fb7-a239f4342f50ramin1010.jpg",
@@ -22724,6 +22745,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-8ljYkbPH0p6jwpueKsn40xHlrTkZYgJpiArB9obBLgQ="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePicture/5ef5793b-788f-420a-b286-198b0f18cfdesarah1010.cb6w4d205h.jpg",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\ProfilePicture\\5ef5793b-788f-420a-b286-198b0f18cfdesarah1010.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2718606"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+N9u+UA2OtN/pacwKenkjlwMKo4HCNEZF4T2TfIInHA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 17:14:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cb6w4d205h"
+        },
+        {
+          "Name": "label",
+          "Value": "ProfilePicture/5ef5793b-788f-420a-b286-198b0f18cfdesarah1010.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+N9u+UA2OtN/pacwKenkjlwMKo4HCNEZF4T2TfIInHA="
+        }
+      ]
+    },
+    {
+      "Route": "ProfilePicture/5ef5793b-788f-420a-b286-198b0f18cfdesarah1010.jpg",
+      "AssetFile": "C:\\Users\\Feri\\Desktop\\test\\AspCoreTest\\ChatApp\\Chat.Web\\Chat.Web\\wwwroot\\ProfilePicture\\5ef5793b-788f-420a-b286-198b0f18cfdesarah1010.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2718606"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+N9u+UA2OtN/pacwKenkjlwMKo4HCNEZF4T2TfIInHA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Mar 2025 17:14:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+N9u+UA2OtN/pacwKenkjlwMKo4HCNEZF4T2TfIInHA="
         }
       ]
     },

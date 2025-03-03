@@ -19,10 +19,7 @@ namespace Chat.Domain.DTOs
         public string Username { get; set; }
 
         [Required(ErrorMessage = "Please Enter Your {0}"), MaxLength(200)]
-        public string Email { get; set; }
-
-        [Required(ErrorMessage = "Please Enter Your {0}"), MaxLength(100)]
-        public string Password { get; set; }      
+        public string Email { get; set; }    
 
         public IFormFile? ProfilePicture { get; set; }
     }

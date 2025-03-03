@@ -31,31 +31,6 @@ namespace Chat.Web.Controllers
             
             var user = await UserService.GetByIdAsync(userId);
             return RedirectToAction("Index" , new { username = user.Username });
-        }
-        
-        [HttpGet]
-        public async Task<IActionResult> EditProfile(int userId)
-        {
-            var userViewModel = await UserService.GetForEditProfile(userId);
-            if(userViewModel == null)
-                return NotFound();
-            
-            return View(userViewModel);
-        }
-        
-        [HttpPost]
-        public async Task<IActionResult> EditProfile(EditProfileDTO model)
-        {
-            var user = await UserService.GetByIdAsync(model.UserId);            
-            
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            await UserService.Update(model);
-            await UserService.SaveChangesAsync();
-            return RedirectToAction("Index" , new { username = user.Username });
-        }
+        }      
     }
 }

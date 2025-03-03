@@ -1206,6 +1206,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\16368546-2830-4552-a719-31f06634d8f4arash1010.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\5ef5793b-788f-420a-b286-198b0f18cfdesarah1010.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Chat.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Chat.Web</BasePath>
+      <RelativePath>ProfilePicture/5ef5793b-788f-420a-b286-198b0f18cfdesarah1010.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>cb6w4d205h</Fingerprint>
+      <Integrity>+N9u+UA2OtN/pacwKenkjlwMKo4HCNEZF4T2TfIInHA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\5ef5793b-788f-420a-b286-198b0f18cfdesarah1010.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProfilePicture\6b6ec58f-77cd-4546-8fb7-a239f4342f50ramin1010.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>Chat.Web</SourceId>

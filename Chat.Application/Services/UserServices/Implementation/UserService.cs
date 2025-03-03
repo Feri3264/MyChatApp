@@ -154,8 +154,7 @@ public class UserService
             UserId = user.UserId,
             Name = user.Name,
             Username = user.Username,
-            Email = user.Email,
-            Password = user.Password,           
+            Email = user.Email,                     
         };
         return editUser;
     }
@@ -171,8 +170,7 @@ public class UserService
             UserId = user.UserId,
             Name = user.Name,
             Username = user.Username,
-            Email = user.Email,
-            Password = user.Password,
+            Email = user.Email,            
             isAdmin = user.isAdmin,
         };
         return editUser;
@@ -181,6 +179,18 @@ public class UserService
     public async Task<int> GetCount()
     {
         return await userRepository.GetCount();
+    }
+
+    public async Task<ChangePasswordResultEnum> ChangePassword(int userId , string password)
+    {
+        if (!passwordService.IsPasswordValid(password))
+            return ChangePasswordResultEnum.PasswordNotValid;
+
+        var user = await GetByIdAsync(userId);
+        user.Password = passwordService.HashMD5(password);
+
+        userRepository.Update(user);
+        return ChangePasswordResultEnum.Success;
     }
 
     public async Task<EditUserResultEnum> Update(AdminEditUserDTO model)
@@ -192,16 +202,12 @@ public class UserService
         if (await EditEmailExistsAsync(model.Email , model.UserId))
             return EditUserResultEnum.EmailAlreadyExists;
 
-        if (!passwordService.IsPasswordValid(model.Password))
-            return EditUserResultEnum.PasswordNotValid;
-
 
         UserModel user = await GetByIdAsync(model.UserId);
         user.UserId = model.UserId;
         user.Name = model.Name;
         user.Username = model.Username;
-        user.Email = model.Email;
-        user.Password = passwordService.HashMD5(model.Password);
+        user.Email = model.Email;        
         user.isAdmin = model.isAdmin;
         user.Picture = profilePicture.Edit(model , user);
         
@@ -215,8 +221,7 @@ public class UserService
         user.UserId = model.UserId;
         user.Name = model.Name;
         user.Username = model.Username;
-        user.Email = model.Email;
-        user.Password = passwordService.HashMD5(model.Password);
+        user.Email = model.Email;        
         user.isAdmin = user.isAdmin;
         user.Picture = profilePicture.Edit(model, user);
 
